@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Голубцов](https://up.htmlacademy.ru/adaptive/14/user/125174).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://up.htmlacademy.ru/adaptive/14/user/27386).
 
 ---
 
