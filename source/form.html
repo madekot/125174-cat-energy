@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип «Кэт энерджи»"/>
+        </a>
+        <a class="page-header__logo-text logo-text" href="index.html">
+          <img class="logo-text__image logo-text__image--small" src="http://placehold.it/110x18" width="101" height="18" alt="Cat Energy"/>
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <nav class="page-header__nav">
+        <ul class="page-header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__desc">
+        Заполните анкету и мы подберем программу питания для вашего кота
+      </p>
+      <form class="page-main__form form-programm" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>
+            <span class="visually-hidden">Данные кота</span>
+          </legend>
+          <div class="form-programm__wrapper">
+            <p class="form-programm__inner">
+              <label class="form-programm__title" for="form-programm__name">Имя:*</label>
+              <input class="form-programm__field" type="text" name="name" placeholder="Барсик" id="form-programm__name" />
+            </p>
+
+            <p class="form-programm__inner">
+              <label  class="form-programm__title" for="form-programm__masa">Вес (кг):*</label>
+              <input class="form-programm__field" type="text" name="masa" placeholder="7" id="form-programm__masa"/>
+            </p>
+
+            <p class="form-programm__inner">
+              <label class="form-programm__title" for="form-programm__age">Возраст (лет):</label>
+              <input class="form-programm__field" type="text" name="age" placeholder="7" id="form-programm__age"/>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <span class="visually-hidden">Необходимая программа</span>
+          </legend>
+          <div class="form-programm__wrapper">
+            <p class="form-programm__inner">
+              <input class="form-programm__radio" type="radio" name="program" value="loss" id="form-programm__loss" checked/>
+              <label class="form-programm__title" for="form-programm__loss">
+                Похудение
+              </label>
+            </p>
+
+            <p class="form-programm__inner">
+              <input class="form-programm__radio" type="radio" name="program" value="raise" id="form-programm__raise"/>
+              <label class="form-programm__title" for="form-programm__raise">
+                Набор массы
+              </label>
+            </p>
+
+            <p class="form-programm__inner">
+              <input class="form-programm__radio" type="radio" name="program" value="inquiry" id="form-programm__inquiry"/>
+              <label class="form-programm__title" for="form-programm__inquiry">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form-programm__title">Контактные данные (владельца кота)</legend>
+          <div class="form-programm__wrapper">
+            <p class="form-programm__inner">
+              <label class="form-programm__title" for="form-programm__e-mail">E-mail:*</label>
+              <input class="form-programm__field" type="text" name="e-mail" placeholder="kuklachev@gmail.com" id="form-programm__e-mail"/>
+            </p>
+
+            <p class="form-programm__inner">
+              <label class="form-programm__title" for="form-programm__phone">Телефон:*</label>
+              <input class="form-programm__field" type="text" name="phone" placeholder="8 (960) 900-60-90" id="form-programm__phone"/>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form-programm__title">Комментарий</legend>
+          <div class="form-programm__wrapper">
+            <textarea>Расскажите обо всех повадках кота</textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form-programm__title">Дополнительно</legend>
+          <div class="form-programm__wrapper">
+            <p class="form-programm__inner">
+              <input class="form-programm__checkbox" type="checkbox" name="sweetener" id="form-programm__sweetener" checked/>
+              <label class="form-programm__title" for="form-programm__sweetener">Сахарозаменитель</label>
+            </p>
+
+            <p class="form-programm__inner">
+              <input class="form-programm__checkbox" type="checkbox" name="water" id="form-programm__water"/>
+              <label class="form-programm__title" for="form-programm__water">Питьевая вода</label>
+            </p>
+
+            <p class="form-programm__inner">
+              <input class="form-programm__checkbox" type="checkbox" name="milk" id="form-programm__milk"/>
+              <label class="form-programm__title" for="form-programm__milk">Молоко</label>
+            </p>
+
+            <p class="form-programm__inner">
+              <input class="form-programm__checkbox" type="checkbox" name="vitamin" id="form-programm__vitamin"/>
+              <label class="form-programm__title" for="form-programm__vitamin">Витамины</label>
+            </p>
+          </div>
+        </fieldset>
+        <button class="form-programm__button button" type="submit">
+          Отправить заявку
+        </button>
+        <p class="form-programm__text">* — Обязательные поля</p>
+      </form>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__contact contact">
+        <p class="contact__lead">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="contact__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+
+      <div class="page-footer__map map">
+        <img class="map__image" src="http://placehold.it/320x362" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+
+      <a class="page-footer__logo-text logo-text" href="index.html">
+        <img class="logo-text__image logo-text__image--medium" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy"/>
+      </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image"  src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy"/>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
