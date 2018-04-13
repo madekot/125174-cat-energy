@@ -21,13 +21,13 @@
       <nav class="page-header__nav">
         <ul class="page-header__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,7 @@
           <p class="program__slogan">Занялся собой? Займись котом!</p>
         </div>
         <div class="programm__wrapper-programm">
-          <img class="program__image" src="test.img" width="280" height="270" alt="Корм для похудения" />
+          <img class="program__image" src="http://placehold.it/280x270" width="280" height="270" alt="Корм для похудения" />
           <a class="program__button button" href="#">Подобрать программу</a>
         </div>
       </article>
@@ -119,17 +119,10 @@
               <img class="sample__image" src="http://placehold.it/320x240" width="320" height="240" alt="Кот «После» программы по снижению веса"/>
             </li>
           </ul>
-          <form class="sample__toggles slider__toggles">
-            <input class="slider__toggle" type="radio" name="sample-slider" value="before" id="sample__before" checked/>
-            <label for="sample__before">
-              <span class="visually-hidden">Было</span>
-            </label>
-
-            <input class="slider__toggle" type="radio" name="sample-slider" value="after" id="sample__after"/>
-            <label for="sample__after">
-              <span class="visually-hidden">Стало</span>
-            </label>
-          </form>
+          <p class="sample__toggles slider__toggles">
+            <button class="slider__toggle" type="button">Было</button>
+            <button class="slider__toggle" type="button">Стало</button>
+          </p>
         </div>
       </section>
 
@@ -137,10 +130,10 @@
     <footer class="page-footer">
       <div class="page-footer__contact contact">
         <p class="contact__lead">
-              Приглашаем к сотрудничеству дилеров!
+          Приглашаем к сотрудничеству дилеров!
         </p>
         <p class="contact__text">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
 
