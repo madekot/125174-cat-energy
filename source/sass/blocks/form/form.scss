@@ -1,0 +1,44 @@
+.form {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family-main;
+  color: $black-lighten;
+
+  background-color: $white;
+  outline: 2px solid lightgreen;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.form__field {
+  font: inherit;
+
+  border: none;
+  border: 1px solid $grey-dark;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: $black-lightest;
+}
+
+.form__field-comment {
+  font: inherit;
+}
+
+.form__button {
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
