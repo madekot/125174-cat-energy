@@ -1,0 +1,13 @@
+.button {
+  display: block;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "oswaldregular", "Arial", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+
+  background-color: $color-main;
+}

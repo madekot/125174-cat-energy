@@ -1,0 +1,16 @@
+.page-footer {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: $black-lightest;
+
+  background-color: $white;
+  outline: 2px solid lightgreen;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

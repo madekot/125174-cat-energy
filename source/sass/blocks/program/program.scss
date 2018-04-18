@@ -1,0 +1,23 @@
+.program {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: $black-lightest;
+
+  background-color: $grey;
+}
+
+.program__title {
+  font-size: 27px;
+  line-height: 37px;
+  font-family: $font-family-main;
+  color: $black;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-family-main;
+  color: $black;
+  text-decoration: none;
+}
