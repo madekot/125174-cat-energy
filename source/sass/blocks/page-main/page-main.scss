@@ -1,7 +1,7 @@
 .page-main{
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-main;
   color: $black-lightest;
 
   background-color: $white;
@@ -10,4 +10,10 @@
 
 .page-main__programs {
   outline: 2px solid lightgreen;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
 }

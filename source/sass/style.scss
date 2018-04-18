@@ -1,3 +1,5 @@
+@import "visually-hidden.scss";
+
 @import "fonts.scss";
 
 @import "variables.scss";
@@ -31,5 +33,17 @@
 @import "blocks/contact/contact.scss";
 
 @import "blocks/copyright/copyright.scss";
+
+@import "blocks/merchandise/merchandise.scss";
+
+@import "blocks/merchandise-catalog-list/merchandise-catalog-list.scss";
+
+@import "blocks/merchandise-item/merchandise-item.scss";
+
+@import "blocks/after-market/after-market.scss";
+
+@import "blocks/after-market-list/after-market-list.scss";
+
+@import "blocks/after-market-item/after-market-item.scss";
 
 body { background: green; }
