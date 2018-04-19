@@ -1,0 +1,34 @@
+.after-market {
+  font-size: 12px;
+  line-height: 1.166px;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
+}
+
+.after-market__title {
+  font-size: 24px;
+  line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black;
+
+  background-color: $color-white;
+}
+
+.after-market__list {
+  @include reset-list;
+}
+
+.after-market__lead {
+  min-height: 289px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $color-white;
+
+  background-color: $color-main;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}

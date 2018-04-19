@@ -1,0 +1,23 @@
+.program {
+  font-size: 14px;
+  line-height: 1.285;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-grey;
+}
+
+.program__title {
+  font-size: 27px;
+  line-height: 1.37;
+  font-family: $font-family-main;
+  color: $color-black;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black;
+  text-decoration: none;
+}

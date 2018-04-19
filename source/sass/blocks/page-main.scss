@@ -1,0 +1,23 @@
+.page-main {
+  font-size: 14px;
+  line-height: 1.285;
+  font-family: $font-family-main;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
+  outline: 2px solid lightgreen;
+}
+
+.page-main__programs {
+  outline: 2px solid lightgreen;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 1.666;
+  color: $color-black;
+}
+
+.page-main__desc {
+  color: $color-black;
+}

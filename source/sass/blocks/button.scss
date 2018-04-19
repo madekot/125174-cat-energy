@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.285;
+  font-family: $font-family-main;
+  vertical-align: middle;
+  text-align: center;
+  color: $color-white;
+  text-decoration: none;
+
+  background-color: $color-main;
+  border: none;
+
+  &--grey {
+    color: $color-black-lightest;
+
+    background-color: $color-grey;
+  }
+}

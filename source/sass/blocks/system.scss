@@ -1,0 +1,20 @@
+.system {
+  font-size: 14px;
+  line-height: 1.258;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
+  outline: 2px solid lightgreen;
+}
+
+.system__title {
+  font-size: 36px;
+  line-height: 1.666;
+  font-family: $font-family-main;
+  color: $color-black;
+}
+
+.system__list {
+  @include reset-list;
+}

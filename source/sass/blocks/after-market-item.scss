@@ -1,0 +1,30 @@
+.after-market-item {
+  font-size: 14px;
+  line-height: 1;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
+}
+
+.after-market-item__title {
+  font-size: 14px;
+  line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black-lighten;
+
+  background-color: $color-white;
+}
+
+.after-market-item__field {
+  text-align: left;
+}
+
+.after-market-item__value {
+  text-align: right;
+}
+
+.after-market-item__button {
+  font-size: 16px;
+  line-height: 1.25;
+}

@@ -1,0 +1,12 @@
+.title {
+  font-size: 24px;
+  line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black;
+
+  background-color: $color-white;
+
+  &--height-medium {
+    line-height: 1.54;
+  }
+}
