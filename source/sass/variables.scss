@@ -1,29 +1,34 @@
+
 // Файл с переменными:
 
 
 // Цвета используемые в проекте:
 // light, lighten, lightest, dark, darken, darkest
 
-$color-main:              #68b738;  // основной цвет
-$color-secondary:         #f2f2f2;  // дополнительный цвет
+$color-main:                    #68b738;  // основной цвет
+$color-secondary:               #f2f2f2;  // дополнительный цвет
 
-$white:                   #ffffff;
-$white-lighten-opacity:   rgba(255, 255, 255, 0.6);
-$white-light-opacity:     rgba(255, 255, 255, 0.3);
+$color-white:                   #ffffff;
+$color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
+$color-white-light-opacity:     rgba(255, 255, 255, 0.3);
 
-$grey:                    #f2f2f2;
-$grey-dark:               #cdcdcd;
+$color-grey:                    #f2f2f2;
+$color-grey-dark:               #cdcdcd;
 
-$black:                   #111111;
-$black-lighten:           #222222;
-$black-lightest:          #444444;
+$color-black:                   #111111;
+$color-black-lighten:           #222222;
+$color-black-lightest:          #444444;
 
-$black-lightest-opacity:  rgba(17, 17, 17, 0.8);
-$black-lighten-opacity:   rgba(17, 17, 17, 0.6);
-$black-light-opacity:     rgba(17, 17, 17, 0.3);
+$color-black-lightest-opacity:  rgba(17, 17, 17, 0.8);
+$color-black-lighten-opacity:   rgba(17, 17, 17, 0.6);
+$color-black-light-opacity:     rgba(17, 17, 17, 0.3);
 
 
 // Гарнитуры используемые в проекте:
 
-$font-family-main:        "oswaldregular", "Arial", sans-serif;
-$font-family-secondary:   "oswaldmedium", "Arial", sans-serif;
+$font-family-main:              "Oswald", "Arial", sans-serif;
+$font-family-secondary:         "Arial", sans-serif;
+
+// weight текста используемые в проекте:
+$font-weight-regular:           400;
+$font-weight-bold:              700;

@@ -1,51 +1,27 @@
-@import "visually-hidden.scss";
-
 @import "fonts.scss";
-
 @import "variables.scss";
-
+@import "mixins.scss";
+@import "blocks/visually-hidden/visually-hidden.scss";
 @import "blocks/page-header/page-header.scss";
-
 @import "blocks/site-list/site-list.scss";
-
 @import "blocks/page-main/page-main.scss";
-
 @import "blocks/preview/preview.scss";
-
 @import "blocks/button/button.scss";
-
 @import "blocks/programs/programs.scss";
-
 @import "blocks/program/program.scss";
-
 @import "blocks/system/system.scss";
-
 @import "blocks/system-list/system-list.scss";
-
 @import "blocks/sample/sample.scss";
-
 @import "blocks/illustration/illustration.scss";
-
 @import "blocks/slider/slider.scss";
-
 @import "blocks/page-footer/page-footer.scss";
-
 @import "blocks/contact/contact.scss";
-
 @import "blocks/copyright/copyright.scss";
-
 @import "blocks/merchandise/merchandise.scss";
-
 @import "blocks/merchandise-catalog-list/merchandise-catalog-list.scss";
-
 @import "blocks/merchandise-item/merchandise-item.scss";
-
 @import "blocks/after-market/after-market.scss";
-
 @import "blocks/after-market-list/after-market-list.scss";
-
 @import "blocks/after-market-item/after-market-item.scss";
-
 @import "blocks/form/form.scss";
-
-body { background: green; }
+@import "blocks/title/title.scss";

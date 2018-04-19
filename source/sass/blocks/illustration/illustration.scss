@@ -1,24 +1,24 @@
 .illustration {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   font-family: "Arial", sans-serif;
   text-align: center;
-  color: $black-lightest;
+  color: $color-black-lightest;
 
-  background-color: $grey;
+  background-color: $color-grey;
   outline: 2px solid lightgreen;
 }
 
 .illustration__value {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 }
 
 .illustration__field {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 }

@@ -1,19 +1,19 @@
 .merchandise-item {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.333;
   font-family: "Arial", sans-serif;
-  color: $black-lightest;
+  color: $color-black-lightest;
 
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .merchandise-item__title {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .merchandise-item__field {
@@ -26,5 +26,5 @@
 
 .merchandise-item__button {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }

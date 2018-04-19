@@ -1,20 +1,18 @@
 .slider {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 
-  background-color: $grey;
+  background-color: $color-grey;
   outline: 2px solid lightgreen;
 }
 
 .slider__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include reset-list;
 }
 
 .slider__toggle {
-  font: inherit;
+  font-size: 16px;
+  line-height: 1.25;
 }

@@ -1,19 +1,19 @@
 .after-market-item {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   font-family: "Arial", sans-serif;
-  color: $black-lightest;
+  color: $color-black-lightest;
 
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .after-market-item__title {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   font-family: $font-family-main;
-  color: $black-lighten;
+  color: $color-black-lighten;
 
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .after-market-item__field {
@@ -22,4 +22,9 @@
 
 .after-market-item__value {
   text-align: right;
+}
+
+.after-market-item__button {
+  font-size: 16px;
+  line-height: 1.25;
 }

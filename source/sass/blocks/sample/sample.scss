@@ -1,23 +1,23 @@
 .sample {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.258;
   font-family: "Arial", sans-serif;
-  color: $black-lightest;
+  color: $color-black-lightest;
 
-  background-color: $grey;
+  background-color: $color-grey;
   outline: 2px solid lightgreen;
 }
 
 .sample__title {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 1.666;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 }
 
 .sample__subtitle {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.428;
   font-family: $font-family-main;
-  color: $black;
+  color: $color-black;
 }

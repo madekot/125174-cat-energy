@@ -1,15 +1,16 @@
 .site-list {
   font-size: 20px;
-  line-height: 20px;
-  font-family: $font-family-secondary;
+  line-height: 1;
+  font-family: $font-family-main;
+  font-weight: $font-weight-bold;
   text-align: center;
-  color: $black;
+  color: $color-black;
 
-  background-color: $white;
+  background-color: $color-white;
   outline: 2px solid lightgreen;
 }
 
 .site-list__link {
   text-decoration: none;
-  color: $black;
+  color: $color-black;
 }

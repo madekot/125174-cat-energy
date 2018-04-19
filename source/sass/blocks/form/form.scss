@@ -1,44 +1,42 @@
 .form {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125;
   font-family: $font-family-main;
-  color: $black-lighten;
+  color: $color-black-lighten;
 
-  background-color: $white;
+  background-color: $color-white;
   outline: 2px solid lightgreen;
 }
 
 .form__title {
   font-size: 24px;
-  line-height: 24px;
-  color: $black;
+  line-height: 1;
+  color: $color-black;
 }
 
-.form__field {
-  font: inherit;
-
-  border: none;
-  border: 1px solid $grey-dark;
-}
-
-.form__field::-webkit-input-placeholder {
-  color: $black-lightest;
-}
-
+.form__field,
 .form__field-comment {
-  font: inherit;
+  font-size: 16px;
+  line-height: 1.125;
+  font-family: $font-family-main;
+  color: $color-black-lighten;
+
+  background-color: $color-white;
+  border: 1px solid $color-grey-dark;
+
+  &::placeholder {
+    color: $color-black-lightest;
+  }
 }
 
 .form__button {
-  margin: 0 auto;
-
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 .form__text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
   font-family: "Arial", sans-serif;
   text-align: center;
 }
