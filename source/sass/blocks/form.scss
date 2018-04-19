@@ -14,8 +14,7 @@
   color: $color-black;
 }
 
-.form__field,
-.form__field-comment {
+.form__field {
   font-size: 16px;
   line-height: 1.125;
   font-family: $font-family-main;
@@ -37,6 +36,6 @@
 .form__text {
   font-size: 14px;
   line-height: 1.142;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-secondary;
   text-align: center;
 }
