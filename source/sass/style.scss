@@ -2,12 +2,14 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
+@import "blocks/logo.scss";
+@import "blocks/logo-text.scss";
+@import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/preview.scss";
-@import "blocks/button.scss";
 @import "blocks/programs.scss";
 @import "blocks/program.scss";
 @import "blocks/system.scss";
@@ -16,7 +18,9 @@
 @import "blocks/illustration.scss";
 @import "blocks/slider.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/map.scss";
 @import "blocks/contact.scss";
+@import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
 @import "blocks/merchandise.scss";
 @import "blocks/merchandise-catalog-list.scss";

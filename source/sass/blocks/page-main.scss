@@ -1,4 +1,5 @@
 .page-main {
+  font-weight: $font-weight-regular;
   font-size: 14px;
   line-height: 1.285;
   font-family: $font-family-main;
@@ -8,11 +9,41 @@
   outline: 2px solid lightgreen;
 }
 
+.page-main__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-main__preview {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
 .page-main__programs {
+  margin-bottom: 25px;
+
   outline: 2px solid lightgreen;
 }
 
+.page-main__system {
+  margin-bottom: 45px;
+}
+
+.page-main__sample {
+  // margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
 .page-main__title {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 36px;
   line-height: 1.666;
   color: $color-black;

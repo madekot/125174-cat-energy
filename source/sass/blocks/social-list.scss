@@ -1,0 +1,17 @@
+.social-list {
+  background-color: $color-grey;
+}
+
+.social-list__item {
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list__link {
+  width: 20px;
+  height: 20px;
+  background-color: $color-grey-dark;
+}

@@ -13,7 +13,10 @@ $color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
 $color-white-light-opacity:     rgba(255, 255, 255, 0.3);
 
 $color-grey:                    #f2f2f2;
-$color-grey-dark:               #cdcdcd;
+$color-grey-lightest:           #e6e6e6;
+$color-grey-dark:               #d9d9d9;
+$color-grey-darken:             #cdcdcd;
+
 
 $color-black:                   #111111;
 $color-black-lighten:           #222222;
@@ -31,4 +34,4 @@ $font-family-secondary:         "Arial", sans-serif;
 
 // weight текста используемые в проекте:
 $font-weight-regular:           400;
-$font-weight-bold:              700;
+$font-weight-medium:            500;

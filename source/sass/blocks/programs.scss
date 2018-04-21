@@ -6,3 +6,18 @@
 
   background-color: $color-white;
 }
+
+.program__title {
+  margin: 0;
+}
+
+.programs__item {
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

@@ -2,6 +2,8 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.285;
@@ -9,6 +11,7 @@
   vertical-align: middle;
   text-align: center;
   color: $color-white;
+  text-transform: uppercase;
   text-decoration: none;
 
   background-color: $color-main;

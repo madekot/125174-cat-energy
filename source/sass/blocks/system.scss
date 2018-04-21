@@ -9,6 +9,10 @@
 }
 
 .system__title {
+  font-weight: $font-weight-regular;
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 36px;
   line-height: 1.666;
   font-family: $font-family-main;
@@ -17,4 +21,8 @@
 
 .system__list {
   @include reset-list;
+}
+
+.system-list__item {
+  padding-left: 80px;
 }
