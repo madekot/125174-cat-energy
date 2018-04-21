@@ -1,41 +1,108 @@
 .form {
+  text-transform: uppercase;
+
+  color: $color-black-lighten;
+  outline: 2px solid lightgreen;
+  background-color: $color-white;
+
+  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1.125;
-  font-family: $font-family-main;
-  color: $color-black-lighten;
-
-  background-color: $color-white;
-  outline: 2px solid lightgreen;
 }
 
 .form__title {
+  padding: 0;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-transform: none;
+
+  color: $color-black;
+
   font-size: 24px;
   line-height: 1;
-  color: $color-black;
+  &--medium {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+    color: $color-black
+  }
 }
 
 .form__field {
+  flex-grow: 1;
+
+  padding: 10px;
+
+  color: $color-black-lighten;
+  border: 1px solid $color-grey-dark;
+  background-color: $color-white;
+
+  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1.125;
-  font-family: $font-family-main;
-  color: $color-black-lighten;
-
-  background-color: $color-white;
-  border: 1px solid $color-grey-dark;
 
   &::placeholder {
     color: $color-black-lightest;
   }
 }
 
+.form__value {
+  margin-right: 15px;
+}
+
 .form__button {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+
   font-size: 16px;
   line-height: 1.25;
 }
 
 .form__text {
+  margin: 0;
+  text-align: center;
+
+  font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1.142;
-  font-family: $font-family-secondary;
-  text-align: center;
+  text-transform: none;
+}
+
+.form__inner {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--chekbox {
+    margin-bottom: 25px;
+  }
+}
+
+.form__checkbox-column {
+  margin-bottom: 30px;
+}
+
+.form__wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  &--border {
+    border-bottom: 1px solid $color-grey-lightest-light;
+  }
+  &--extra {
+    padding: 0;
+  }
+}
+
+.form__column-coment {
+  height: 150px;
+  display: flex;
 }

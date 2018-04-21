@@ -40,21 +40,36 @@
 }
 
 .page-main__title {
-  font-weight: $font-weight-regular;
   margin: 0;
   padding: 20px;
   padding-top: 15px;
   padding-bottom: 30px;
 
-  font-size: 36px;
-  line-height: 1.666;
   color: $color-black;
-  border-bottom: 1px solid $color-grey-lightest-light;
+
+  font-size: 36px;
+  font-weight: $font-weight-regular;
+  line-height: 1.666;
+    &--border {
+      border-bottom: 1px solid $color-grey-lightest-light;
+  }
+    &--size-medium {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 }
 
 .page-main__desc {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-right: 55px;
+  text-transform: uppercase;
   color: $color-black;
 }
 .page-main__after-market {
   margin-bottom: 35px;
+}
+
+.page-main__form {
+  padding-bottom: 30px;
 }
