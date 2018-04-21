@@ -6,3 +6,12 @@
 
   background-color: $color-white;
 }
+
+.merchandise-catalog-list__item {
+  border-bottom: 1px solid $color-grey-lightest-light;
+}
+
+.merchandise-catalog-list__desc {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

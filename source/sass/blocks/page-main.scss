@@ -35,20 +35,26 @@
 }
 
 .page-main__sample {
-  // margin-bottom: 30px;
   padding-top: 15px;
   padding-bottom: 30px;
 }
 
 .page-main__title {
+  font-weight: $font-weight-regular;
   margin: 0;
-  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 
   font-size: 36px;
   line-height: 1.666;
   color: $color-black;
+  border-bottom: 1px solid $color-grey-lightest-light;
 }
 
 .page-main__desc {
   color: $color-black;
+}
+.page-main__after-market {
+  margin-bottom: 35px;
 }
