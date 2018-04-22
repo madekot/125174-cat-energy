@@ -71,6 +71,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__title {
+    box-sizing: border-box;
+    min-height: 140px;
+    // временно для сетки
+  }
+
   .page-main__preview {
     min-height: 810px;
     // временно для сетки

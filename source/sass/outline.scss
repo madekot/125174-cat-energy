@@ -6,7 +6,9 @@
   .page-main *,
   .page-main,
   .page-footer *,
-  .page-footer {
+  .page-footer,
+  .merchandise__catalog-list *,
+  .page-main__merchandise {
     background-color: transparent;
   }
 
@@ -28,8 +30,14 @@
   .page-footer__contact *,
   .page-footer__map *,
   .page-footer__bottom *,
-  .page-header__inner * {
+  .page-header__inner *,
+  .merchandise-catalog-list__item *,
+  .after-market-list__item * {
     display: none;
+  }
+
+  .page-main__title {
+    // visibility: hidden;
   }
 }
 
@@ -44,9 +52,76 @@
     width: 768px;
     height: 4333px;
 
-    background-image: url("../img/cat-energy-index-tablet.jpg");
+    background-image: url("../img/cat-energy-catalog-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+  }
+  .page-main__after-market {
+    padding-bottom: 40px;
+  }
+
+  .page-main__title {
+    margin-bottom: 30px;
+  }
+
+  .merchandise__catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .merchandise-catalog-list__item {
+    width: 325px;
+    height: 430px;
+    // временно дял сетки
+    padding-top: 85px;
+
+    &:nth-child(even) {
+      margin-left: 55px;
+      margin-right: 30px;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(n+3) {
+      margin-top: 55px;
+    }
+  }
+
+  .page-main__merchandise {
+    margin-bottom: 75px;
+  }
+
+  .page-main__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__title {
+    box-sizing: border-box;
+    min-height: 105px;
+    // временно для сетки
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__list {
+    margin-bottom: 70px;
+  }
+
+  .after-market-list__item {
+    height: 139px;
+  }
+
+  .after-market__lead {
+    box-sizing: border-box;
+    background-image: none;
+    min-height: 200px;
+    padding: 0;
+    // временно для сетки
   }
 }
 
@@ -55,9 +130,41 @@
     width: 1440px;
     height: 2809px;
 
-    background-image: url("../img/cat-energy-index-desktop.jpg");
+    background-image: url("../img/cat-energy-catalog-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+  }
+
+  .page-main__title {
+    box-sizing: border-box;
+    min-height: 85px;
+    margin-bottom: 75px;
+    padding: 0;
+    // временно для сетки
+  }
+
+  .merchandise__catalog-list {
+    justify-content: flex-start;
+  }
+
+  .merchandise-catalog-list__item  {
+    padding-top: 80px;
+    width: 245px;
+    height: 430px;
+
+    &:nth-child(n) {
+      margin: 0;
+      margin-left: 80px;
+      margin-bottom: 60px;
+    }
+
+    &:nth-child(4n-3) {
+      margin-left: 110px;
+    }
+
+    &:nth-child(4n) {
+      // margin: 0;
+    }
   }
 }
 
@@ -102,4 +209,32 @@
 //
 .page-footer__bottom {
   outline: 2px solid orange;
+}
+
+.page-main__title {
+  outline: 2px solid red;
+}
+
+.page-main__merchandise {
+  outline: 2px solid orange;
+}
+
+.page-main__after-market {
+  outline: 2px solid orange;
+}
+
+.merchandise-catalog-list__item {
+  outline: 2px solid red;
+}
+
+.after-market__title {
+  outline: 2px solid red;
+}
+
+.after-market-list__item {
+  outline: 2px solid red;
+}
+
+.after-market__lead {
+  outline: 2px solid red;
 }
