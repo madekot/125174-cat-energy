@@ -1,20 +1,20 @@
 .page-header {
-  font-weight: $font-weight-medium;
-  font-size: 20px;
-  line-height: 1;
-  font-family: $font-family-main;
   text-align: center;
-  color: $color-black;
   text-transform: uppercase;
 
-  background-color: $color-white;
-  outline: 2px solid lightgreen;
+  color: $color-black;
+
+  font-family: $font-family-main;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  line-height: 1;
 }
 
 .page-header__inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   height: 65px;
   padding-right: 20px;
   padding-left: 20px;
@@ -24,4 +24,48 @@
 
 .page-header__list {
   @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+
+    min-height: 110px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__list {
+    display: none;
+    // временно
+  }
+
+  .page-header__nav {
+    width: 65%;
+  }
+
+  .page-header__inner {
+    width: 35%;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+
+    min-height: 175px;
+  }
+
+  .page-header__nav {
+    width: 50%;
+  }
+
+  .page-header__inner {
+    width: 50%;
+  }
 }

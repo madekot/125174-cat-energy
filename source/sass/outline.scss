@@ -1,0 +1,105 @@
+
+
+@media (min-width: $tablet-width) {
+  .page-header *,
+  .page-header,
+  .page-main *,
+  .page-main,
+  .page-footer *,
+  .page-footer {
+    background-color: transparent;
+  }
+
+  .page-main__preview,
+  .programs__item,
+  .page-main__system,
+  .page-main__sample,
+  .page-footer__contact,
+  .page-footer__map,
+  .page-footer__bottom,
+  .page-header__inner {
+    background-image: none;
+  }
+
+  .page-main__preview *,
+  .programs__item *,
+  .page-main__system *,
+  .page-main__sample *,
+  .page-footer__contact *,
+  .page-footer__map *,
+  .page-footer__bottom *,
+  .page-header__inner * {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  body {
+    width: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+    height: 4333px;
+
+    background-image: url("../img/cat-energy-index-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+    height: 2809px;
+
+    background-image: url("../img/cat-energy-index-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+.page-header__inner,
+.page-header__nav {
+  outline: 2px solid orange;
+}
+
+.page-main__preview {
+  outline: 2px solid orange;
+}
+
+.page-main__programs {
+  outline: 2px solid orange;
+}
+
+.page-main__system {
+  outline: 2px solid orange;
+}
+
+.page-main__sample {
+  outline: 2px solid orange;
+}
+
+.sample__column {
+  outline: 2px solid blue;
+  outline-offset: -3px;
+}
+
+.sample__column-mutation {
+  outline: 2px solid blue;
+  outline-offset: -3px;
+}
+
+.page-footer__contact {
+  outline: 2px solid orange;
+}
+
+.page-footer__map {
+  outline: 2px solid orange;
+}
+//
+.page-footer__bottom {
+  outline: 2px solid orange;
+}

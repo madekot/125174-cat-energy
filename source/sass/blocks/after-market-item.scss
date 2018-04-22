@@ -36,11 +36,10 @@
 }
 
 .after-market-item__button {
+  display: block;
+
+  margin-bottom: 15px;
+
   font-size: 16px;
   line-height: 1.25;
-}
-
-.after-market-item__button {
-  display: block;
-  margin-bottom: 15px;
 }

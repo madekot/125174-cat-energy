@@ -5,7 +5,15 @@
   color: $color-black-lightest;
 
   background-color: $color-grey;
-  outline: 2px solid lightgreen;
+}
+
+.sample__column {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.sample__column-mutation {
+  padding-bottom: 30px;
 }
 
 .sample__title {
@@ -27,7 +35,7 @@
 
 .sample__subtitle {
   margin: 0;
-  margin-bottom: 30px;
+
 
   font-size: 14px;
   line-height: 1.428;
@@ -70,4 +78,14 @@
   border: none;
   padding: 0;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .sample__column {
+    min-height: 580px;
+  }
+
+  .sample__column-mutation {
+    min-height: 430px;
+  }
 }

@@ -2,7 +2,6 @@
   text-transform: uppercase;
 
   color: $color-black-lighten;
-  outline: 2px solid lightgreen;
   background-color: $color-white;
 
   font-family: $font-family-main;
@@ -22,18 +21,23 @@
 
   font-size: 24px;
   line-height: 1;
+
   &--medium {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 30px;
-    color: $color-black
+    color: $color-black;
   }
 }
 
 .form__field {
   flex-grow: 1;
 
-  padding: 10px;
+  padding: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-transform: uppercase;
 
   color: $color-black-lighten;
   border: 1px solid $color-grey-dark;
@@ -88,21 +92,25 @@
 }
 
 .form__checkbox-column {
-  margin-bottom: 30px;
+  padding-top: 10px;
+  margin-bottom: 35px;
 }
 
 .form__wrapper {
   padding-top: 25px;
   padding-bottom: 25px;
+
   &--border {
     border-bottom: 1px solid $color-grey-lightest-light;
   }
+
   &--extra {
     padding: 0;
   }
 }
 
 .form__column-coment {
-  height: 150px;
+  padding-top: 5px;
+  min-height: 150px;
   display: flex;
 }
