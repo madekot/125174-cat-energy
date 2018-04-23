@@ -23,6 +23,11 @@
   border-bottom: 1px solid $color-grey-darken;
 }
 
+.after-market__column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .after-market__list {
   @include reset-list;
   margin-bottom: 40px;
@@ -52,6 +57,11 @@
     min-height: 105px;
     // временно для сетки
 
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__column {
     padding-left: 30px;
     padding-right: 30px;
   }

@@ -72,9 +72,10 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
+    margin: 0;
     box-sizing: border-box;
-    min-height: 140px;
-    margin-bottom: 30px;
+    min-height: 145px;
+    margin-bottom: 0;
     // временно для сетки
   }
 
@@ -115,6 +116,16 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .page-main__desc {
+    min-height: 60px;
+    margin-bottom: 65px;
+  }
+
+  .page-main__form {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -139,14 +150,22 @@
   }
 
   .page-main__title {
-    box-sizing: border-box;
-    min-height: 85px;
-    margin-bottom: 75px;
-    padding: 0;
+    // box-sizing: border-box;
+    min-height: 135px;
+    // margin-bottom: 75px;
+    // padding: 0;
     // временно для сетки
   }
 
   .page-main__after-market {
     padding-bottom: 55px;
+  }
+
+  .page-main__form {
+    margin-bottom: 80px;
+  }
+
+  .page-main__desc {
+    margin-bottom: 60px;
   }
 }
