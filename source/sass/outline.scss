@@ -56,6 +56,7 @@
     background-repeat: no-repeat;
     background-position: center top;
   }
+
   .page-main__after-market {
     padding-bottom: 40px;
   }
@@ -135,6 +136,10 @@
     background-position: center top;
   }
 
+  .page-main__merchandise {
+    margin-bottom: 20px;
+  }
+
   .page-main__title {
     box-sizing: border-box;
     min-height: 85px;
@@ -147,7 +152,7 @@
     justify-content: flex-start;
   }
 
-  .merchandise-catalog-list__item  {
+  .merchandise-catalog-list__item {
     padding-top: 80px;
     width: 245px;
     height: 430px;
@@ -161,10 +166,37 @@
     &:nth-child(4n-3) {
       margin-left: 110px;
     }
+  }
 
-    &:nth-child(4n) {
-      // margin: 0;
-    }
+  .page-main__after-market {
+    padding-bottom: 55px;
+  }
+
+  .after-market__title {
+    padding: 0;
+    // временно для сетки
+    min-height: 115px;
+  }
+
+  .after-market__column {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .after-market__list {
+    width: 895px;
+    margin-bottom: 0;
+    // временно для сетки
+  }
+
+  .after-market-list__item {
+    height: 70px;
+  }
+
+  .after-market__lead {
+    width: 245px;
   }
 }
 
