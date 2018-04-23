@@ -10,3 +10,17 @@
 .merchandise__catalog-list {
   @include reset-list;
 }
+
+@media (min-width: $tablet-width) {
+  .merchandise__catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .merchandise__catalog-list {
+    justify-content: flex-start;
+  }
+}

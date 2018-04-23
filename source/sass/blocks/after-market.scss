@@ -45,3 +45,55 @@
   background-repeat: no-repeat;
   background-position: top center;
 }
+
+@media (min-width: $tablet-width) {
+  .after-market__title {
+    box-sizing: border-box;
+    min-height: 105px;
+    // временно для сетки
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__list {
+    margin-bottom: 70px;
+  }
+
+  .after-market-list__item {
+    height: 139px;
+  }
+
+  .after-market__lead {
+    box-sizing: border-box;
+    background-image: none;
+    min-height: 200px;
+    padding: 0;
+    // временно для сетки
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .after-market__title {
+    padding: 0;
+    // временно для сетки
+    min-height: 115px;
+  }
+
+  .after-market__column {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .after-market__list {
+    width: 895px;
+    margin-bottom: 0;
+    // временно для сетки
+  }
+
+  .after-market__lead {
+    width: 245px;
+  }
+}

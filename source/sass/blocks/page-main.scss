@@ -74,6 +74,7 @@
   .page-main__title {
     box-sizing: border-box;
     min-height: 140px;
+    margin-bottom: 30px;
     // временно для сетки
   }
 
@@ -101,6 +102,19 @@
     margin: 0;
     padding: 0;
   }
+
+  .page-main__after-market {
+    padding-bottom: 40px;
+  }
+
+  .page-main__merchandise {
+    margin-bottom: 75px;
+  }
+
+  .page-main__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -118,5 +132,21 @@
 
   .page-main__sample {
     min-height: 590px;
+  }
+
+  .page-main__merchandise {
+    margin-bottom: 20px;
+  }
+
+  .page-main__title {
+    box-sizing: border-box;
+    min-height: 85px;
+    margin-bottom: 75px;
+    padding: 0;
+    // временно для сетки
+  }
+
+  .page-main__after-market {
+    padding-bottom: 55px;
   }
 }
