@@ -30,7 +30,8 @@
   .page-footer__bottom *,
   .page-header__inner *,
   .merchandise-catalog-list__item *,
-  .after-market-list__item * {
+  .after-market-list__item *,
+  .form__inner * {
     display: none;
   }
 }
@@ -50,6 +51,93 @@
     background-repeat: no-repeat;
     background-position: center top;
   }
+
+  .page-main__title {
+    min-height: 145px;
+    margin-bottom: 0;
+    // временно для сетки
+  }
+
+  .page-main__desc {
+    min-height: 60px;
+    margin-bottom: 65px;
+  }
+
+  .page-main__form {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  .form__wrapper {
+    min-height: 195px;
+    padding: 0;
+    margin-bottom: 75px;
+    // временно для сетки
+    padding-left: 70px;
+    padding-right: 70px;
+
+    &--border {
+      border-bottom: none;
+    }
+
+    &--extra {
+      min-height: 120px;
+      margin-bottom: 70px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
+  .page-main__inner {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form__title {
+    padding: 0;
+    min-height: 35px;
+    margin-bottom: 75px;
+
+    &--medium {
+      min-height: 35px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .form__column-coment {
+    min-height: 175px;
+  }
+
+  .form__checkbox-column {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .form__inner {
+    &--chekbox {
+      width: 50%;
+      height: 40px;
+      margin-bottom: 32px;
+    }
+  }
+
+
+  .form__column-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .form__button {
+    width: 285px;
+    min-height: 55px;
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -60,6 +148,82 @@
     background-image: url("../img/cat-energy-form-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+  }
+
+  .page-main__form {
+    margin-bottom: 80px;
+  }
+
+  .page-main__title {
+    min-height: 135px;
+  }
+
+  .page-main__desc {
+    margin-bottom: 60px;
+  }
+
+  .form__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 75px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .form__wrapper {
+    &--border {
+      padding: 0;
+      margin: 0;
+      width: 570px;
+    }
+  }
+
+  .form__title {
+    min-height: 105px;
+    margin: 0;
+
+    &--medium {
+      min-height: 90px;
+    }
+  }
+
+  .form__column-coment {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .form__checkbox-column {
+    min-height: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 0;
+  }
+
+  .form__inner {
+    &--chekbox {
+      width: 245px;
+      margin-right: 80px;
+    }
+
+    &--chekbox:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .form__column-button {
+    justify-content: flex-start;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin-right: 80px;
   }
 }
 
@@ -132,4 +296,16 @@
 
 .after-market__lead {
   outline: 2px solid red;
+}
+
+.page-main__desc {
+  outline: 2px solid red;
+}
+
+.page-main__form {
+  outline: 2px solid red;
+}
+
+.fieldset {
+  outline: 2px solid orange;
 }

@@ -39,59 +39,60 @@
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form__column">
+            <fieldset class="fieldset">
+              <legend>
+                <span class="visually-hidden">Данные кота</span>
+              </legend>
+              <div class="form__wrapper form__wrapper--border">
+                <p class="form__inner page-main__inner">
+                  <label class="form__value" for="name">Имя:*</label>
+                  <input class="form__field" type="text" name="name" placeholder="Барсик" required id="name" >
+                </p>
+
+                <p class="form__inner page-main__inner">
+                  <label  class="form__value" for="weight">Вес (кг):*</label>
+                  <input class="form__field" type="number" name="weight" placeholder="7" required id="weight">
+                </p>
+
+                <p class="form__inner page-main__inner">
+                  <label class="form__value" for="age">Возраст (лет):</label>
+                  <input class="form__field" type="number" name="age" placeholder="7" id="age">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend>
+                <span class="visually-hidden">Необходимая программа</span>
+              </legend>
+              <div class="form__wrapper form__wrapper--border">
+                <p class="page-main__inner form__inner form__inner--chekbox">
+                  <input class="form__radio" type="radio" name="program" value="loss" id="loss" checked>
+                  <label class="form__value" for="loss">
+                    Похудение
+                  </label>
+                </p>
+
+                <p class="page-main__inner form__inner form__inner--chekbox">
+                  <input class=" form__radio" type="radio" name="program" value="raise" id="rais">
+                  <label class="form__value" for="rais">
+                    Набор массы
+                  </label>
+                </p>
+
+                <p class="page-main__inner form__inner form__inner--chekbox">
+                  <input class="form__radio" type="radio" name="program" value="inquiry" id="inquiry">
+                  <label class="form__value" for="inquiry">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+
           <fieldset class="fieldset">
-            <legend>
-              <span class="visually-hidden">Данные кота</span>
-            </legend>
-            <div class="form__wrapper form__wrapper--border">
-              <p class="form__inner page-main__inner">
-                <label class="form__value" for="name">Имя:*</label>
-                <input class="form__field" type="text" name="name" placeholder="Барсик" required id="name" >
-              </p>
-
-              <p class="form__inner page-main__inner">
-                <label  class="form__value" for="weight">Вес (кг):*</label>
-                <input class="form__field" type="number" name="weight" placeholder="7" required id="weight">
-              </p>
-
-              <p class="form__inner page-main__inner">
-                <label class="form__value" for="age">Возраст (лет):</label>
-                <input class="form__field" type="number" name="age" placeholder="7" id="age">
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="fieldset">
-            <legend>
-              <span class="visually-hidden">Необходимая программа</span>
-            </legend>
-            <div class="form__wrapper form__wrapper--border">
-              <p class="page-main__inner form__inner form__inner--chekbox">
-                <input class="form__radio" type="radio" name="program" value="loss" id="loss" checked>
-                <label class="form__value" for="loss">
-                  Похудение
-                </label>
-              </p>
-
-              <p class="page-main__inner form__inner form__inner--chekbox">
-                <input class=" form__radio" type="radio" name="program" value="raise" id="rais">
-                <label class="form__value" for="rais">
-                  Набор массы
-                </label>
-              </p>
-
-              <p class="page-main__inner form__inner form__inner--chekbox">
-                <input class="form__radio" type="radio" name="program" value="inquiry" id="inquiry">
-                <label class="form__value" for="inquiry">
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </p>
-            </div>
-        </fieldset class="fieldset">
-
-        <div class="page-main__inner">
-          <fieldset class="fieldset">
-            <legend class="form__title form__title--medium">Контактные данные (владельца кота)</legend>
-            <div class="form__wrapper form__wrapper--extra">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <div class="form__wrapper form__wrapper--extra form__column">
               <p class="form__inner">
                 <label class="form__value" for="e-mail">E-mail:*</label>
                 <input class="form__field" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
@@ -107,8 +108,8 @@
           </fieldset>
 
           <fieldset class="fieldset">
-            <legend class="form__title form__title--medium">Комментарий</legend>
-            <div class="form__column-coment">
+            <legend class="form__title">Комментарий</legend>
+            <div class="form__column-coment form__wrapper--extra">
               <textarea class="form__field form__field--coment" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -116,7 +117,7 @@
 
           <fieldset class="fieldset">
             <legend class="form__title form__title--medium">Дополнительно</legend>
-            <div class="form__checkbox-column">
+            <div class="form__checkbox-column form__wrapper--extra">
               <p class="form__inner form__inner--chekbox">
                 <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="form__value" for="sweetener">Сахарозаменитель</label>
@@ -138,11 +139,12 @@
               </p>
             </div>
           </fieldset>
-          <button class="form__button button" type="submit">
-            Отправить заявку
-          </button>
-          <p class="form__text">* — Обязательные поля</p>
-        </div>
+          <div class="form__column-button">
+            <button class="form__button button" type="submit">
+              Отправить заявку
+            </button>
+            <p class="form__text">* — Обязательные поля</p>
+          </div>
       </form>
     </main>
 
