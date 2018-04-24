@@ -1,13 +1,98 @@
 .page-footer {
-  font-size: 14px;
-  line-height: 1.428;
-  font-family: $font-family-secondary;
   color: $color-black-lightest;
-
   background-color: $color-white;
-  outline: 2px solid lightgreen;
+
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  line-height: 1.428;
+}
+
+.page-footer__contact {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  min-height: 115px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-footer__logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 95px;
+}
+
+.page-footer__map {
+  position: relative;
+
+  min-height: 360px;
+}
+
+.page-footer__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: $color-grey;
 }
 
 .page-footer__social {
   @include reset-list;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-right: 75px;
+  padding-left: 75px;
+
+  border-top: 1px solid $color-grey-dark;
+  border-bottom: 1px solid $color-grey-dark;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contact {
+    min-height: 200px;
+  }
+
+  .page-footer__map {
+    min-height: 400px;
+  }
+
+  .page-footer__bottom {
+    // временно для сетки
+    display: flex;
+
+    min-height: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__contact {
+    position: absolute;
+    top: 100px;
+    left: 110px;
+
+    width: 570px;
+    height: 200px;
+  }
 }

@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__inner">
         <a class="page-header__logo logo" href="#">
           <img class="logo__image" src="http://placehold.it/191x38"
           width="191" height="38" alt="Логотип «Кэт энерджи»" aria-label="Логотип «Кэт энерджи»">
@@ -47,10 +49,9 @@
         <a class="preview__button button" href="#">Подобрать программу</a>
       </article>
 
-
-      <section class="page-main__programs programs">
+      <section class="page-main__programs programs page-main__inner">
         <h2 class="visually-hidden">Программы питания</h2>
-        <article class="programs__loss program">
+        <article class="programs__item program">
           <h3 class="program__title">Похудение</h3>
           <p class="program__desc">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -59,7 +60,7 @@
           <a class="program__link" href="#">Каталог Slim</a>
         </article>
 
-        <article class="programs__raise program">
+        <article class="programs__item program">
           <h3 class="program__title">Набор массы</h3>
           <p class="program__desc">
             Заработать авторитет среди дворовых котов и даже собак?
@@ -70,7 +71,7 @@
       </section>
 
 
-      <section class="page-main__system system">
+      <section class="page-main__system system page-main__inner">
         <h2 class="system__title">Как это работает</h2>
         <ul class="system__list system-list">
           <li class="system-list__item">
@@ -90,66 +91,69 @@
 
 
       <section class="page-main__sample sample">
-        <h2 class="sample__title">Живой пример</h2>
-        <p class="sample__desc">
-          Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный
-          корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-          При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит
-          по&nbsp;16&nbsp;часов в&nbsp;день.
-        </p>
+        <div class="sample__column page-main__inner">
+          <h2 class="sample__title">Живой пример</h2>
+          <p class="sample__desc">
+            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный
+            корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+            При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит
+            по&nbsp;16&nbsp;часов в&nbsp;день.
+          </p>
 
-        <div class="page-main__illustration illustration" aria-hidden="true">
-          <dl class="illustration__item">
-            <dt class="illustration__value">5 кг</dt>
-            <dd class="illustration__field">Cнижение веса<dd>
-          </dl>
-          <dl class="illustration__item">
-            <dt class="illustration__value">60 дней</dt>
-            <dd class="illustration__field">Затрачено времени</dd>
-          </dl>
+          <div class="sample__illustration illustration" aria-hidden="true">
+            <dl class="illustration__item">
+              <dt class="illustration__value">5 кг</dt>
+              <dd class="illustration__field">Cнижение веса<dd>
+              </dl>
+              <dl class="illustration__item">
+                <dt class="illustration__value">60 дней</dt>
+                <dd class="illustration__field">Затрачено времени</dd>
+              </dl>
+            </div>
+            <p class="sample__subtitle">
+              Затраты на питание: 15 000 руб.
+            </p>
         </div>
 
-        <p class="sample__subtitle">
-          Затраты на питание: 15 000 руб.
-        </p>
-
-        <div class="sample__wrapper-mutation slider">
+        <div class="sample__column-mutation slider">
           <ul class="sample__list slider__list">
             <li class="sample__item slider__item">
               <img class="sample__image" src="img/before-mobile@1x.png"
               width="320" height="240" alt="Кот «До» программы по снижению веса">
             </li>
-            <li class="sample__item slider__item">
+            <li class="sample__item slider__item visually-hidden">
               <img class="sample__image" src="img/after-mobile@1x.png"
               width="320" height="240" alt="Кот «После» программы по снижению веса">
             </li>
           </ul>
           <div class="sample__toggles slider__toggles">
-            <button class="slider__toggle" type="button">Было</button>
+            <button class="sample__toggle slider__toggle" type="button">Было</button>
             <div class="sample__progress-slider slider__progress-slider">
               <div class="sample__switch slider__switch"></div>
             </div>
-            <button class="slider__toggle" type="button">Стало</button>
+            <button class="sample__toggle slider__toggle" type="button">Стало</button>
           </div>
         </div>
       </section>
+    </main>
 
 
-      <footer class="page-footer">
-        <div class="page-footer__contact contact">
-          <p class="contact__lead">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="contact__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </div>
+    <footer class="page-footer">
+      <div class="page-footer__contact page-footer__inner contact">
+        <p class="contact__lead">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="contact__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
 
-        <div class="page-footer__map map">
-          <img class="map__image" src="img/bg-map-mobile@1x.png"
-          width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </div>
+      <div class="page-footer__map map">
+        <img class="map__image" src="img/bg-map-mobile@1x.png"
+        width="320" height="360" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
 
+      <div class="page-footer__bottom page-footer__inner">
         <a class="page-footer__logo-text logo-text" href="index.html">
           <img class="logo-text__image logo-text__image--medium" src="http://placehold.it/128x24"
           width="128" height="24" alt="Cat Energy" aria-label="Cat Energy">
@@ -180,9 +184,8 @@
             width="27" height="34" aria-label="Логотип HTML Academy">
           </a>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-
-    </main>
   </body>
 </html>

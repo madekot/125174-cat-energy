@@ -5,11 +5,24 @@
   color: $color-black-lightest;
 
   background-color: $color-white;
+
+  &--grey {
+    background-color: $color-grey;
+  }
 }
 
 .contact__lead {
+  width: 140px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.25;
   font-family: $font-family-main;
   color: $color-black;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  width: 140px;
+  margin: 0;
 }

@@ -6,7 +6,26 @@
   color: $color-black-lightest;
 
   background-color: $color-grey;
-  outline: 2px solid lightgreen;
+}
+
+.sample__illustration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.illustration__item {
+  position: relative;
+
+  min-width: 120px;
+  min-height: 25px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 1px solid $color-grey-darken;
+  border-radius: 3px;
 }
 
 .illustration__value {
@@ -14,11 +33,25 @@
   line-height: 1;
   font-family: $font-family-main;
   color: $color-black;
+  text-transform: uppercase;
 }
 
 .illustration__field {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+
+  width: 55px;
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+
   font-size: 12px;
   line-height: 1;
   font-family: $font-family-main;
   color: $color-black;
+  text-transform: lowercase;
+
+  background-color: $color-grey;
+  transform: translate(-50%);
 }

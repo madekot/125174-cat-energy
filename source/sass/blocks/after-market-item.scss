@@ -7,7 +7,18 @@
   background-color: $color-white;
 }
 
+.after-market-item__wrapper {
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .after-market-item__title {
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: $font-weight-regular;
   font-size: 14px;
   line-height: 1;
   font-family: $font-family-main;
@@ -25,6 +36,10 @@
 }
 
 .after-market-item__button {
+  display: block;
+
+  margin-bottom: 15px;
+
   font-size: 16px;
   line-height: 1.25;
 }

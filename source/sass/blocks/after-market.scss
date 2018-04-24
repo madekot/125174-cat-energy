@@ -8,20 +8,38 @@
 }
 
 .after-market__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  font-weight: $font-weight-regular;
   font-size: 24px;
   line-height: 1;
   font-family: $font-family-main;
   color: $color-black;
 
   background-color: $color-white;
+  border-bottom: 1px solid $color-grey-darken;
+}
+
+.after-market__column {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .after-market__list {
   @include reset-list;
+  margin-bottom: 40px;
 }
 
 .after-market__lead {
-  min-height: 289px;
+  margin: 0;
+  text-align: center;
+  padding-top: 190px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 60px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -31,4 +49,61 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+@media (min-width: $tablet-width) {
+  .after-market__title {
+    box-sizing: border-box;
+    min-height: 105px;
+    // временно для сетки
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__column {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .after-market__list {
+    margin-bottom: 70px;
+  }
+
+  .after-market-list__item {
+    height: 139px;
+  }
+
+  .after-market__lead {
+    box-sizing: border-box;
+    background-image: none;
+    min-height: 200px;
+    padding: 0;
+    // временно для сетки
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .after-market__title {
+    padding: 0;
+    // временно для сетки
+    min-height: 115px;
+  }
+
+  .after-market__column {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .after-market__list {
+    width: 895px;
+    margin-bottom: 0;
+    // временно для сетки
+  }
+
+  .after-market__lead {
+    width: 245px;
+  }
 }

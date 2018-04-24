@@ -8,10 +8,21 @@
 }
 
 .program__title {
+  font-weight: $font-weight-regular;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 70px;
+
   font-size: 27px;
   line-height: 1.37;
   font-family: $font-family-main;
   color: $color-black;
+  text-transform: uppercase;
+}
+
+.program__desc {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .program__link {
@@ -19,5 +30,6 @@
   line-height: 1;
   font-family: $font-family-main;
   color: $color-black;
+  text-transform: uppercase;
   text-decoration: none;
 }

@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__inner">
         <a class="page-header__logo logo" href="#">
-          <img class="logo__image" src="http://placehold.it/191x38"
+          <img class="logo__image" src="img/logo-mobile.svg"
           width="191" height="38" alt="Логотип «Кэт энерджи»" aria-label="Логотип «Кэт энерджи»">
         </a>
         <button class="page-header__toggle" type="button">
@@ -34,189 +36,221 @@
 
 
     <main class="page-main">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__title--border">Каталог продукции</h1>
       <section class="merchandise page-main__merchandise">
         <h2 class="visually-hidden">Каталог корма</h2>
         <ul class="merchandise__catalog-list merchandise-catalog-list">
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/chicken-small-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy PRO 500 г">
-            <h3 class="merchandise-item__title">Cat Energy PRO 500 г</h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">500 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/chicken-small-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy PRO 500 г">
+              <div class=" merchandise-item__column">
+                <div class="merchandise-item__column">
+                  <h3 class="merchandise-item__title">Cat Energy PRO 500 г</h3>
+                  <dl class="merchandise-item__wrapper">
+                    <div class="merchandise-item__inner">
+                      <dt class="merchandise-item__field">Объем</dt>
+                      <dd class="merchandise-item__value">500 г</dd>
+                    </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Курица</dd>
-              </div>
+                    <div class="merchandise-item__inner">
+                      <dt class="merchandise-item__field">Вкус</dt>
+                      <dd class="merchandise-item__value">Курица</dd>
+                    </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">700 Р.</dd>
+                    <div class="merchandise-item__inner">
+                      <dt class="merchandise-item__field">Цена</dt>
+                      <dd class="merchandise-item__value">700 Р.</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/chicken-big-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy PRO 1000 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy PRO 1000 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">1000 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/chicken-big-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy PRO 1000 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Объем</dt>
+                    <dd class="merchandise-item__value">1000 г</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Курица</dd>
-              </div>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Вкус</dt>
+                    <dd class="merchandise-item__value">Курица</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">1000 Р.</dd>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Цена</dt>
+                    <dd class="merchandise-item__value">1000 Р.</dd>
+                  </div>
+                </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/fish-small-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy PRO 500 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy PRO 500 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">500 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/fish-small-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy PRO 500 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy PRO 500 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Объем</dt>
+                    <dd class="merchandise-item__value">500 г</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Рыба</dd>
-              </div>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Вкус</dt>
+                    <dd class="merchandise-item__value">Рыба</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">700 Р.</dd>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Цена</dt>
+                    <dd class="merchandise-item__value">700 Р.</dd>
+                  </div>
+                </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/fish-big-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy PRO 1000 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy PRO 1000 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">1000 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/fish-big-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy PRO 1000 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy PRO 1000 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                <div class="merchandise-item__inner">
+                  <dt class="merchandise-item__field">Объем</dt>
+                  <dd class="merchandise-item__value">1000 г</dd>
+                </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Рыба</dd>
-              </div>
+                <div class="merchandise-item__inner">
+                  <dt class="merchandise-item__field">Вкус</dt>
+                  <dd class="merchandise-item__value">Рыба</dd>
+                </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">1000 Р.</dd>
+                <div class="merchandise-item__inner">
+                  <dt class="merchandise-item__field">Цена</dt>
+                  <dd class="merchandise-item__value">1000 Р.</dd>
+                </div>
+              </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/buckwheat-small-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy Slim 500 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy Slim 500 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">500 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/buckwheat-small-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy Slim 500 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy Slim 500 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Объем</dt>
+                    <dd class="merchandise-item__value">500 г</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Гречка</dd>
-              </div>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Вкус</dt>
+                    <dd class="merchandise-item__value">Гречка</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">400 Р.</dd>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Цена</dt>
+                    <dd class="merchandise-item__value">400 Р.</dd>
+                  </div>
+                </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/buckwheat-big-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy Slim 1000 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy Slim 1000 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">1000 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/buckwheat-big-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy Slim 1000 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy Slim 1000 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Объем</dt>
+                    <dd class="merchandise-item__value">1000 г</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Гречка</dd>
-              </div>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Вкус</dt>
+                    <dd class="merchandise-item__value">Гречка</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">700 Р.</dd>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Цена</dt>
+                    <dd class="merchandise-item__value">700 Р.</dd>
+                  </div>
+                </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item">
-            <img class="merchandise-item__image" src="img/rice-small-mobile@1x.jpg"
-            width="140" height="144" alt="Cat Energy Slim 500 г">
-            <h3 class="merchandise-item__title">
-              Cat Energy Slim 500 г
-            </h3>
-            <dl class="merchandise-item__wrapper">
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Объем</dt>
-                <dd class="merchandise-item__value">500 г</dd>
-              </div>
+            <div class="page-main__inner merchandise-item__content">
+              <img class="merchandise-item__image" src="img/rice-small-mobile@1x.jpg"
+              width="140" height="144" alt="Cat Energy Slim 500 г">
+              <div class="merchandise-item__column">
+                <h3 class="merchandise-item__title">
+                  Cat Energy Slim 500 г
+                </h3>
+                <dl class="merchandise-item__wrapper">
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Объем</dt>
+                    <dd class="merchandise-item__value">500 г</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Вкус</dt>
-                <dd class="merchandise-item__value">Рис</dd>
-              </div>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Вкус</dt>
+                    <dd class="merchandise-item__value">Рис</dd>
+                  </div>
 
-              <div class="merchandise-item__inner">
-                <dt class="merchandise-item__field">Цена</dt>
-                <dd class="merchandise-item__value">500 Р.</dd>
+                  <div class="merchandise-item__inner">
+                    <dt class="merchandise-item__field">Цена</dt>
+                    <dd class="merchandise-item__value">500 Р.</dd>
+                  </div>
+                </dl>
               </div>
-            </dl>
-            <a class="merchandise-item__button button" href="#">Заказать</a>
+              <a class="merchandise-item__button button" href="#">Заказать</a>
+            </div>
           </li>
 
           <li class="merchandise-catalog-list__item merchandise-item merchandise-item--alternative">
-            <h3 class="merchandise-item__title">Показать еще 100500 товаров</h3>
-            <p class="merchandise-catalog-list__desc">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <a class="merchandise-item__button button button--grey" href="#">Показать все</a>
+            <div class="page-main__inner merchandise-item__content">
+              <h3 class="merchandise-item__title merchandise-item__title--more">Показать еще 100500 товаров</h3>
+              <p class="merchandise-catalog-list__desc">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <a class="merchandise-item__button button button--grey" href="#">Показать все</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -224,60 +258,62 @@
 
       <section class="after-market page-main__after-market">
         <h2 class="after-market__title title title--medium">Дополнительные товары</h2>
-        <ul class="after-market__list after-market-list">
-          <li class="after-market-list__item after-market-item">
-            <h3 class="after-market-item__title">Сахарозаменитель</h3>
-            <dl class="after-market-item__wrapper">
-                <dt class="after-market-item__field">1 упаковка (100 г)</dt>
-                <dd class="after-market-item__value">
-                  100 Р.
-                </dd>
-            </dl>
-            <a class="after-market-item__button button" href="#">Заказать</a>
-          </li>
+        <div class="after-market__column">
+          <ul class="after-market__list after-market-list">
+            <li class="after-market-list__item after-market-item">
+              <h3 class="after-market-item__title">Сахарозаменитель</h3>
+              <dl class="after-market-item__wrapper">
+                  <dt class="after-market-item__field">1 упаковка (100 г)</dt>
+                  <dd class="after-market-item__value">
+                    100 Р.
+                  </dd>
+              </dl>
+              <a class="after-market-item__button button" href="#">Заказать</a>
+            </li>
 
-          <li class="after-market-list__item after-market-item">
-            <h3 class="after-market-item__title">Питьевая вода</h3>
-            <dl class="after-market-item__wrapper">
-                <dt class="after-market-item__field">5 литров</dt>
-                <dd class="after-market-item__value">
-                  50 Р.
-                </dd>
-            </dl>
-            <a class="after-market-item__button button" href="#">Заказать</a>
-          </li>
+            <li class="after-market-list__item after-market-item">
+              <h3 class="after-market-item__title">Питьевая вода</h3>
+              <dl class="after-market-item__wrapper">
+                  <dt class="after-market-item__field">5 литров</dt>
+                  <dd class="after-market-item__value">
+                    50 Р.
+                  </dd>
+              </dl>
+              <a class="after-market-item__button button" href="#">Заказать</a>
+            </li>
 
-          <li class="after-market-list__item after-market-item">
-            <h3 class="after-market-item__title">Молоко</h3>
-            <dl class="after-market-item__wrapper">
-                <dt class="after-market-item__field">1 литр</dt>
-                <dd class="after-market-item__value">
-                  100 Р.
-                </dd>
-            </dl>
-            <a class="after-market-item__button button" href="#">Заказать</a>
-          </li>
+            <li class="after-market-list__item after-market-item">
+              <h3 class="after-market-item__title">Молоко</h3>
+              <dl class="after-market-item__wrapper">
+                  <dt class="after-market-item__field">1 литр</dt>
+                  <dd class="after-market-item__value">
+                    100 Р.
+                  </dd>
+              </dl>
+              <a class="after-market-item__button button" href="#">Заказать</a>
+            </li>
 
-          <li class="after-market-list__item after-market-item">
-            <h3 class="after-market-item__title">Витамины</h3>
-            <dl class="after-market-item__wrapper">
-                <dt class="after-market-item__field">1 упаковка (30 г)</dt>
-                <dd class="after-market-item__value">
-                  300 Р.
-                </dd>
-            </dl>
-            <a class="after-market-item__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <p class="after-market__lead">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+            <li class="after-market-list__item after-market-item">
+              <h3 class="after-market-item__title">Витамины</h3>
+              <dl class="after-market-item__wrapper">
+                  <dt class="after-market-item__field">1 упаковка (30 г)</dt>
+                  <dd class="after-market-item__value">
+                    300 Р.
+                  </dd>
+              </dl>
+              <a class="after-market-item__button button" href="#">Заказать</a>
+            </li>
+          </ul>
+          <p class="after-market__lead">
+          Закажите все <br> и получите чехол для кота в подарок!
+          </p>
+        </div>
       </section>
     </main>
 
 
     <footer class="page-footer">
-      <div class="page-footer__contact contact">
+      <div class="page-footer__contact page-footer__inner contact">
         <p class="contact__lead">
           Приглашаем к сотрудничеству дилеров!
         </p>
@@ -288,38 +324,40 @@
 
       <div class="page-footer__map map">
         <img class="map__image" src="img/bg-map-mobile@1x.png"
-        width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        width="320" height="360" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
 
-      <a class="page-footer__logo-text logo-text" href="index.html">
-        <img class="logo-text__image logo-text__image--medium" src="http://placehold.it/128x24"
-        width="128" height="24" alt="Cat Energy" aria-label="Cat Energy">
-      </a>
-
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="#">
-            <span class="visually-hidden">Мы в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#">
-            <span class="visually-hidden">Мы в Инстаграме</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-      </ul>
-
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/27x34" alt="Логотип HTML Academy"
-          width="27" height="34" aria-label="Логотип HTML Academy">
+      <div class="page-footer__bottom page-footer__inner">
+        <a class="page-footer__logo-text logo-text" href="index.html">
+          <img class="logo-text__image logo-text__image--medium" src="http://placehold.it/128x24"
+          width="128" height="24" alt="Cat Energy" aria-label="Cat Energy">
         </a>
+
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="http://placehold.it/27x34" alt="Логотип HTML Academy"
+            width="27" height="34" aria-label="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

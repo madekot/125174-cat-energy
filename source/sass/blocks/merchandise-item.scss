@@ -5,15 +5,41 @@
   color: $color-black-lightest;
 
   background-color: $color-white;
+
+  &--alternative {
+    padding-top: 80px;
+  }
+}
+
+.merchandise-item__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.merchandise-item__inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .merchandise-item__title {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 85px;
+  font-weight: $font-weight-regular;
   font-size: 16px;
   line-height: 1.25;
   font-family: $font-family-main;
   color: $color-black;
 
   background-color: $color-white;
+
+  &--more {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: auto;
+    text-transform: uppercase;
+  }
 }
 
 .merchandise-item__field {
@@ -25,6 +51,17 @@
 }
 
 .merchandise-item__button {
+  flex-grow: 1;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.merchandise-item__wrapper {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.merchandise-item__column {
+  flex-grow: 1;
 }

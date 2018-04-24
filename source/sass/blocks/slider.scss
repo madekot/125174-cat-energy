@@ -5,11 +5,11 @@
   color: $color-black;
 
   background-color: $color-grey;
-  outline: 2px solid lightgreen;
 }
 
 .slider__list {
   @include reset-list;
+  margin-bottom: 35px;
 }
 
 .slider__toggle {

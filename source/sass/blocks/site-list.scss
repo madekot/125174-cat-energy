@@ -1,16 +1,29 @@
 .site-list {
+  font-weight: $font-weight-medium;
   font-size: 20px;
   line-height: 1;
   font-family: $font-family-main;
-  font-weight: $font-weight-bold;
   text-align: center;
   color: $color-black;
 
   background-color: $color-white;
-  outline: 2px solid lightgreen;
+}
+
+.site-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid $color-grey-lightest;
 }
 
 .site-list__link {
-  text-decoration: none;
+  flex-grow: 1;
+  padding-top: 25px;
+  padding-bottom: 20px;
+
   color: $color-black;
+  text-decoration: none;
 }

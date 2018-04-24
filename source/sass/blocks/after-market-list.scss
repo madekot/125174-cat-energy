@@ -6,3 +6,13 @@
 
   background-color: $color-white;
 }
+
+.after-market-list__item {
+  border-bottom: 1px solid $color-grey-darken;
+}
+
+@media (min-width: $desktop-width) {
+  .after-market-list__item {
+    height: 70px;
+  }
+}

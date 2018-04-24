@@ -1,0 +1,12 @@
+.map {
+  background-color: $color-white;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.map__image {
+  position: absolute;
+  top: -40px;
+  left: 0;
+}

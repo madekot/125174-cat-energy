@@ -5,9 +5,23 @@
   color: $color-black-lightest;
 
   background-color: $color-white;
-  outline: 2px solid lightgreen;
 }
 
 .merchandise__catalog-list {
   @include reset-list;
+  padding-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .merchandise__catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .merchandise__catalog-list {
+    justify-content: flex-start;
+  }
 }
