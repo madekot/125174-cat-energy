@@ -7,10 +7,6 @@
   background-color: $color-white;
 }
 
-.program__title {
-  margin: 0;
-}
-
 .programs__item {
   padding-top: 30px;
   padding-right: 25px;
@@ -18,6 +14,47 @@
   padding-left: 20px;
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .programs__item {
+    padding-top: 80px;
+    padding-right: 55px;
+    padding-bottom: 55px;
+    padding-left: 55px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__inner {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .programs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    padding-top: 75px;
+    width: 570px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 }

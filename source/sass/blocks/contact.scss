@@ -26,3 +26,26 @@
   width: 140px;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .contact__lead {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .contact__text {
+    text-align: right;
+    width: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__text {
+    text-align: left;
+  }
+}

@@ -13,8 +13,8 @@
   margin-bottom: 30px;
   padding-left: 70px;
 
-  font-size: 27px;
-  line-height: 1.37;
+  font-size: 24px;
+  line-height: 1.542;
   font-family: $font-family-main;
   color: $color-black;
   text-transform: uppercase;
@@ -22,7 +22,7 @@
 
 .program__desc {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .program__link {
@@ -32,4 +32,56 @@
   color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .program__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 1.02;
+    margin-bottom: 25px;
+  }
+
+  .program__desc {
+    margin-bottom: 55px;
+
+    &--text-diet {
+      padding-right: 225px;
+    }
+
+    &--text-raise {
+      padding-right: 255px;
+    }
+  }
+
+  .program__link {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .program__title {
+    margin-bottom: 75px;
+    padding-left: 160px;
+  }
+
+  .program__desc {
+    margin-bottom: 30px;
+    padding-right: 50px;
+
+    &--text-diet {
+
+      padding-right: 0;
+    }
+
+    &--text-raise {
+      padding-right: 0;
+    }
+  }
 }

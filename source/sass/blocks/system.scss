@@ -22,6 +22,16 @@
   @include reset-list;
 }
 
-.system-list__item {
-  padding-left: 80px;
+@media (min-width: $tablet-width) {
+  .system {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .system__title {
+    margin-bottom: 75px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
 }
