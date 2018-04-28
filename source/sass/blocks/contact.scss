@@ -48,4 +48,10 @@
   .contact__text {
     text-align: left;
   }
+
+  .contact {
+    &--color {
+      background-color: $color-white;
+    }
+  }
 }

@@ -71,6 +71,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .page-main__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .page-main__programs {
     // margin-bottom: 85px;
     margin-bottom: 45px;
@@ -90,6 +100,20 @@
     font-size: 60px;
     line-height: 1;
     margin-bottom: 50px;
+
+    &--border {
+      border: none;
+    }
+  }
+
+  .page-main__title--size-medium {
+    margin-bottom: 25px;
+  }
+
+  .page-main__desc {
+    padding-left: 70px;
+    padding-right: 375px;
+    margin-bottom: 65px;
   }
 
   .page-main__system {
@@ -108,16 +132,6 @@
 
   .page-main__merchandise {
     margin-bottom: 75px;
-  }
-
-  .page-main__inner {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .page-main__desc {
-    min-height: 60px;
-    margin-bottom: 65px;
   }
 
   .page-main__form {

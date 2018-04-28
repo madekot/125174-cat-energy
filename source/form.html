@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--color">
       <div class="page-header__inner">
         <a class="page-header__logo logo" href="#">
           <img class="logo__image" src="img/logo-mobile.svg"
@@ -21,15 +21,15 @@
       </div>
 
       <nav class="page-header__nav">
-        <ul class="page-header__list site-list">
+        <ul class="page-header__list site-list site-list--color">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--color" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--color" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор программы</a>
+            <a class="site-list__link site-list__link--color" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -68,23 +68,23 @@
               <legend>
                 <span class="visually-hidden">Необходимая программа</span>
               </legend>
-              <div class="form__wrapper form__wrapper--border">
-                <p class="page-main__inner form__inner form__inner--chekbox">
-                  <input class="form__radio" type="radio" name="program" value="loss" id="loss" checked>
+              <div class="form__wrapper form__wrapper--border form__wrapper--radio">
+                <p class="page-main__inner form__inner form__inner--radio">
+                  <input class="form__radio visually-hidden" type="radio" name="program" value="loss" id="loss" checked>
                   <label class="form__value" for="loss">
                     Похудение
                   </label>
                 </p>
 
-                <p class="page-main__inner form__inner form__inner--chekbox">
-                  <input class=" form__radio" type="radio" name="program" value="raise" id="rais">
+                <p class="page-main__inner form__inner form__inner--radio">
+                  <input class=" form__radio visually-hidden" type="radio" name="program" value="raise" id="rais">
                   <label class="form__value" for="rais">
                     Набор массы
                   </label>
                 </p>
 
-                <p class="page-main__inner form__inner form__inner--chekbox">
-                  <input class="form__radio" type="radio" name="program" value="inquiry" id="inquiry">
+                <p class="page-main__inner form__inner form__inner--radio">
+                  <input class="form__radio visually-hidden" type="radio" name="program" value="inquiry" id="inquiry">
                   <label class="form__value" for="inquiry">
                     Не знаю (Нужен ваш совет)
                   </label>
@@ -96,13 +96,13 @@
           <fieldset class="fieldset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <div class="form__wrapper form__wrapper--extra form__column">
-              <p class="form__inner">
+              <p class="form__inner form__inner--extra">
                 <label class="form__value" for="e-mail">E-mail:*</label>
                 <input class="form__field" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
                 required id="e-mail">
               </p>
 
-              <p class="form__inner">
+              <p class="form__inner form__inner--extra">
                 <label class="form__value" for="phone">Телефон:*</label>
                 <input class="form__field" type="tel" name="phone" placeholder="8 (960) 900-60-90"
                 required id="phone">
@@ -122,23 +122,23 @@
             <legend class="form__title form__title--medium">Дополнительно</legend>
             <div class="form__checkbox-column form__wrapper--extra">
               <p class="form__inner form__inner--chekbox">
-                <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-                <label class="form__value" for="sweetener">Сахарозаменитель</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__value form__value--checkbox" for="sweetener">Сахарозаменитель</label>
               </p>
 
               <p class="form__inner form__inner--chekbox">
-                <input class="form__checkbox" type="checkbox" name="water" id="water">
-                <label class="form__value" for="water">Питьевая вода</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="water" id="water">
+                <label class="form__value form__value--checkbox" for="water">Питьевая вода</label>
               </p>
 
               <p class="form__inner form__inner--chekbox">
-                <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-                <label class="form__value" for="milk">Молоко</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                <label class="form__value form__value--checkbox" for="milk">Молоко</label>
               </p>
 
               <p class="form__inner form__inner--chekbox">
-                <input class="form__checkbox" type="checkbox" name="vitamin" id="vitamin">
-                <label class="form__value" for="vitamin">Витамины</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+                <label class="form__value form__value--checkbox" for="vitamin">Витамины</label>
               </p>
             </div>
           </fieldset>
@@ -153,17 +153,18 @@
 
 
     <footer class="page-footer">
-      <div class="page-footer__contact page-footer__inner contact">
+      <div class="page-footer__contact page-footer__inner contact contact--color">
         <p class="contact__lead">
           Приглашаем к сотрудничеству дилеров!
         </p>
         <p class="contact__text">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          <span class="contact__text-more">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contact__text-more">Санкт-Петербург</span>
         </p>
       </div>
 
       <div class="page-footer__map map">
-        <img class="map__image" src="img/bg-map-mobile@1x.png"
+        <img class="map__image" src="#"
         width="320" height="360" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
 
