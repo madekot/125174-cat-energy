@@ -11,8 +11,13 @@
   border-bottom: 1px solid $color-grey-darken;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .after-market-list__item {
-    height: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    margin-bottom: -1px;
+    border: 1px solid $color-grey-dark;
   }
 }

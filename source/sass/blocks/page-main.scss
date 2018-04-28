@@ -86,11 +86,10 @@
   }
 
   .page-main__title {
-    margin: 0;
-    box-sizing: border-box;
-    min-height: 145px;
-    margin-bottom: 0;
-    // временно для сетки
+    padding: 30px;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 50px;
   }
 
   .page-main__system {
@@ -134,6 +133,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title {
+    padding-top: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   .page-main__programs {
     margin-bottom: 75px;
   }
@@ -160,10 +165,6 @@
 
   .page-main__merchandise {
     margin-bottom: 20px;
-  }
-
-  .page-main__title {
-    min-height: 135px;
   }
 
   .page-main__after-market {

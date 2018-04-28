@@ -18,10 +18,10 @@
 
 @media (min-width: $tablet-width) {
   .merchandise-catalog-list__item {
+    position: relative;
     width: 325px;
-    height: 430px;
-    // временно дял сетки
-    padding-top: 85px;
+    padding-top: 80px;
+    border: none;
 
     &:nth-child(even) {
       margin-left: 55px;
@@ -33,8 +33,19 @@
     }
 
     &:nth-child(n+3) {
-      margin-top: 55px;
+      margin-top: 65px;
     }
+
+    &:last-child {
+      display: flex;
+    }
+  }
+
+  .merchandise-catalog-list__desc {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: auto;
   }
 }
 
@@ -42,16 +53,20 @@
   .merchandise-catalog-list__item {
     padding-top: 80px;
     width: 245px;
-    height: 430px;
 
     &:nth-child(n) {
       margin: 0;
       margin-left: 80px;
-      margin-bottom: 60px;
+      margin-bottom: 65px;
     }
 
     &:nth-child(4n-3) {
       margin-left: 110px;
     }
+  }
+
+  .merchandise-catalog-list__desc {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

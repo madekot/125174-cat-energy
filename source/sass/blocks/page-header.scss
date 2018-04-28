@@ -32,8 +32,6 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-
-    // min-height: 110px;
   }
 
   .page-header__toggle {
@@ -63,6 +61,10 @@
   .page-header {
     display: flex;
     background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
+
+    &--color {
+      background-image: none;
+    }
   }
 
   .page-header__inner {
