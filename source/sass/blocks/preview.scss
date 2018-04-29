@@ -13,8 +13,8 @@
   margin: 0;
   margin-bottom: 20px;
 
-  font-weight: $font-weight-regular;
   font-size: 36px;
+  font-weight: $font-weight-regular;
   line-height: 1;
 }
 
@@ -59,13 +59,15 @@
 
 @media (min-width: $tablet-width) {
   .preview {
-    font-size: 20px;
     align-items: flex-start;
+
+    font-size: 20px;
   }
 
   .preview__title {
-    font-size: 60px;
     margin-bottom: 40px;
+
+    font-size: 60px;
   }
 
   .preview__slogan {
@@ -73,16 +75,13 @@
   }
 
   .preview__image {
+    z-index: -5;
     top: 230px;
+
     width: 610px;
     height: 610px;
-    z-index: -5;
 
     transform: translate(-43%);
-  }
-
-  .preview__button {
-    // z-index: -5;
   }
 }
 
@@ -92,9 +91,11 @@
   }
 
   .preview__image {
+    top: -45px;
+
     width: 515px;
     height: auto;
-    top: -45px;
+
     transform: translate(-25%);
   }
 }

@@ -1,15 +1,17 @@
 .site-list {
-  font-weight: $font-weight-medium;
-  font-size: 20px;
-  line-height: 1;
-  font-family: $font-family-main;
   text-align: center;
-  color: $color-black;
 
+  color: $color-black;
   background-color: $color-white;
+
+  font-family: $font-family-main;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  line-height: 1;
 }
 
 .site-list__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,8 +19,18 @@
 
 .site-list__link {
   flex-grow: 1;
-  color: $color-black;
+
   text-decoration: none;
+
+  color: $color-black;
+
+  &:hover {
+    color: $color-black-lighten-opacity;
+  }
+
+  &:active {
+    color: $color-black-light-opacity;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -30,46 +42,87 @@
   .site-list__item {
     padding-right: 20px;
     padding-left: 20px;
+
     border-bottom: 1px solid $color-grey-lightest;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    font-weight: $font-weight-regular;
-    font-size: 18px;
-    line-height: 1.38;
-    font-family: $font-family-main;
     text-align: right;
-    color: $color-black-lighten;
 
+    color: $color-black-lighten;
     background-color: $color-white;
+
+    font-family: $font-family-main;
+    font-size: 18px;
+    font-weight: $font-weight-regular;
+    line-height: 1.38;
   }
 
   .site-list__item {
     margin-bottom: 20px;
     margin-left: 35px;
   }
+
+  .site-list__item-curent {
+    position: relative;
+  }
+
+  .site-list__link-current {
+    &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: $color-main;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
+    color: $color-white;
+    background-color: $color-main;
+
     font-size: 20px;
     line-height: 1.243;
-    background-color: $color-main;
-    color: $color-white;
 
     &--color {
-      background-color: $color-white;
       color: $color-black;
+      background-color: $color-white;
     }
   }
+
+    .site-list__link-current {
+      &::after {
+        background-color: $color-white;
+      }
+    }
 
   .site-list__link {
     color: $color-white;
 
+    &:hover {
+      color: $color-white-lighten-opacity;
+    }
+
+    &:active {
+      color: $color-white-light-opacity;
+    }
+
     &--color {
       color: $color-black;
+    }
+
+    &--color:hover {
+      color: $color-black-lighten-opacity;
+    }
+
+    &--color:active {
+      color: $color-black-light-opacity;
     }
   }
 }

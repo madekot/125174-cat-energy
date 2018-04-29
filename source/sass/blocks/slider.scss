@@ -1,14 +1,15 @@
 .slider {
+  color: $color-black;
+  background-color: $color-grey;
+
+  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1.25;
-  font-family: $font-family-main;
-  color: $color-black;
-
-  background-color: $color-grey;
 }
 
 .slider__list {
   @include reset-list;
+
   margin-bottom: 35px;
 }
 
@@ -23,8 +24,17 @@
   }
 
   .slider__toggle {
+    border-bottom: 1px dotted $color-grey-darken-dark;
+
     font-size: 20px;
     line-height: 1.25;
-    border-bottom: 1px dotted $color-grey-darken-dark;
+
+    &:hover {
+      border-bottom: 1px solid $color-black-darken;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }

@@ -1,22 +1,22 @@
 .page-main {
-  font-weight: $font-weight-regular;
-  font-size: 14px;
-  line-height: 1.285;
-  font-family: $font-family-main;
   color: $color-black-lightest;
-
   background-color: $color-white;
+
+  font-family: $font-family-main;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  line-height: 1.285;
 }
 
 .page-main__inner {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .page-main__preview {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 0;
@@ -28,8 +28,8 @@
 }
 
 .page-main__system {
-  padding-bottom: 20px;
   margin-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .page-main__title {
@@ -58,7 +58,9 @@
   margin: 0;
   margin-bottom: 15px;
   padding-right: 55px;
+
   text-transform: uppercase;
+
   color: $color-black;
 }
 
@@ -77,29 +79,30 @@
   }
 
   .page-main__inner {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .page-main__programs {
-    // margin-bottom: 85px;
     margin-bottom: 45px;
   }
 
   .page-main__preview {
-    padding-top: 30px;
-    padding-left: 120px;
-    padding-right: 225px;
-    margin-bottom: 0;
-    min-height: 805px;
     z-index: 5;
+
+    min-height: 805px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-right: 225px;
+    padding-left: 120px;
   }
 
   .page-main__title {
+    margin-bottom: 50px;
     padding: 30px;
+
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 50px;
 
     &--border {
       border: none;
@@ -111,14 +114,14 @@
   }
 
   .page-main__desc {
-    padding-left: 70px;
-    padding-right: 375px;
     margin-bottom: 65px;
+    padding-right: 375px;
+    padding-left: 70px;
   }
 
   .page-main__system {
-    padding-bottom: 55px;
     margin-bottom: 45px;
+    padding-bottom: 55px;
   }
 
   .page-main__sample {
@@ -135,12 +138,12 @@
   }
 
   .page-main__form {
-    padding-bottom: 0;
     margin-bottom: 70px;
+    padding-bottom: 0;
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-main__system {
     border-bottom: 1px solid $color-grey-lightest;
   }
@@ -149,8 +152,8 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     padding-top: 0;
-    padding-left: 110px;
     padding-right: 110px;
+    padding-left: 110px;
   }
 
   .page-main__programs {
@@ -158,18 +161,18 @@
   }
 
   .page-main__system {
-    // margin-bottom: 50px;
-    padding-bottom: 0;
     margin-bottom: 80px;
+    padding-bottom: 0;
   }
 
   .page-main__preview {
     min-height: auto;
     margin-bottom: 80px;
     padding-top: 30px;
-    padding-left: 190px;
     padding-right: 830px;
     padding-bottom: 190px;
+    padding-left: 190px;
+
     background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
   }
 

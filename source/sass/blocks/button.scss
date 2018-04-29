@@ -1,27 +1,36 @@
 .button {
   display: inline-block;
+
   margin: 0;
   padding: 0;
   padding-top: 13px;
+  padding-right: 27px;
   padding-bottom: 13px;
   padding-left: 27px;
-  padding-right: 27px;
 
-  // font-size: 14px;
-  line-height: 1.285;
-  font-family: $font-family-main;
-  vertical-align: middle;
   text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
+  vertical-align: middle;
   text-decoration: none;
+  text-transform: uppercase;
 
-  background-color: $color-main;
+  color: $color-white;
   border: none;
+  background-color: $color-main;
+
+  font-family: $font-family-main;
+  line-height: 1.285;
 
   &--grey {
     color: $color-black-lightest;
-
     background-color: $color-grey;
+  }
+
+  &:hover {
+    background-color: $color-green-down;
+  }
+
+  &:active {
+    background-color: $color-green-down;
+    color: rgba(255, 255, 255, 0.302);
   }
 }

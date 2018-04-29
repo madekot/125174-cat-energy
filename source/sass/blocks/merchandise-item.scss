@@ -1,10 +1,10 @@
 .merchandise-item {
+  color: $color-black-lightest;
+  background-color: $color-white;
+
+  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1.333;
-  font-family: $font-family-secondary;
-  color: $color-black-lightest;
-
-  background-color: $color-white;
 
   &--alternative {
     padding-top: 80px;
@@ -14,6 +14,7 @@
 .merchandise-item__content {
   display: flex;
   flex-wrap: wrap;
+
   padding-bottom: 24px;
 }
 
@@ -23,23 +24,26 @@
 }
 
 .merchandise-item__title {
+  width: 85px;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 15px;
-  width: 85px;
-  font-weight: $font-weight-regular;
-  font-size: 16px;
-  line-height: 1.25;
-  font-family: $font-family-main;
-  color: $color-black;
+
   text-transform: uppercase;
 
+  color: $color-black;
   background-color: $color-white;
 
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  line-height: 1.25;
+
   &--more {
+    width: auto;
     margin: 0 auto;
     margin-bottom: 10px;
-    width: auto;
+
     text-transform: uppercase;
   }
 }
@@ -54,15 +58,18 @@
 
 .merchandise-item__button {
   flex-grow: 1;
-  font-size: 16px;
-  line-height: 1.25;
+
   padding-top: 10px;
   padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .merchandise-item__wrapper {
-  margin: 0;
   flex-grow: 1;
+
+  margin: 0;
 }
 
 .merchandise-item__column {
@@ -77,29 +84,32 @@
 
   .merchandise-item__content {
     flex-direction: column;
+
     padding-top: 165px;
-    padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 35px;
+    padding-left: 35px;
+
     background-color: $color-grey;
 
     &--last {
-      background-color: $color-white;
       border: 1px solid $color-grey-darken;
+      background-color: $color-white;
     }
   }
 
   .merchandise-item__image {
     position: absolute;
-    left: 50%;
     top: 0;
+    left: 50%;
+
     transform: translate(-50%);
   }
 
   .merchandise-item__column {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .merchandise-item__column--text {
@@ -111,23 +121,26 @@
 
     width: 150px;
     margin-top: 0;
+    margin-bottom: 20px;
 
     text-align: center;
 
-    font-size: 20px;
-    line-height: 1;
-    margin-bottom: 20px;
     background-color: $color-grey;
 
+    font-size: 20px;
+    line-height: 1;
+
     &--more {
-      background-color: $color-white;
       margin-bottom: 25px;
+
+      background-color: $color-white;
     }
   }
 
   .merchandise-item__inner {
     padding-top: 8px;
     padding-bottom: 7px;
+
     border-bottom: 1px solid $color-grey-darken;
   }
 

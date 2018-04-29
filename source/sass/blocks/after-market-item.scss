@@ -1,30 +1,33 @@
 .after-market-item {
+  color: $color-black-lightest;
+  background-color: $color-white;
+
+  font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1;
-  font-family: $font-family-secondary;
-  color: $color-black-lightest;
-
-  background-color: $color-white;
 }
 
 .after-market-item__wrapper {
-  margin: 0;
-  margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .after-market-item__title {
-  text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-weight: $font-weight-regular;
-  font-size: 16px;
-  line-height: 1;
-  font-family: $font-family-main;
-  color: $color-black-lighten;
 
+  text-transform: uppercase;
+
+  color: $color-black-lighten;
   background-color: $color-white;
+
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  line-height: 1;
 }
 
 .after-market-item__field {
@@ -39,40 +42,44 @@
   display: block;
 
   margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 1.25;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .after-market-item {
-    font-size: 16px;
-    line-height: 1.25;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .after-market-item__wrapper {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 0;
   }
 
   .after-market-item__button {
     display: inline-block;
+
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 0;
   }
 
   .after-market-item__title {
-    font-size: 20px;
-    line-height: 1;
     margin-top: 0;
     margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 
   .after-market-item__value {
@@ -87,24 +94,27 @@
   }
 
   .after-market-item__title {
-    margin-bottom: 0;
     width: 325px;
+    margin-bottom: 0;
   }
 
   .after-market-item__value {
-    text-align: left;
     width: 80px;
+
+    text-align: left;
   }
 
   .after-market-list__item {
+    align-items: center;
+    justify-content: flex-start;
+
     padding-top: 15px;
+    padding-right: 0;
     padding-bottom: 15px;
     padding-left: 0;
-    padding-right: 0;
-    justify-content: flex-start;
-    align-items: center;
-    border-left: none;
+
     border-right: none;
+    border-left: none;
   }
 
   .after-market-item__field {
@@ -116,8 +126,9 @@
   }
 
   .after-market__lead {
-    text-align: center;
     box-sizing: border-box;
     width: 245px;
+
+    text-align: center;
   }
 }

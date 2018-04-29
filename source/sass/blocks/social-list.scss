@@ -3,15 +3,25 @@
 }
 
 .social-list__item {
-  min-height: 60px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+
+  min-height: 60px;
 }
 
-.social-list__link {
-  width: 20px;
-  height: 20px;
-  background-color: $color-grey-dark;
+.social-list__image-vk,
+.social-list__image-instagram,
+.social-list__image-facebook {
+  fill: $color-black-dark;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill: $color-main;
+    opacity: 0.3;
+  }
 }

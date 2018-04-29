@@ -14,6 +14,8 @@ $desktop-width:                 1440px;
 $color-main:                    #68b738;  // основной цвет
 $color-secondary:               #f2f2f2;  // дополнительный цвет
 
+$color-green-down:              #5eaa2f;
+
 $color-white:                   #ffffff;
 $color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
 $color-white-light-opacity:     rgba(255, 255, 255, 0.3);
@@ -27,13 +29,19 @@ $color-grey-dark:               #d9d9d9;
 $color-grey-darken:             #cdcdcd;
 $color-grey-darken-dark:        #bebebe;
 
+
 $color-black:                   #111111;
 $color-black-lighten:           #222222;
 $color-black-lightest:          #444444;
+$color-black-dark:              #666666;
+$color-black-darken:            #989898;
 
 $color-black-lightest-opacity:  rgba(17, 17, 17, 0.8);
 $color-black-lighten-opacity:   rgba(17, 17, 17, 0.6);
 $color-black-light-opacity:     rgba(17, 17, 17, 0.3);
+
+$color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
+$color-white-light-opacity:     rgba(255, 255, 255, 0.3);
 
 
 // Гарнитуры используемые в проекте:
