@@ -34,7 +34,9 @@
     }
 
     &:active {
-      border-bottom: none;
+      padding-bottom: 1px;
+
+      border: none;
     }
   }
 }

@@ -12,7 +12,6 @@
 }
 
 .copyright__image {
-
   path {
     fill: $color-black-dark;
   }
@@ -25,8 +24,9 @@
 
   &:active {
     path {
-      fill: $color-main;
       opacity: 0.3;
+
+      fill: $color-main;
     }
   }
 }

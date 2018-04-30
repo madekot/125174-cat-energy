@@ -13,16 +13,13 @@
 .page-header__toggle {
   width: 24px;
   height: 18px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
   margin: 0;
-}
+  padding: 0;
 
-.page-header__toggle {
-  width: 24px;
-  height: 18px;
-  transform: rotate(45deg) translate(0px, -3px);
+  transform: rotate(45deg) translate(0, -3px);
+
+  border: none;
+  background-color: transparent;
 }
 
 .page-header__inner {
@@ -38,9 +35,9 @@
 }
 
 .page-header__list {
-  @include reset-list;
-
   max-width: 500px;
+
+  @include reset-list;
 }
 
 @media (min-width: $tablet-width) {

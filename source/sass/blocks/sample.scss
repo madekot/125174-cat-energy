@@ -80,10 +80,10 @@
 }
 
 .sample__switch {
-  padding: 4px;
   width: 30px;
   height: 6px;
   margin-left: 5px;
+  padding: 4px;
 
   border: none;
   border-radius: 12px;
@@ -230,11 +230,11 @@
 
     transform: translate(-40%);
 
+    border: 10px solid $color-white;
+    border-radius: 50%;
     box-shadow:
       0 2px 5px 0 rgba(0, 0, 0, 0.15),
       0 0 0 1px $color-grey-darken;
-    border: 10px solid $color-white;
-    border-radius: 50%;
 
     &:hover {
       box-shadow:
@@ -244,14 +244,11 @@
 
     &:active {
       box-shadow:
-      0 4px 5px 0 rgba(0, 0, 0, 0.3),
-      0 0 0 2px $color-main;
+        0 4px 5px 0 rgba(0, 0, 0, 0.3),
+        0 0 0 2px $color-main;
     }
   }
 }
-
-
-
 
 @media (min-width: $desktop-width) {
   .sample {

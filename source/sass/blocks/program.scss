@@ -9,6 +9,7 @@
 
 .program__title {
   position: relative;
+
   margin: 0;
   margin-bottom: 33px;
   padding-left: 70px;
@@ -24,34 +25,42 @@
 
   &::before,
   &::after {
-    content: "";
     position: absolute;
-    background-position: center;
+
+    content: "";
+
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &::after {
-    width: 35px;
-    height: 49px;
     top: -8px;
     left: 9px;
+
+    width: 35px;
+    height: 49px;
+
     background-image: url("/img/icon-cat-slim.svg");
   }
 
   &::before {
-    width: 50px;
-    height: 50px;
     top: -4px;
     left: 3px;
-    background-color: $color-main;
+
+    width: 50px;
+    height: 50px;
+
     border-radius: 50%;
+    background-color: $color-main;
   }
 
   &--raise::after {
-    width: 67px;
-    height: 28px;
     top: 6px;
     left: -6px;
+
+    width: 67px;
+    height: 28px;
+
     background-image: url("/img/icon-cat-pro.svg");
   }
 }
@@ -63,6 +72,7 @@
 
 .program__link {
   position: relative;
+
   text-decoration: none;
   text-transform: uppercase;
 
@@ -73,23 +83,27 @@
   line-height: 1;
 
   &::after {
-    content: "";
     position: absolute;
-    width: 24px;
-    height: 11px;
-    background-position: center;
-    background-repeat: no-repeat;
     right: -35px;
     bottom: 6px;
 
+    width: 24px;
+    height: 11px;
+
+    content: "";
+
     background-image: url("/img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &:hover.program__link::after {
     right: -42px;
+
     width: 31px;
     height: 11px;
-    background-image: url("/img/right-arrow-verylong.png")
+
+    background-image: url("/img/right-arrow-verylong.png");
   }
 
   &:active,
@@ -100,8 +114,9 @@
 
 @media (max-width: $tablet-width) {
   .program__desc {
-    border-bottom: 1px solid $color-grey-dark;
     padding-bottom: 22px;
+
+    border-bottom: 1px solid $color-grey-dark;
   }
 }
 
@@ -119,27 +134,32 @@
     line-height: 1.02;
 
     &::after {
-      width: 140px;
-      height: 194px;
       top: 4px;
       right: 36px;
       left: auto;
+
+      width: 140px;
+      height: 194px;
+
       background-image: url("/img/icon-cat-slim.svg");
     }
 
     &::before {
+      top: 15px;
+      right: 5px;
+      left: auto;
+
       width: 200px;
       height: 200px;
-      top: 15px;
-      left: auto;
-      right: 5px;
     }
 
     &--raise::after {
       top: 57px;
       right: -28px;
+
       width: 268px;
       height: 112px;
+
       background-image: url("/img/icon-cat-pro.svg");
     }
   }
@@ -165,9 +185,11 @@
 
     &:hover.program__link::after {
       right: -52px;
+
       width: 31px;
       height: 11px;
-      background-image: url("/img/right-arrow-verylong.png")
+
+      background-image: url("/img/right-arrow-verylong.png");
     }
   }
 }
@@ -178,28 +200,33 @@
     padding-left: 160px;
 
     &::after {
-      width: 70px;
-      height: 97px;
       top: -35px;
       right: auto;
       left: 10px;
+
+      width: 70px;
+      height: 97px;
+
       background-image: url("/img/icon-cat-slim.svg");
     }
 
     &::before {
+      top: -30px;
+      right: auto;
+      left: -5px;
+
       width: 100px;
       height: 100px;
-      top: -30px;
-      left: -5px;
-      right: auto;
     }
 
     &--raise::after {
       top: -8px;
       right: auto;
       left: -22px;
+
       width: 134px;
       height: 56px;
+
       background-image: url("/img/icon-cat-pro.svg");
     }
   }

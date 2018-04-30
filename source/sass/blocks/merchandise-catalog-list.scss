@@ -8,7 +8,9 @@
 }
 
 .merchandise-catalog-list__item {
-  border-bottom: 1px solid $color-grey-lightest-light;
+  margin-top: -1px;
+
+  border: 1px solid $color-grey-lightest-light;
 }
 
 .merchandise-catalog-list__desc {
@@ -26,8 +28,8 @@
     border: none;
 
     &:nth-child(even) {
-      margin-right: 30px;
-      margin-left: 55px;
+      margin-right: 28px;
+      margin-left: 59px;
     }
 
     &:nth-child(odd) {
@@ -35,7 +37,7 @@
     }
 
     &:nth-child(n+3) {
-      margin-top: 65px;
+      margin-top: 60px;
     }
 
     &:last-child {

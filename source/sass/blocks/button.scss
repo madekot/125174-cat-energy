@@ -20,17 +20,26 @@
   font-family: $font-family-main;
   line-height: 1.285;
 
-  &--grey {
-    color: $color-black-lightest;
-    background-color: $color-grey;
-  }
-
   &:hover {
     background-color: $color-green-down;
   }
 
   &:active {
-    background-color: $color-green-down;
     color: rgba(255, 255, 255, 0.302);
+    background-color: $color-green-down;
+  }
+
+  &--grey {
+    color: $color-black-lightest;
+    background-color: $color-grey;
+
+    &:hover {
+      background-color: $color-grey-lightest;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.302);
+      background-color: $color-grey-lightest-light;
+    }
   }
 }
