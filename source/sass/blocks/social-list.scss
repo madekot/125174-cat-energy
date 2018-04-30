@@ -21,7 +21,8 @@
   }
 
   &:active {
-    fill: $color-main;
     opacity: 0.3;
+
+    fill: $color-main;
   }
 }

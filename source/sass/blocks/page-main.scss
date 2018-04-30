@@ -98,7 +98,7 @@
   }
 
   .page-main__title {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     padding: 30px;
 
     font-size: 60px;
@@ -134,7 +134,7 @@
   }
 
   .page-main__merchandise {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   }
 
   .page-main__form {
@@ -151,6 +151,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
+    margin-bottom: 20px;
     padding-top: 0;
     padding-right: 110px;
     padding-left: 110px;
@@ -181,7 +182,7 @@
   }
 
   .page-main__merchandise {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .page-main__after-market {
@@ -193,6 +194,6 @@
   }
 
   .page-main__desc {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 }
