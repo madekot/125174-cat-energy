@@ -5,6 +5,9 @@
   font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1.258;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .system__title {
@@ -27,6 +30,10 @@
   .system {
     font-size: 16px;
     line-height: 1.5;
+    padding-bottom: 55px;
+    border-bottom: 1px solid $color-grey-lightest;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .system__title {
@@ -34,5 +41,13 @@
 
     font-size: 60px;
     line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .system {
+    border: none;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }

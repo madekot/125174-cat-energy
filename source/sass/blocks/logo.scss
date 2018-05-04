@@ -1,18 +1,36 @@
-.page-header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 12px;
 }
 
-.logo__svg {
+.logo__img {
   width: 191px;
   height: 38px;
+  transition: all 0.3s ease;
 
   &:hover {
     opacity: 0.8;
+    transition: all 0.3s ease;
   }
 
   &:active {
     opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-bottom: 24px;
+    flex-grow: 1;
+  }
+
+  .logo__img {
+    width: 173px;
+    height: 58px;
   }
 }

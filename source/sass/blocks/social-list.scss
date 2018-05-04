@@ -1,5 +1,12 @@
 .social-list {
+  flex-grow: 1;
   background-color: $color-grey;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid $color-grey-dark;
+  border-bottom: 1px solid $color-grey-dark;
 }
 
 .social-list__item {
@@ -8,21 +15,64 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  min-height: 60px;
+  &:last-child,
+  &:first-child {
+    flex-grow: 1;
+  }
+
+  &:last-child .social-list__link,
+  &:first-child .social-list__link {
+    flex-grow: 1;
+  }
+
+  &:first-child .social-list__link {
+    justify-content: flex-end;
+  }
+
+  &:last-child {
+    justify-content: flex-start;
+  }
 }
 
-.social-list__image-vk,
-.social-list__image-instagram,
-.social-list__image-facebook {
+.social-list__link {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 24px;
+}
+
+.social-list__image {
   fill: $color-black-dark;
+  transition: all 0.3s ease;
 
   &:hover {
     fill: $color-main;
+    transition: all 0.3s ease;
   }
 
   &:active {
     opacity: 0.3;
-
     fill: $color-main;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    border: none;
+  }
+
+  .social-list__item {
+    &:not(:first-child) {
+      // padding-left: 28px;
+    }
+  }
+
+  .social-list__link {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 66px;
+    padding-bottom: 68px;
   }
 }

@@ -25,17 +25,19 @@
 
   .slider__toggle {
     border-bottom: 1px dotted $color-grey-darken-dark;
+    transition: all 0.3s ease;
 
     font-size: 20px;
     line-height: 1.25;
 
     &:hover {
       border-bottom: 1px solid $color-black-darken;
+      transition: all 0.3s ease;
     }
 
     &:active {
       padding-bottom: 1px;
-
+      transition: all 0.3s ease;
       border: none;
     }
   }

@@ -99,12 +99,18 @@
   background-color: transparent;
 }
 
+.sample__image {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .sample {
     background-color: $color-white;
 
     font-size: 16px;
     line-height: 1.5;
+    padding: 0;
   }
 
   .sample__column {
@@ -227,7 +233,7 @@
     width: 8px;
     height: 8px;
     margin-left: 50%;
-
+    transition: all 0.3s ease;
     transform: translate(-40%);
 
     border: 10px solid $color-white;
@@ -240,12 +246,14 @@
       box-shadow:
         0 3px 5px 0 rgba(0, 0, 0, 0.25),
         0 0 0 1px $color-grey-darken;
+      transition: all 0.3s ease;
     }
 
     &:active {
       box-shadow:
         0 4px 5px 0 rgba(0, 0, 0, 0.3),
         0 0 0 2px $color-main;
+      transition: all 0.3s ease;
     }
   }
 }
@@ -254,6 +262,7 @@
   .sample {
     display: flex;
     flex-wrap: wrap;
+    min-height: 590px;
   }
 
   .sample__column {

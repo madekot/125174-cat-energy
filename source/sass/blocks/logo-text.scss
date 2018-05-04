@@ -1,5 +1,6 @@
 .logo-text {
   background-color: $color-grey;
+  transition: all 0.3s ease;
 }
 
 .logo-text__image {
@@ -8,9 +9,11 @@
 
   &:hover {
     opacity: 0.8;
+    transition: all 0.3s ease;
   }
 
   &:active {
     opacity: 0.6;
+    transition: all 0.3s ease;
   }
 }

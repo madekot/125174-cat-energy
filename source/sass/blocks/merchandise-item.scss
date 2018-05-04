@@ -5,6 +5,8 @@
   font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1.333;
+
+  border: 1px solid $color-grey-lightest-light;
 }
 
 .merchandise-item__content {
@@ -17,6 +19,7 @@
 
   &--last {
     padding-top: 80px;
+    flex-direction: column;
 
     &::before {
       position: absolute;
@@ -73,6 +76,8 @@
 }
 
 .merchandise-item__button {
+  box-sizing: border-box;
+  width: 100%;
   flex-grow: 1;
 
   padding-top: 10px;
@@ -96,6 +101,7 @@
   .merchandise-item {
     font-size: 16px;
     line-height: 1;
+    border: none;
   }
 
   .merchandise-item__content {

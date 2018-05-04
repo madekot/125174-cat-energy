@@ -1,4 +1,5 @@
 .page-main {
+
   color: $color-black-lightest;
   background-color: $color-white;
 
@@ -14,13 +15,7 @@
 }
 
 .page-main__preview {
-  position: relative;
-
   margin-bottom: 20px;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-bottom: 0;
-  padding-left: 20px;
 }
 
 .page-main__programs {
@@ -29,7 +24,6 @@
 
 .page-main__system {
   margin-bottom: 25px;
-  padding-bottom: 20px;
 }
 
 .page-main__title {
@@ -74,6 +68,8 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
+    width: 768px;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -88,13 +84,7 @@
   }
 
   .page-main__preview {
-    z-index: 5;
-
-    min-height: 805px;
     margin-bottom: 0;
-    padding-top: 30px;
-    padding-right: 225px;
-    padding-left: 120px;
   }
 
   .page-main__title {
@@ -121,12 +111,10 @@
 
   .page-main__system {
     margin-bottom: 45px;
-    padding-bottom: 55px;
   }
 
   .page-main__sample {
     margin: 0;
-    padding: 0;
   }
 
   .page-main__after-market {
@@ -143,13 +131,11 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .page-main__system {
-    border-bottom: 1px solid $color-grey-lightest;
-  }
-}
-
 @media (min-width: $desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
+
   .page-main__title {
     margin-bottom: 20px;
     padding-top: 0;
@@ -167,18 +153,7 @@
   }
 
   .page-main__preview {
-    min-height: auto;
     margin-bottom: 80px;
-    padding-top: 30px;
-    padding-right: 830px;
-    padding-bottom: 190px;
-    padding-left: 190px;
-
-    background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
-  }
-
-  .page-main__sample {
-    min-height: 590px;
   }
 
   .page-main__merchandise {

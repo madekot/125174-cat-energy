@@ -11,14 +11,27 @@
   margin: 0;
 }
 
+.copyright__link {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .copyright__image {
+  // width: 27px;
+  // height: 34px;
+
   path {
     fill: $color-black-dark;
+    transition: all 0.3s ease;
   }
 
   &:hover {
     path {
       fill: $color-main;
+      transition: all 0.3s ease;
     }
   }
 
@@ -27,6 +40,7 @@
       opacity: 0.3;
 
       fill: $color-main;
+      transition: all 0.3s ease;
     }
   }
 }

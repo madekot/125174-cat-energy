@@ -9,7 +9,13 @@
 
 .system-list__item {
   position: relative;
+  margin-bottom: 30px;
+  padding-left: 80px;
   z-index: 10;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     position: absolute;
@@ -22,47 +28,25 @@
     content: "";
 
     background-color: $color-main;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
   }
 
-  &--image-leaf::after,
-  &--image-powder::after,
-  &--image-dining::after,
-  &--image-clock::after {
-    position: absolute;
-    top: 3px;
-    left: 5px;
-
-    width: 50px;
-    height: 50px;
-
-    content: "";
-  }
-
-  &--image-leaf::after {
+  &--image-leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--image-powder::after {
+  &--image-powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--image-dining::after {
+  &--image-dining::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--image-clock::after {
+  &--image-clock::before {
     background-image: url("../img/advantage-clock@1x.png");
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .system-list__item {
-    margin-bottom: 30px;
-    padding-left: 80px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -73,6 +57,7 @@
 
     font-size: 16px;
     line-height: 1.5;
+    counter-reset: flag;
   }
 
   .system-list__item {
@@ -81,55 +66,36 @@
     margin-bottom: 90px;
     padding-top: 110px;
     padding-bottom: 45px;
+    padding-left: 0;
 
     &:last-child,
     &:nth-last-of-type(2) {
       margin-bottom: 0;
     }
 
-    &::before {
-      width: 80px;
-      height: 80px;
-    }
-
     &::after {
-      top: 15px;
-      left: 15px;
-    }
-  }
-
-  .system-list__number {
-    &::after {
+      content: counter(flag);
       position: absolute;
       z-index: -5;
       right: 0;
       bottom: -10px;
-
-      content: "";
 
       color: $color-grey;
 
       font-family: $font-family-main;
       font-size: 281px;
       line-height: 1;
+      counter-increment: flag;
     }
 
-    &--1::after {
+    &--image-leaf::after {
       right: 15px;
-
-      content: "1";
     }
 
-    &--2::after {
-      content: "2";
-    }
 
-    &--3::after {
-      content: "3";
-    }
-
-    &--4::after {
-      content: "4";
+    &::before {
+      width: 80px;
+      height: 80px;
     }
   }
 }

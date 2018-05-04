@@ -1,91 +1,95 @@
 .preview {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+
   color: $color-black;
   background-color: $color-white;
+  background-image:
+    url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#65a93c 305px, $color-white 305px);
+  background-repeat: no-repeat;
+  background-position: top center;
 
   font-family: $font-family-main;
-  line-height: 1;
+  font-size: 14px;
+  line-height: 1.285;
+  text-align: center;
+}
+
+.preview__slogan {
+  color: $color-white;
+
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 26px;
+
+  text-transform: uppercase;
 }
 
 .preview__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  color: $color-white;
 
   font-size: 36px;
   font-weight: $font-weight-regular;
   line-height: 1;
 }
 
-.preview__slogan {
-  margin: 0;
-  margin-bottom: 300px;
-
-  text-transform: uppercase;
-}
-
-
 .preview__image {
-  position: absolute;
-  top: 165px;
-  left: 50%;
-
-  transform: translate(-50%);
-}
-
-@media (max-width: $tablet-width) {
-  .preview {
-    text-align: center;
-
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    font-size: 14px;
-    line-height: 1.285;
-  }
-
-  .preview__slogan {
-    color: $color-white;
-
-    font-size: 14px;
-  }
-
-  .preview__title {
-    color: $color-white;
-  }
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .preview {
+    text-align: left;
     align-items: flex-start;
-
+    background-image: none;
     font-size: 20px;
+    z-index: 5;
+
+    padding-top: 30px;
+    padding-left: 120px;
   }
 
   .preview__title {
     margin-bottom: 40px;
-
+    color: $color-black;
     font-size: 60px;
+    width: 430px;
   }
 
   .preview__slogan {
+    font-size: 20px;
+    line-height: 1;
+    color: $color-black;
     margin-bottom: 50px;
   }
 
-  .preview__image {
-    z-index: -5;
-    top: 230px;
-
-    width: 610px;
-    height: 610px;
-
-    transform: translate(-43%);
+  .preview__button {
+    position: absolute;
+    top: 260px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .preview {
+    min-height: auto;
+    padding-top: 30px;
+    padding-left: 190px;
+
+    background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
+  }
+
   .preview__slogan {
     margin-bottom: 55px;
   }

@@ -1,4 +1,5 @@
 .merchandise-catalog-list {
+  @include reset-list;
   color: $color-black-lightest;
   background-color: $color-white;
 
@@ -9,8 +10,6 @@
 
 .merchandise-catalog-list__item {
   margin-top: -1px;
-
-  border: 1px solid $color-grey-lightest-light;
 }
 
 .merchandise-catalog-list__desc {
@@ -19,6 +18,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .merchandise-catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .merchandise-catalog-list__item {
     position: relative;
 
@@ -55,6 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .merchandise-catalog-list {
+    justify-content: flex-start;
+  }
+
   .merchandise-catalog-list__item {
     width: 245px;
     padding-top: 80px;

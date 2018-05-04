@@ -1,4 +1,6 @@
 .after-market-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: $color-black-lightest;
   background-color: $color-white;
 
@@ -16,7 +18,8 @@
 }
 
 .after-market-item__title {
-  margin-top: 15px;
+  // margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 15px;
 
   text-transform: uppercase;
@@ -41,7 +44,7 @@
 .after-market-item__button {
   display: block;
 
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -57,6 +60,13 @@
 
     font-size: 16px;
     line-height: 1.25;
+
+    padding-top: 26px;
+    padding-right: 35px;
+    padding-bottom: 28px;
+    padding-left: 35px;
+
+    border: 1px solid $color-grey-dark;
   }
 
   .after-market-item__wrapper {

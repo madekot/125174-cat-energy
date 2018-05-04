@@ -19,27 +19,42 @@
 
   font-family: $font-family-main;
   line-height: 1.285;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: $color-green-down;
+    transition: all 0.3s ease;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.302);
     background-color: $color-green-down;
+    transition: all 0.3s ease;
   }
 
   &--grey {
     color: $color-black-lightest;
     background-color: $color-grey;
+    transition: all 0.3s ease;
 
     &:hover {
       background-color: $color-grey-lightest;
+      transition: all 0.3s ease;
     }
 
     &:active {
       color: rgba(68, 68, 68, 0.302);
       background-color: $color-grey-lightest-light;
+      transition: all 0.3s ease;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 1;
   }
 }

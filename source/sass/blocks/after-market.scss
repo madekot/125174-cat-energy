@@ -29,9 +29,9 @@
 }
 
 .after-market__list {
-  margin-bottom: 40px;
-
   @include reset-list;
+
+  margin-bottom: 40px;
 }
 
 .after-market__lead {
