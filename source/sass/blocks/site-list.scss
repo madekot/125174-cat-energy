@@ -31,16 +31,17 @@
   text-decoration: none;
 
   color: $color-black;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 
   &:hover {
     color: $color-black-lighten-opacity;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
   }
 
   &:active {
     color: $color-black-light-opacity;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
+    transition-duration: 0s;
   }
 }
 
@@ -129,17 +130,18 @@
 
     &--color {
       color: $color-black;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     &--color:hover {
       color: $color-black-lighten-opacity;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     &--color:active {
       color: $color-black-light-opacity;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
+      transition-duration: 0s;
     }
   }
 }

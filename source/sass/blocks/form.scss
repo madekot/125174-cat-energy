@@ -68,21 +68,32 @@
 
   &::placeholder {
     color: $color-black-lightest;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
+    opacity: 1;
   }
 
   &:hover {
     box-shadow: 0 0 0 1px $color-grey-darken;
-    transition: all 0.3s ease;
+    transition: color, box-shadow 0.3s ease;
   }
 
   &:focus {
     border-color: transparent;
     outline: none;
     box-shadow: 0 0 0 2px $color-black-lightest;
-    transition: all 0.3s ease;
+    transition: color, box-shadow 0.3s ease;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &--number {
+    appearance: textfield;
   }
 }
+
 
 .form__value {
   position: relative;
@@ -103,7 +114,7 @@
     border-radius: 50%;
     background-color: $color-white;
     box-shadow: 0 0 0 1px $color-grey-darken;
-    transition: all 0.3s ease;
+    transition: color, box-shadow 0.3s ease;
   }
 
   &--checkbox::after {
@@ -117,7 +128,7 @@
     content: "";
 
     box-shadow: inset 0 0 0 1px $color-grey-darken;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
   }
 }
 
@@ -143,31 +154,33 @@
 
   &:focus + .form__value--checkbox::after {
     // outline: thin dotted;
-    // outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 
   &:active + .form__value--checkbox::after,
   &:active + .form__value--checkbox {
     opacity: 0.3;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease;
+    transition-duration: 0s;
   }
 }
 
 .form__radio {
   &:checked + .form__value--radio::before {
     background-color: $color-main;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
   }
 
   &:focus + .form__value--radio::before {
     // outline: thin dotted;
-    // outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 
   &:active + .form__value--radio::before,
   &:active + .form__value--radio {
     opacity: 0.3;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease;
+    transition-duration: 0s;
   }
 }
 
@@ -224,6 +237,7 @@
   &--radio {
     border: 1px solid $color-grey-lightest-light;
     transition: all 0.3s ease;
+    transition-duration: 0s;
   }
 
   &--extra {

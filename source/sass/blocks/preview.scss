@@ -58,14 +58,19 @@
     z-index: 5;
 
     padding-top: 30px;
-    padding-left: 120px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .preview__title {
     margin-bottom: 40px;
     color: $color-black;
     font-size: 60px;
-    width: 430px;
+  }
+
+  .preview__column-text {
+    width: 485px;
+    margin: 0 auto;
   }
 
   .preview__slogan {
@@ -75,9 +80,16 @@
     margin-bottom: 50px;
   }
 
+  .preview__column-image {
+    width: 708px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .preview__button {
     position: absolute;
-    top: 260px;
+    top: 0;
+    left: 110px;
   }
 }
 
@@ -87,7 +99,7 @@
     padding-top: 30px;
     padding-left: 190px;
 
-    background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
+    // background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
   }
 
   .preview__slogan {
