@@ -44,6 +44,24 @@
   }
 }
 
+.form__inner {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &--e-mail {
+    right: 15px;
+  }
+
+  &--phone {
+    right: 12px;
+  }
+}
+
 .form__field {
   flex-grow: 1;
 
@@ -84,6 +102,16 @@
     transition: color, box-shadow 0.3s ease;
   }
 
+  &:focus + .form__icon path  {
+  fill: $color-main;
+  transition: fill 0.3s ease;
+  }
+
+  &:invalid + .form__icon path  {
+  fill: #ff8282;
+  transition: fill 0.3s ease;
+  }
+
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     appearance: none;
@@ -93,7 +121,6 @@
     appearance: textfield;
   }
 }
-
 
 .form__value {
   position: relative;
