@@ -1,10 +1,38 @@
-.page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  padding-right: 20px;
 }
 
-.logo__image {
+.logo__img {
   width: 191px;
   height: 38px;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    transition-duration: 0s;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-bottom: 24px;
+    flex-grow: 1;
+  }
+
+  .logo__img {
+    width: 173px;
+    height: 58px;
+  }
 }

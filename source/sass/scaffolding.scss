@@ -1,41 +1,3 @@
-@media (min-width: $tablet-width) {
-  // .page-header *,
-  // .page-header,
-  // .page-main *,
-  // .page-main,
-  // .page-footer *,
-  // .page-footer,
-  // .merchandise__catalog-list *,
-  // .page-main__merchandise {
-  //   background-color: transparent;
-  // }
-
-  // .page-main__preview,
-  // .programs__item,
-  // .page-main__system,
-  // .page-main__sample,
-  // .page-footer__contact,
-  // .page-footer__map,
-  // .page-footer__bottom,
-  // .page-header__inner {
-  //   background-image: none;
-  // }
-
-  // .page-main__preview *,
-  // .programs__item *,
-  // .page-main__system *,
-  // .page-main__sample *,
-  // .page-footer__contact *,
-  // .page-footer__map *,
-  // .page-footer__bottom *,
-  // .page-header__inner *,
-  // .merchandise-catalog-list__item *,
-  // .after-market-list__item *,
-  // .form__inner * {
-  //   display: none;
-  // }
-}
-
 body {
   min-width: 320px;
   margin: 0 auto;
@@ -59,46 +21,4 @@ textarea,
 select,
 button {
   font: inherit;
-}
-
-.fieldset {
-  min-width: auto;
-  margin: 0;
-  padding: 0;
-
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  // .page-header *,
-  // .page-header,
-  // .page-main *,
-  // .page-main,
-  // .page-footer *,
-  // .page-footer {
-  //   background-color: transparent;
-  // }
-  //
-  //
-  // .page-main__preview,
-  // .programs__item,
-  // .page-main__system,
-  // .page-main__sample,
-  // .page-footer__contact,
-  // .page-footer__map,
-  // .page-footer__bottom,
-  // .page-header__inner {
-  //   background-image: none;
-  // }
-  //
-  // .page-main__preview *,
-  // .programs__item *,
-  // .page-main__system *,
-  // .page-main__sample *,
-  // .page-footer__contact *,
-  // .page-footer__map *,
-  // .page-footer__bottom *,
-  // .page-header__inner * {
-  //   display: none;
-  // }
 }

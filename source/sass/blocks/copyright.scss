@@ -1,12 +1,45 @@
 .copyright {
+  color: $color-black-lightest;
+  background-color: $color-grey;
+
+  font-family: $font-family-secondary;
   font-size: 16px;
   line-height: 1;
-  font-family: $font-family-secondary;
-  color: $color-black-lightest;
-
-  background-color: $color-grey;
 }
 
 .copyright__text {
   margin: 0;
+}
+
+.copyright__link {
+  padding-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.copyright__image {
+  // width: 27px;
+  // height: 34px;
+
+  path {
+    fill: $color-black-dark;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    path {
+      fill: $color-main;
+      transition: fill 0.3s ease;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+
+      fill: $color-main;
+      transition: fill 0.3s ease;
+      transition-duration: 0s;
+    }
+  }
 }

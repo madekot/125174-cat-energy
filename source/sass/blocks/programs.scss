@@ -1,23 +1,51 @@
 .programs {
+  color: $color-black;
+  background-color: $color-white;
+
+  font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1.285;
-  font-family: $font-family-secondary;
-  color: $color-black;
-
-  background-color: $color-white;
-}
-
-.program__title {
-  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .programs__item {
-  padding-top: 30px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .programs__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__inner {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .programs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    &:not(:last-child) {
+      margin-right: 80px;
+      margin-bottom: 0;
+    }
   }
 }

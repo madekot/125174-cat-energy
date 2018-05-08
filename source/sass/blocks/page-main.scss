@@ -1,34 +1,28 @@
 .page-main {
-  font-weight: $font-weight-regular;
-  font-size: 14px;
-  line-height: 1.285;
-  font-family: $font-family-main;
-  color: $color-black-lightest;
 
+  color: $color-black-lightest;
   background-color: $color-white;
+
+  font-family: $font-family-main;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+  line-height: 1.285;
 }
 
 .page-main__inner {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .page-main__preview {
-  position: relative;
-
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-bottom: 0;
-  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .page-main__programs {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .page-main__system {
-  padding-bottom: 20px;
   margin-bottom: 25px;
 }
 
@@ -58,7 +52,9 @@
   margin: 0;
   margin-bottom: 15px;
   padding-right: 55px;
+
   text-transform: uppercase;
+
   color: $color-black;
 }
 
@@ -71,37 +67,54 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__title {
-    margin: 0;
-    box-sizing: border-box;
-    min-height: 145px;
-    margin-bottom: 0;
-    // временно для сетки
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
-  .page-main__preview {
-    min-height: 810px;
-    // временно для сетки
-    margin-bottom: 0;
+  .page-main__inner {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .page-main__programs {
-    min-height: 770px;
-    // временно для сетки
+    margin-bottom: 45px;
+  }
+
+  .page-main__preview {
     margin-bottom: 0;
+  }
+
+  .page-main__title {
+    margin-bottom: 55px;
+    padding: 30px;
+
+    font-size: 60px;
+    line-height: 1;
+
+    &--border {
+      border: none;
+    }
+  }
+
+  .page-main__title--size-medium {
+    margin-bottom: 25px;
+  }
+
+  .page-main__desc {
+    margin-bottom: 65px;
+    padding-right: 375px;
+    padding-left: 70px;
   }
 
   .page-main__system {
-    min-height: 760px;
-    // временно для сетки
-    margin-bottom: 0;
+    margin-bottom: 45px;
   }
 
   .page-main__sample {
-    min-height: 1085px;
-    // временно для сетки
     margin: 0;
-    padding: 0;
   }
 
   .page-main__after-market {
@@ -109,52 +122,43 @@
   }
 
   .page-main__merchandise {
-    margin-bottom: 75px;
-  }
-
-  .page-main__inner {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .page-main__desc {
-    min-height: 60px;
-    margin-bottom: 65px;
+    margin-bottom: 40px;
   }
 
   .page-main__form {
-    padding-bottom: 0;
     margin-bottom: 70px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__preview {
-    min-height: 490px;
-  }
-
-  .page-main__programs {
-    min-height: 530px;
-  }
-
-  .page-main__system {
-    min-height: 425px;
-  }
-
-  .page-main__sample {
-    min-height: 590px;
-  }
-
-  .page-main__merchandise {
-    margin-bottom: 20px;
+  .page-main {
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .page-main__title {
-    // box-sizing: border-box;
-    min-height: 135px;
-    // margin-bottom: 75px;
-    // padding: 0;
-    // временно для сетки
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .page-main__programs {
+    margin-bottom: 75px;
+  }
+
+  .page-main__system {
+    margin-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  .page-main__preview {
+    margin-bottom: 80px;
+  }
+
+  .page-main__merchandise {
+    margin-bottom: 0;
   }
 
   .page-main__after-market {
@@ -166,6 +170,6 @@
   }
 
   .page-main__desc {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
   }
 }

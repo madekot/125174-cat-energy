@@ -1,18 +1,45 @@
 .slider {
+  color: $color-black;
+  background-color: $color-grey;
+
+  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1.25;
-  font-family: $font-family-main;
-  color: $color-black;
-
-  background-color: $color-grey;
 }
 
 .slider__list {
   @include reset-list;
+
   margin-bottom: 35px;
 }
 
 .slider__toggle {
   font-size: 16px;
   line-height: 1.25;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    margin-bottom: 0;
+  }
+
+  .slider__toggle {
+    border-bottom: 1px dotted $color-grey-darken-dark;
+    transition: color 0.3s ease;
+
+    font-size: 20px;
+    line-height: 1.25;
+
+    &:hover {
+      border-bottom: 1px solid $color-black-darken;
+      transition: color 0.3s ease;
+    }
+
+    &:active {
+      padding-bottom: 1px;
+      transition: color 0.3s ease;
+      transition-duration: 0s;
+      border: none;
+    }
+  }
 }

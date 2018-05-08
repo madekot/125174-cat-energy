@@ -1,10 +1,10 @@
 .after-market {
+  color: $color-black-lightest;
+  background-color: $color-white;
+
+  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1.166px;
-  font-family: $font-family-secondary;
-  color: $color-black-lightest;
-
-  background-color: $color-white;
 }
 
 .after-market__title {
@@ -13,97 +13,123 @@
   padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
-  font-weight: $font-weight-regular;
-  font-size: 24px;
-  line-height: 1;
-  font-family: $font-family-main;
-  color: $color-black;
 
+  color: $color-black;
   background-color: $color-white;
-  border-bottom: 1px solid $color-grey-darken;
+
+  font-family: $font-family-main;
+  font-size: 24px;
+  font-weight: $font-weight-regular;
+  line-height: 1;
 }
 
 .after-market__column {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .after-market__list {
   @include reset-list;
+
   margin-bottom: 40px;
 }
 
 .after-market__lead {
+  position: relative;
+
   margin: 0;
-  text-align: center;
   padding-top: 190px;
   padding-right: 60px;
   padding-bottom: 40px;
   padding-left: 60px;
 
-  font-size: 16px;
-  line-height: 1.25;
-  color: $color-white;
+  text-align: center;
 
+  color: $color-white;
   background-color: $color-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  &::before {
+    position: absolute;
+    top: 66px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    content: "";
+    transform: translate(-50%);
+
+    background-image: url("../img/icon-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .after-market__title {
-    box-sizing: border-box;
-    min-height: 105px;
-    // временно для сетки
+    margin-bottom: 48px;
+    padding-top: 0;
+    padding-right: 65px;
+    padding-left: 65px;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    border-bottom: none;
   }
 
   .after-market__column {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .after-market__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     margin-bottom: 70px;
   }
 
-  .after-market-list__item {
-    height: 139px;
-  }
-
   .after-market__lead {
-    box-sizing: border-box;
+    padding-top: 70px;
+    padding-right: 110px;
+    padding-bottom: 70px;
+    padding-left: 420px;
+
+    text-align: left;
+
     background-image: none;
-    min-height: 200px;
-    padding: 0;
-    // временно для сетки
+
+    &::before {
+      left: 118px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .after-market__list {
+    margin-bottom: 0;
+  }
+
   .after-market__title {
-    padding: 0;
-    // временно для сетки
-    min-height: 115px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 
   .after-market__column {
-    padding-left: 110px;
-    padding-right: 110px;
     display: flex;
     justify-content: space-between;
-  }
 
-  .after-market__list {
-    width: 895px;
-    margin-bottom: 0;
-    // временно для сетки
+    padding-right: 110px;
+    padding-left: 110px;
   }
 
   .after-market__lead {
-    width: 245px;
+    padding-top: 185px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
   }
 }

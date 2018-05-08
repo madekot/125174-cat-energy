@@ -1,25 +1,62 @@
 .button {
   display: inline-block;
+
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-right: 27px;
+  padding-bottom: 13px;
+  padding-left: 27px;
 
-  font-size: 14px;
-  line-height: 1.285;
-  font-family: $font-family-main;
-  vertical-align: middle;
   text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
+  vertical-align: middle;
   text-decoration: none;
+  text-transform: uppercase;
 
-  background-color: $color-main;
+  color: $color-white;
   border: none;
+  background-color: $color-main;
+
+  font-family: $font-family-main;
+  line-height: 1.285;
+  font-size: 14px;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-green-down;
+    transition: background-color 0.3s ease;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.302);
+    background-color: $color-green-down;
+    transition: background-color 0.3s ease;
+    transition-duration: 0s;
+  }
 
   &--grey {
     color: $color-black-lightest;
-
     background-color: $color-grey;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-grey-lightest;
+      transition: background-color 0.3s ease;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.302);
+      background-color: $color-grey-lightest-light;
+      transition: all 0.3s ease;
+      transition-duration: 0s;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 1;
   }
 }

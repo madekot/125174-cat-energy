@@ -5,7 +5,7 @@
 
 $mobile-width:                  320px;
 $tablet-width:                  768px;
-$desktop-width:                 1440px;
+$desktop-width:                 1300px;
 
 
 // Цвета используемые в проекте:
@@ -14,24 +14,34 @@ $desktop-width:                 1440px;
 $color-main:                    #68b738;  // основной цвет
 $color-secondary:               #f2f2f2;  // дополнительный цвет
 
+$color-green-down:              #5eaa2f;
+
 $color-white:                   #ffffff;
 $color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
 $color-white-light-opacity:     rgba(255, 255, 255, 0.3);
 
 $color-grey:                    #f2f2f2;
 $color-grey-lightest-light:     #ededed;
+$color-grey-lightest-normal:    #eaeaea;
 $color-grey-lightest:           #e6e6e6;
+$color-grey-lightest-dark:      #dcdcdc;
 $color-grey-dark:               #d9d9d9;
 $color-grey-darken:             #cdcdcd;
-
+$color-grey-darken-dark:        #bebebe;
+$color-grey-darken-dark-dark:   #bababa;
 
 $color-black:                   #111111;
 $color-black-lighten:           #222222;
 $color-black-lightest:          #444444;
+$color-black-dark:              #666666;
+$color-black-darken:            #989898;
 
 $color-black-lightest-opacity:  rgba(17, 17, 17, 0.8);
 $color-black-lighten-opacity:   rgba(17, 17, 17, 0.6);
 $color-black-light-opacity:     rgba(17, 17, 17, 0.3);
+
+$color-white-lighten-opacity:   rgba(255, 255, 255, 0.6);
+$color-white-light-opacity:     rgba(255, 255, 255, 0.3);
 
 
 // Гарнитуры используемые в проекте:

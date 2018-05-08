@@ -1,8 +1,20 @@
 .logo-text {
   background-color: $color-grey;
+  transition: opacity 0.3s ease;
 }
 
 .logo-text__image {
   width: 128px;
   height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    transition-duration: 0s;
+  }
 }
