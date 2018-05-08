@@ -44,10 +44,6 @@
   }
 }
 
-.form__inner {
-  position: relative;
-}
-
 .form__icon {
   position: absolute;
   top: 50%;
@@ -102,14 +98,14 @@
     transition: color, box-shadow 0.3s ease;
   }
 
-  &:focus + .form__icon path  {
-  fill: $color-main;
-  transition: fill 0.3s ease;
+  &:focus + .form__icon path {
+    fill: $color-main;
+    transition: fill 0.3s ease;
   }
 
-  &:invalid + .form__icon path  {
-  fill: #ff8282;
-  transition: fill 0.3s ease;
+  &:invalid + .form__icon path {
+    fill: #ff8282;
+    transition: fill 0.3s ease;
   }
 
   &::-webkit-outer-spin-button,
@@ -231,6 +227,7 @@
 }
 
 .form__inner {
+  position: relative;
   display: flex;
   align-items: center;
 
