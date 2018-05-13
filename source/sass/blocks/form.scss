@@ -14,6 +14,7 @@
 }
 
 .form__title {
+  margin: 0;
   margin-bottom: 36px;
   padding: 0;
   padding-top: 27px;
@@ -29,18 +30,6 @@
 
   &--green-them {
     display: flex;
-  }
-
-  &--green-them::after {
-    flex-grow: 1;
-
-    height: 3px;
-    margin-top: 15px;
-    margin-left: 20px;
-
-    content: "";
-
-    background-color: $color-main;
   }
 }
 
@@ -77,7 +66,7 @@
   line-height: 1.125;
 
   &--coment {
-    min-height: 150px;
+    min-height: 125px;
   }
 
   &::placeholder {
@@ -250,9 +239,11 @@
 }
 
 .form__checkbox-column {
-  margin-bottom: 35px;
-  padding-top: 10px;
+  // margin-bottom: 35px;
+  // padding-top: 10px;
 }
+
+// .form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {
 
 .form__wrapper {
   padding-top: 27px;
@@ -264,18 +255,28 @@
     transition-duration: 0s;
   }
 
-  &--extra {
-    padding: 0;
+  &--contact {
     padding-right: 20px;
     padding-left: 20px;
   }
+
+  &--checkbox {
+    margin-bottom: 35px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.form__column-coment {
-  display: flex;
+.form__column {
+  &--coment {
+    display: flex;
 
-  min-height: 150px;
-  padding-top: 5px;
+    min-height: 150px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .form__column-button {
@@ -287,6 +288,15 @@
   .form {
     font-size: 20px;
     line-height: 1;
+  }
+
+  .form__column {
+    @include desktop-width-form;
+    &--coment {
+      min-height: 175px;
+      padding: 0;
+      margin-bottom: 63px;
+    }
   }
 
   .form__value {
@@ -302,11 +312,11 @@
 
     &--checkbox {
       margin-right: 0;
-      padding-left: 60px;
+      padding-left: 57px;
     }
 
     &--checkbox::after {
-      top: -12px;
+      top: -10px;
       left: 0;
 
       width: 40px;
@@ -314,76 +324,63 @@
     }
   }
 
-  .form__column {
-    margin-bottom: 5px;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-
-  .form__checkbox-column {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: 20px;
-    padding-top: 15px;
-  }
-
+// .form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {
   .form__wrapper {
-    margin-bottom: 70px;
+    @include desktop-width-form;
+    margin-bottom: 75px;
     padding-top: 0;
     padding-bottom: 0;
 
     &--radio {
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 22px;
     }
 
-    &--extra {
-      margin-bottom: 64px;
-      padding-right: 70px;
-      padding-left: 70px;
+    &--contact {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 67px;
+    }
+
+    &--checkbox {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-bottom: 55px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &--button {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
   .form__title {
-    margin-bottom: 80px;
-    padding-top: 0;
-    padding-right: 70px;
-    padding-left: 70px;
+    width: 628px;
+    margin: 0 auto;
+    padding: 0;
 
     font-size: 36px;
     line-height: 1;
 
-    &--medium {
-      min-height: 35px;
-      margin-bottom: 50px;
+    &--contact {
+      margin-bottom: 77px;
     }
 
-    &--green-them {
-      padding-right: 0;
-      padding-left: 0;
+    &--coment {
+      margin-bottom: 77px;
     }
 
-    &--green-them::before {
-      width: 30px;
-      height: 3px;
-      margin-top: 23px;
-      margin-right: 40px;
-
-      content: "";
-
-      background-color: $color-main;
+    &--extra {
+      margin-bottom: 57px;
     }
-
-    &--green-them::after {
-      margin-top: 24px;
-      margin-left: 43px;
-    }
-  }
-
-  .form__column-coment {
-    min-height: 175px;
-    padding-top: 0;
   }
 
   .form__inner {
@@ -399,7 +396,7 @@
 
     &--chekbox {
       width: 220px;
-      margin-bottom: 55px;
+      margin-bottom: 51px;
     }
 
     &--chekbox:last-child,
@@ -429,17 +426,8 @@
     line-height: 1;
 
     &--coment {
-      min-height: 170px;
+      min-height: 150px;
     }
-  }
-
-  .form__column-button {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    padding-right: 70px;
-    padding-left: 70px;
   }
 
   .form__button {
@@ -464,63 +452,62 @@
     margin-bottom: 90px;
   }
 
-  .page-main__desc {
-    padding-right: 950px;
-  }
-
   .form__column {
+    @include desktop-width;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-bottom: 65px;
-    padding-right: 110px;
-    padding-left: 110px;
+    margin-bottom: 70px;
+
+    &--coment {
+      margin-bottom: 65px;
+    }
   }
 
   .form__wrapper {
+    @include desktop-width;
     &--border {
       width: 570px;
       margin: 0;
       padding: 0;
     }
 
-    &--radio {
+    &--contact {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      margin-bottom: 68px;
+    }
 
-      min-height: 196px;
+    &--radio {
+      padding-top: 20px;
+      padding-bottom: 25px;
     }
 
     &--extra {
       margin-bottom: 70px;
     }
+
+    &--checkbox {
+      margin-bottom: 62px;
+    }
   }
 
   .form__title {
-    margin-bottom: 75px;
+    @include desktop-width;
     padding-left: 0;
 
-    &--medium {
-      margin-bottom: 70px;
+    &--contact {
+      margin-bottom: 77px;
     }
 
-    &--green-them::before {
-      width: 70px;
+    &--coment {
+      margin-bottom: 77px;
     }
-  }
 
-  .form__column-coment {
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-
-  .form__checkbox-column {
-    margin-bottom: 70px;
-    padding-top: 0;
-    padding-right: 110px;
-    padding-left: 110px;
+    &--extra {
+      margin-bottom: 57px;
+    }
   }
 
   .form__inner {
@@ -536,7 +523,7 @@
 
 
     &--chekbox:nth-child(odd) {
-      margin-right: 75px;
+      margin-right: 77px;
     }
 
     &--chekbox:last-child {
@@ -550,10 +537,8 @@
   }
 
   .form__column-button {
+    @include desktop-width;
     justify-content: flex-start;
-
-    padding-right: 110px;
-    padding-left: 110px;
   }
 
   .form__button {

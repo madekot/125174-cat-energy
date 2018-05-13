@@ -11,11 +11,21 @@
 
   color: $color-black;
   background-color: $color-white;
+
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(#65a93c 305px, $color-white 305px);
   background-repeat: no-repeat;
   background-position: top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(#65a93c 305px, $color-white 305px);
+    background-size:
+      320px auto,
+      auto;
+  }
 
   font-family: $font-family-main;
   font-size: 14px;
@@ -49,6 +59,10 @@
   margin: 0 auto;
 }
 
+.preview__button {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .preview {
     text-align: left;
@@ -57,9 +71,14 @@
     font-size: 20px;
     z-index: 5;
 
-    padding-top: 30px;
+    padding-top: 55px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .preview__image {
+    width: 709px;
+    height: 609px;
   }
 
   .preview__title {
@@ -69,49 +88,62 @@
   }
 
   .preview__column-text {
-    width: 485px;
-    margin: 0 auto;
+    width: 425px;
+    padding-left: 86px;
+    margin-bottom: 20px;
+  }
+
+  .preview__column-image {
+    position: relative;
   }
 
   .preview__slogan {
     font-size: 20px;
     line-height: 1;
     color: $color-black;
-    margin-bottom: 50px;
-  }
-
-  .preview__column-image {
-    width: 708px;
-    margin: 0 auto;
-    position: relative;
+    margin-bottom: 0;
   }
 
   .preview__button {
     position: absolute;
-    top: 0;
-    left: 110px;
+    width: 192px;
+    top: 30px;
+    left: 85px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .preview {
-    min-height: auto;
-    padding-top: 30px;
-    // padding-left: 190px;
+    box-sizing: border-box;
+    padding-top: 107px;
+    padding-left: 77px;
+    background-color: transparent;
+    min-height: 582px;
+  }
 
-    // background-image: linear-gradient(to left, $color-main 50%, $color-white 50%);
+  .preview__column-text {
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .preview__column-image {
+    position: static;
   }
 
   .preview__slogan {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .preview__image {
-    top: -45px;
+    position: absolute;
+    top: 27px;
+    right: 222px;
+    width: 552px;
+    height: 499px;
+  }
 
-    width: 515px;
-    height: auto;
-
-    transform: translate(-25%);
+  .preview__button {
+    position: static;
   }
 }

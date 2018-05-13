@@ -1,4 +1,7 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: $color-black-lightest;
   background-color: $color-grey;
 
@@ -9,12 +12,30 @@
 
 .copyright__text {
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
 .copyright__link {
-  padding-left: 22px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 23px;
+  padding-right: 0;
+
+  &:hover .copyright__image {
+    path {
+      fill: $color-main;
+      transition: fill 0.3s ease;
+    }
+  }
+
+  &:active .copyright__image {
+    path {
+      opacity: 0.3;
+
+      fill: $color-main;
+      transition: fill 0.3s ease;
+      transition-duration: 0s;
+    }
+  }
 }
 
 .copyright__image {
@@ -25,21 +46,11 @@
     fill: $color-black-dark;
     transition: fill 0.3s ease;
   }
+}
 
-  &:hover {
-    path {
-      fill: $color-main;
-      transition: fill 0.3s ease;
-    }
-  }
-
-  &:active {
-    path {
-      opacity: 0.3;
-
-      fill: $color-main;
-      transition: fill 0.3s ease;
-      transition-duration: 0s;
-    }
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }

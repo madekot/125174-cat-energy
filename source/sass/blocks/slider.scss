@@ -43,3 +43,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__list {
+    left: 0px;
+    width: 565px;
+    height: 670px;
+  }
+}

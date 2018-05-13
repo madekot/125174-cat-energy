@@ -4,3 +4,23 @@
 
   list-style: none;
 }
+
+@mixin mobile-width {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@mixin table-width {
+  width: 708px;
+  margin: 0 auto;
+}
+
+@mixin desktop-width {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+@mixin desktop-width-form {
+  width: 628px;
+  margin: 0 auto;
+}

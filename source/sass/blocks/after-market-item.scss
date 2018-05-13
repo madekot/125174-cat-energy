@@ -18,7 +18,6 @@
 }
 
 .after-market-item__title {
-  // margin-top: 15px;
   margin-top: 0;
   margin-bottom: 15px;
 
@@ -44,7 +43,6 @@
 .after-market-item__button {
   display: block;
 
-  // margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -106,6 +104,13 @@
   .after-market-item__title {
     width: 325px;
     margin-bottom: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .after-market-item__wrapper {
+    padding-top: 14px;
+    padding-bottom: 8px;
   }
 
   .after-market-item__value {
@@ -115,9 +120,6 @@
   }
 
   .after-market-list__item {
-    align-items: center;
-    justify-content: flex-start;
-
     padding-top: 15px;
     padding-right: 0;
     padding-bottom: 15px;

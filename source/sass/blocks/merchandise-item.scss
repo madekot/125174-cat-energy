@@ -18,6 +18,7 @@
   padding-bottom: 24px;
 
   &--last {
+    width: 324px;
     padding-top: 80px;
     flex-direction: column;
 
@@ -102,6 +103,10 @@
     font-size: 16px;
     line-height: 1;
     border: none;
+
+    &--alternative {
+      display: flex;
+    }
   }
 
   .merchandise-item__content {
@@ -123,16 +128,28 @@
 
         width: 60px;
         height: 60px;
+        background-image: url("../img/icon-plus.svg");
       }
     }
   }
 
   .merchandise-item__image {
     position: absolute;
-    top: 0;
     left: 50%;
 
     transform: translate(-50%);
+
+    &--small {
+      top: -46px;
+      width: 324px;
+      height: 172px;
+    }
+
+     &--big {
+      top: -80px;
+      width: 324px;
+      height: 208px;
+    }
   }
 
   .merchandise-item__column {
@@ -160,7 +177,7 @@
     line-height: 1;
 
     &--more {
-      margin-bottom: 25px;
+      margin-bottom: 29px;
 
       background-color: $color-white;
     }

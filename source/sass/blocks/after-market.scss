@@ -51,6 +51,11 @@
   background-repeat: no-repeat;
   background-position: top center;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+
   font-size: 16px;
   line-height: 1.25;
 
@@ -71,17 +76,16 @@
 
 @media (min-width: $tablet-width) {
   .after-market__title {
-    margin-bottom: 48px;
-    padding-top: 0;
-    padding-right: 65px;
-    padding-left: 65px;
-
+    @include desktop-width-form;
+    padding: 0;
     border-bottom: none;
+    margin-bottom: 80px;
   }
 
   .after-market__column {
-    padding-right: 30px;
-    padding-left: 30px;
+    @include table-width;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .after-market__list {
@@ -100,7 +104,11 @@
 
     text-align: left;
 
-    background-image: none;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
 
     &::before {
       left: 118px;
@@ -109,21 +117,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .after-market__list {
-    margin-bottom: 0;
-  }
-
   .after-market__title {
-    padding-right: 110px;
-    padding-left: 110px;
+    @include desktop-width;
+    margin-bottom: 80px;
   }
 
   .after-market__column {
+    @include desktop-width;
     display: flex;
-    justify-content: space-between;
+  }
 
-    padding-right: 110px;
-    padding-left: 110px;
+  .after-market__list {
+    margin-right: auto;
+    margin-bottom: 0;
   }
 
   .after-market__lead {
@@ -131,5 +137,11 @@
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }

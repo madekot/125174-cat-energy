@@ -68,28 +68,17 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 768px;
     margin: 0 auto;
     font-size: 20px;
     line-height: 1.5;
   }
 
-  .page-main__inner {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .page-main__programs {
-    margin-bottom: 45px;
-  }
-
-  .page-main__preview {
-    margin-bottom: 0;
-  }
-
   .page-main__title {
+    @include table-width;
     margin-bottom: 55px;
-    padding: 30px;
+    padding: 0;
+    padding-top: 51px;
+
 
     font-size: 60px;
     line-height: 1;
@@ -99,14 +88,24 @@
     }
   }
 
-  .page-main__title--size-medium {
-    margin-bottom: 25px;
+  .page-main__inner {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .page-main__programs {
+    @include table-width;
+    margin-bottom: 45px;
+  }
+
+  .page-main__preview {
+    @include table-width;
   }
 
   .page-main__desc {
-    margin-bottom: 65px;
-    padding-right: 375px;
-    padding-left: 70px;
+    @include  desktop-width-form;
+    margin-bottom: 67px;
+    padding: 0;
   }
 
   .page-main__system {
@@ -122,7 +121,8 @@
   }
 
   .page-main__merchandise {
-    margin-bottom: 40px;
+    @include table-width;
+    margin-bottom: 69px;
   }
 
   .page-main__form {
@@ -132,19 +132,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    width: 1440px;
-    margin: 0 auto;
+  .page-main__title {
+    @include desktop-width;
+    margin-bottom: 0px;
+    padding-top: 74px;
+    margin-bottom: 82px;
+
+    &--size {
+      margin-bottom: 54px;
+    }
   }
 
-  .page-main__title {
-    margin-bottom: 20px;
-    padding-top: 0;
-    padding-right: 110px;
-    padding-left: 110px;
+  .page-main__desc {
+    @include desktop-width;
+    margin-bottom: 67px;
+  }
+
+  .page-main__merchandise {
+    @include desktop-width;
+    margin-bottom: 80px;
   }
 
   .page-main__programs {
+    @include desktop-width;
     margin-bottom: 75px;
   }
 
@@ -154,11 +164,8 @@
   }
 
   .page-main__preview {
+    @include desktop-width;
     margin-bottom: 80px;
-  }
-
-  .page-main__merchandise {
-    margin-bottom: 0;
   }
 
   .page-main__after-market {
@@ -167,9 +174,5 @@
 
   .page-main__form {
     margin-bottom: 80px;
-  }
-
-  .page-main__desc {
-    margin-bottom: 67px;
   }
 }
