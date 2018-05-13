@@ -39,33 +39,14 @@
 
 @media (min-width: $tablet-width) {
   .title {
-    // position: relative;
-    // z-index: 5;
     font-size: 36px;
-    // background-color: $color-white; ----
 
     &--theme-green {
-      // &::before {
-      //   z-index: -5;
-      //   content: "";
-      //   position: absolute;
-      // //   width: 100%;
-      //   top: 13px;
-      //   left: 0;
-      //   height: 3px;
-      //   margin-right: 40px;
-      //   margin-top: 9px;
-      //   box-shadow:
-      //     -500px 0 0 0 #68b738,
-      //     500px 0 0 0 #68b738;
-      //
-      //   background-color: $color-main;
-      // }
       &::before {
         top: 13px;
       }
+    }
   }
-}
 
   .title__text {
     background-color: $color-white;

@@ -53,26 +53,21 @@
 }
 
 @media (min-width: $desktop-width) {
-    .merchandise-catalog-list__item {
-      width: 245px;
-      padding-top: 80px;
+  .merchandise-catalog-list__item {
+    width: 245px;
+    padding-top: 80px;
 
-      &:nth-child(n) {
-        margin-right: 80px;
-        margin-bottom: 60px;
-      }
+    &:nth-child(n) {
+      margin-right: 80px;
+      margin-bottom: 60px;
+    }
 
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
-      &:nth-last-child(-n+4) {
-        margin-bottom: 0;
-      }
-
-    .merchandise-catalog-list__desc {
-      padding-right: 0;
-      padding-left: 0;
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
     }
   }
 }

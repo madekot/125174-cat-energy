@@ -292,6 +292,7 @@
 
   .form__column {
     @include desktop-width-form;
+
     &--coment {
       min-height: 175px;
       padding: 0;
@@ -324,7 +325,6 @@
     }
   }
 
-// .form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {
   .form__wrapper {
     @include desktop-width-form;
     margin-bottom: 75px;
@@ -467,6 +467,7 @@
 
   .form__wrapper {
     @include desktop-width;
+
     &--border {
       width: 570px;
       margin: 0;

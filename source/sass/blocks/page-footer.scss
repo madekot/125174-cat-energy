@@ -46,9 +46,6 @@
   @include reset-list;
 }
 
-.page-footer__copyright {
-}
-
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 100%;
@@ -71,18 +68,18 @@
   }
 
   .page-footer__map {
-
     min-height: 395px;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 143px;
-        left: 42.5%;
-        width: 124px;
-        height: 106px;
-        background-image: url("../img/map-pin.png");
-        z-index: 10;
-      }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 143px;
+      left: 42.5%;
+      width: 124px;
+      height: 106px;
+      background-image: url("../img/map-pin.png");
+      z-index: 10;
+    }
   }
 
   .page-footer__bottom {

@@ -103,7 +103,7 @@
   }
 
   .page-main__desc {
-    @include  desktop-width-form;
+    @include desktop-width-form;
     margin-bottom: 67px;
     padding: 0;
   }
@@ -134,7 +134,6 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     @include desktop-width;
-    margin-bottom: 0px;
     padding-top: 74px;
     margin-bottom: 82px;
 
