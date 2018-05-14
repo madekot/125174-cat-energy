@@ -1,33 +1,30 @@
 .logo {
-  padding-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 12px;
-  padding-right: 20px;
-}
+  padding-top: 11px;
+  padding-bottom: 10px;
 
-.logo__img {
-  width: 191px;
-  height: 38px;
-  transition: opacity 0.3s ease;
-
-  &:hover {
+  &:hover .logo__img {
     opacity: 0.8;
     transition: opacity 0.3s ease;
   }
 
-  &:active {
+  &:active .logo__img {
     opacity: 0.6;
     transition: opacity 0.3s ease;
     transition-duration: 0s;
   }
 }
 
+.logo__img {
+  width: 191px;
+  height: 38px;
+  transition: opacity 0.3s ease;
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     display: flex;
-    padding-top: 24px;
-    padding-left: 30px;
-    padding-bottom: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
     flex-grow: 1;
   }
 

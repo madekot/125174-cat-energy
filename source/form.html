@@ -7,39 +7,51 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--color">
-      <div class="page-header__inner">
-        <a class="page-header__logo logo" href="#">
-          <img class="logo__img" width="191" height="38" src="img/logo-mobile.svg">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <img  class="page-header__toggle-svg" src="img/icon-plus-mobile.svg">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
+      <div class="page-header__wrapper">
+        <div class="page-header__inner">
+          <div class="page-header__top">
+            <a class="page-header__logo logo" href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
+              </picture>
+            </a>
+            <button class="page-header__toggle page-header__toggle--close" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+        </div>
 
-      <nav class="page-header__nav">
-        <ul class="page-header__list site-list site-list--color">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--color" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--color" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--color site-list__link--current site-list__link--current-color" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="page-header__nav">
+          <ul class="page-header__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--color" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--color" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--color site-list__link--current site-list__link--current-color" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
     <main class="page-main">
-      <h1 class="page-main__title page-main__title--size-medium">Подбор программы</h1>
+      <h1 class="page-main__title page-main__title--size">Подбор программы</h1>
       <p class="page-main__desc page-main__inner">
-        Заполните анкету и мы подберем программу питания для вашего кота
+        Заполните анкету и мы подберем<br> программу питания для вашего кота
       </p>
       <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
           <div class="form__column">
@@ -95,11 +107,11 @@
 
           <fieldset class="fieldset">
             <legend class="form__legend">
-              <div class="form__title form__title--green-them">
-                <span>Контактные данные (владельца кота)</span>
-              </div>
+              <h2 class="form__title form__title--contact title title--theme-green">
+                <span class="title__text">Контактные данные (владельца кота)</span>
+              </h2>
             </legend class="form__legend">
-            <div class="form__wrapper form__wrapper--extra form__column">
+            <div class="form__wrapper form__wrapper--contact">
               <p class="form__inner form__inner--extra">
                 <label class="form__value" for="e-mail">E-mail:*</label>
                 <input class="form__field form__field--email" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
@@ -125,9 +137,11 @@
 
           <fieldset class="fieldset">
             <legend class="form__legend">
-              <div class="form__title form__title--green-them">Комментарий</div>
+              <div class="form__title form__title--coment title title--theme-green">
+                <span class="title__text">Комментарий</span>
+              </div>
             </legend>
-            <div class="form__column-coment form__wrapper--extra">
+            <div class="form__column form__column--coment form__column-coment">
               <textarea class="form__field form__field--coment" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -135,9 +149,10 @@
 
           <fieldset class="fieldset">
             <legend class="form__legend">
-              <div class="form__title form__title--green-them form__title--medium">Дополнительно</div>
+              <div class="form__title form__title--extra title title--theme-green">
+                <span class="title__text">Дополнительно</span></div>
             </legend>
-            <div class="form__checkbox-column form__wrapper--extra">
+            <div class="form__wrapper form__wrapper--checkbox form__checkbox-column">
               <p class="form__inner form__inner--chekbox">
                 <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="form__value form__value--checkbox" for="sweetener">Сахарозаменитель</label>
@@ -159,7 +174,7 @@
               </p>
             </div>
           </fieldset>
-          <div class="form__column-button">
+          <div class="form__wrapper form__wrapper--button form__column-button">
             <button class="form__button button" type="submit">
               Отправить заявку
             </button>
@@ -170,103 +185,112 @@
 
 
     <footer class="page-footer">
-      <div class="page-footer__contact page-footer__inner contact contact--color">
-        <p class="contact__lead">
-          Приглашаем к&nbsp;сотрудничеству дилеров!
-        </p>
-        <p class="contact__text">
-          <span class="contact__text-more">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="contact__text-more">Санкт-Петербург</span>
-        </p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contact page-footer__inner contact contact--color">
+          <p class="contact__lead">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </p>
+          <p class="contact__text">
+            <span class="contact__text-more">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contact__text-more">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
 
       <div class="page-footer__map map">
-        <img class="map__image" src="img/bg-map-mobile@1x.png"
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile_2x.png 2x"
           alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </div>
 
-      <div class="page-footer__bottom page-footer__inner">
-        <a class="page-footer__logo-text logo-text" href="index.html">
-          <img class="logo-text__image" src="img/logo-footer.svg">
-        </a>
-
-        <ul class="page-footer__social social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <svg class="social-list__image" width="22" height="12"  version="1.1" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
-                <g>
-                  <path
-                    d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
-                  c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
-                  c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
-                  C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
-                  c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
-                  c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
-                  c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
-                  c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
-                  c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
-                  c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
-                  C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
-                  c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
-                  c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
-                  c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
-                  c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/>
-                </g>
-              </svg>
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <svg class="social-list__image" width="16" height="16" version="1.1" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-                <style type="text/css">
-                  .social-list__image-instagram {
-                    fill: #666666;
-                  }
-                </style>
-                <path class="st110" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
-                L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
-                <path class="st110" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
-                C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
-                <circle class="st110" cx="12.3" cy="3.7" r="0.9"/>
-              </svg>
-              <span class="visually-hidden">Мы в Инстаграме</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <svg class="social-list__image"  width="10" height="19"
-              version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19"
-              style="enable-background:new 0 0 10 19;" xml:space="preserve">
-                <g>
-                  <path
-                    d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
-                    M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
-                    H1.1v2.3h2V18z"/>
-                </g>
-              </svg>
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__image" width="27" height="34"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 60 60">
-              <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
-              36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7
-              11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9
-              1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-            </svg>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__bottom page-footer__inner">
+          <a class="page-footer__logo-text logo-text" href="index.html">
+            <img class="logo-text__image" src="img/logo-footer.svg">
           </a>
+
+          <ul class="page-footer__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg class="social-list__image social-list__image--vk" width="22" height="12"  version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                  <g>
+                    <path
+                      d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+                    c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
+                    c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2
+                    C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0
+                    c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9
+                    c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5
+                    c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3
+                    c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1
+                    c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7
+                    c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0
+                    C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3
+                    c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2
+                    c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8
+                    c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1
+                    c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/>
+                  </g>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg class="social-list__image social-list__image--instagram" width="16" height="16" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                  <style type="text/css">
+                    .social-list__image-instagram {
+                      fill: #666666;
+                    }
+                  </style>
+                  <path class="st110" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                  L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/>
+                  <path class="st110" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                  C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/>
+                  <circle class="st110" cx="12.3" cy="3.7" r="0.9"/>
+                </svg>
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg class="social-list__image social-list__image--fb"  width="10" height="19"
+                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19"
+                style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                  <g>
+                    <path
+                      d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
+                      M3.1,18h2.8V9.1h2.9V6.8H5.9l0-0.5c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6
+                      H1.1v2.3h2V18z"/>
+                  </g>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">HTML Academy</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__image" width="27" height="34"  xmlns="http://www.w3.org/2000/svg"  viewBox="10 10 40 40">
+                <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
+                36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7
+                11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9
+                1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

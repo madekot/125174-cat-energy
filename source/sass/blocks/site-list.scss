@@ -60,17 +60,14 @@
   }
 
   .site-list__link {
-    padding-top: 42px;
-    padding-bottom: 0;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 18px;
 
     &--current {
       position: relative;
 
       &::after {
         position: absolute;
-        bottom: 31px;
+        bottom: 8px;
         left: 50%;
         transform: translate(-50%);
 
@@ -93,7 +90,7 @@
   .site-list {
     max-width: none;
     color: $color-white;
-    background-color: $color-main;
+    background-color: transparent;
 
     font-size: 20px;
     line-height: 1.243;

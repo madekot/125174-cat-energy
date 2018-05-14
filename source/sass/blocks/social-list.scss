@@ -21,18 +21,13 @@
   padding-right: 20px;
   padding-top: 26px;
   padding-bottom: 24px;
-}
 
-.social-list__image {
-  fill: $color-black-dark;
-  transition: fill 0.3s ease;
-
-  &:hover {
+  &:hover .social-list__image {
     fill: $color-main;
     transition: fill 0.3s ease;
   }
 
-  &:active {
+  &:active .social-list__image {
     opacity: 0.3;
     fill: $color-main;
     transition: fill 0.3s ease;
@@ -40,21 +35,34 @@
   }
 }
 
+.social-list__image {
+  fill: $color-black-dark;
+  transition: fill 0.3s ease;
+}
+
 @media (min-width: $tablet-width) {
   .social-list {
     border: none;
   }
 
-  .social-list__item {
-    &:not(:first-child) {
-      // padding-left: 28px;
-    }
+  .social-list__link {
+    padding: 14px;
   }
 
-  .social-list__link {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .social-list__image {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

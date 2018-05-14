@@ -91,7 +91,7 @@
 
   &::after {
     position: absolute;
-    right: 3px;
+    right: 14px;
     bottom: 6px;
 
     width: 24px;
@@ -105,12 +105,12 @@
   }
 
   &:hover.program__link::after {
-    right: 10px;
+    right: 6px;
 
     width: 31px;
     height: 11px;
 
-    background-image: url("../img/right-arrow-verylong.png");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active,
@@ -123,10 +123,10 @@
   .program {
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 80px;
+    padding-top: 75px;
     padding-right: 55px;
     padding-bottom: 55px;
-    padding-left: 55px;
+    padding-left: 52px;
   }
 
   .program__title {
@@ -168,15 +168,19 @@
 
   .program__desc {
     padding-bottom: 0;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     border: none;
 
     &--text-diet {
-      padding-right: 225px;
+      width: 380px;
     }
 
     &--text-raise {
-      padding-right: 255px;
+      width: 380px;
+
+      span {
+        display: block;
+      }
     }
   }
 
@@ -184,16 +188,17 @@
     font-size: 20px;
 
     &::after {
-      right: 10px;
+      right: 2px;
+      bottom: 9px;
     }
 
     &:hover.program__link::after {
-      right: 3px;
+      right: -5px;
 
       width: 31px;
       height: 11px;
 
-      background-image: url("../img/right-arrow-verylong.png");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 }
@@ -243,6 +248,7 @@
   .program__desc {
     margin-bottom: 30px;
     padding-right: 50px;
+    width: auto;
 
     &--text-diet {
       padding-right: 0;
@@ -250,6 +256,10 @@
 
     &--text-raise {
       padding-right: 0;
+    }
+
+    span {
+      display: inline;
     }
   }
 }

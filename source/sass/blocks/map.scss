@@ -10,3 +10,21 @@
   top: -40px;
   left: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    position: absolute;
+    width: 767px;
+    height: 400px;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    width: 1440px;
+    height: 400px;
+  }
+}

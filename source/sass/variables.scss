@@ -30,6 +30,7 @@ $color-grey-darken:             #cdcdcd;
 $color-grey-darken-dark:        #bebebe;
 $color-grey-darken-dark-dark:   #bababa;
 
+$color-black-darkest:           #000000;
 $color-black:                   #111111;
 $color-black-lighten:           #222222;
 $color-black-lightest:          #444444;
@@ -52,3 +53,7 @@ $font-family-secondary:         "Arial", sans-serif;
 // weight текста используемые в проекте:
 $font-weight-regular:           400;
 $font-weight-medium:            500;
+
+// ретина используемые в проекте:
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
