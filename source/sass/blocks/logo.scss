@@ -1,6 +1,5 @@
 .logo {
-  padding-top: 11px;
-  padding-bottom: 10px;
+  padding-top: 7px;
 
   &:hover .logo__img {
     opacity: 0.8;
@@ -22,9 +21,8 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    display: flex;
     padding-top: 0;
-    padding-bottom: 0;
+    display: flex;
     flex-grow: 1;
   }
 

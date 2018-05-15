@@ -16,35 +16,26 @@
   padding-bottom: 35px;
 }
 
+.copyright__image {
+  fill: $color-black-dark;
+  transition: fill 0.3s ease;
+}
+
 .copyright__link {
   padding: 23px;
   padding-right: 0;
 
   &:hover .copyright__image {
-    path {
-      fill: $color-main;
-      transition: fill 0.3s ease;
-    }
+    fill: $color-main;
+    transition: fill 0.3s ease;
   }
 
   &:active .copyright__image {
-    path {
-      opacity: 0.3;
+    opacity: 0.3;
 
-      fill: $color-main;
-      transition: fill 0.3s ease;
-      transition-duration: 0s;
-    }
-  }
-}
-
-.copyright__image {
-  // width: 27px;
-  // height: 34px;
-
-  path {
-    fill: $color-black-dark;
+    fill: $color-main;
     transition: fill 0.3s ease;
+    transition-duration: 0s;
   }
 }
 

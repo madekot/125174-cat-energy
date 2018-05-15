@@ -8,6 +8,16 @@
   font-size: 20px;
   font-weight: $font-weight-medium;
   line-height: 1;
+
+  &--no-js {
+    .page-header__toggle {
+      display: none;
+    }
+
+    .page-header__nav {
+      display: block;
+    }
+  }
 }
 
 .page-header__logo {
@@ -20,13 +30,12 @@
 }
 
 .page-header__toggle {
+  display: block;
+  width: 64px;
+  height: 54px;
+  position: relative;
   margin: 0;
   margin-right: -20px;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 21px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   cursor: pointer;
 
@@ -35,12 +44,52 @@
 
   &--close::before {
     content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+
+    left: 50%;
+    top: 50%;
+
+    background-color: $color-black-lighten;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &--close::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 24px;
+
+    left: 50%;
+    top: 50%;
+
+    background-color: $color-black-lighten;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &--open::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black-lighten;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:
+      0 -6px 0 0 $color-black-lighten,
+      0 6px 0 0 $color-black-lighten;
+  }
+}
+
+.page-header__nav {
+  &--close {
+    display: none;
+  }
+
+  &--open {
     display: block;
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/icon-close.svg");
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
   }
 }
 
@@ -50,6 +99,8 @@
 
 .page-header__top {
   @include mobile-width;
+  padding-top: 17px;
+  padding-bottom: 5px;
   display: flex;
   align-items: flex-start;
 }
@@ -65,6 +116,14 @@
     padding-bottom: 3px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-header__nav {
+    display: flex;
+
+    &--close {
+      display: block;
+    }
   }
 
   .page-header__wrapper {
@@ -92,10 +151,6 @@
     margin-right: -18px;
   }
 
-  .page-header__nav {
-    display: flex;
-  }
-
   .page-header__inner {
     width: 192px;
     margin-right: auto;
@@ -103,6 +158,9 @@
   }
 
   .page-header__top {
+    padding-top: 0;
+    padding-bottom: 0;
+
     width: auto;
     margin: auto;
   }
@@ -116,7 +174,7 @@
     padding-top: 54px;
     padding-bottom: 0;
 
-    &::after {
+    &--image::after {
       content: "";
       z-index: -10;
       position: absolute;

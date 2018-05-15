@@ -60,6 +60,11 @@
     text-align: left;
   }
 
+  .contact__content {
+    @include desktop-width;
+    min-height: 395px;
+  }
+
   .contact {
     &--color {
       background-color: $color-white;
