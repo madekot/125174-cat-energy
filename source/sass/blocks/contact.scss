@@ -63,6 +63,8 @@
   .contact__content {
     @include desktop-width;
     min-height: 395px;
+    padding-top: 90px;
+    box-sizing: border-box;
   }
 
   .contact {

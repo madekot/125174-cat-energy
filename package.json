@@ -12,6 +12,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-sass": "4.0.x",
+    "picturefill": "^3.0.2",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
