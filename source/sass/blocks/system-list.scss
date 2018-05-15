@@ -89,6 +89,10 @@
       margin-bottom: 0;
     }
 
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
     &::after {
       content: counter(flag);
       position: absolute;
@@ -122,18 +126,14 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-  .system-list__item {
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .system-list__item {
     margin-right: 80px;
     margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
 
     &:last-child {
       margin-right: 0;

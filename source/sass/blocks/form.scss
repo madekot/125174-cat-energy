@@ -33,6 +33,10 @@
   }
 }
 
+.form__text-contact {
+  width: 185px;
+}
+
 .form__icon {
   position: absolute;
   top: 50%;
@@ -67,6 +71,7 @@
 
   &--coment {
     min-height: 125px;
+    resize: none;
   }
 
   &::placeholder {
@@ -93,7 +98,7 @@
   }
 
   &:invalid + .form__icon path {
-    fill: #ff8282;
+    // fill: #ff8282; eror
     transition: fill 0.3s ease;
   }
 
@@ -104,6 +109,12 @@
 
   &--number {
     appearance: textfield;
+  }
+
+  &--field-error,
+  &--field-error:hover,
+  &--field-error:focus {
+    box-shadow: 0 0 0 2px $color-error;
   }
 }
 
@@ -243,8 +254,6 @@
   // padding-top: 10px;
 }
 
-// .form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {.form__checkbox-column {
-
 .form__wrapper {
   padding-top: 27px;
   padding-bottom: 27px;
@@ -274,6 +283,7 @@
 
     min-height: 150px;
     padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -298,6 +308,10 @@
       padding: 0;
       margin-bottom: 63px;
     }
+  }
+
+  .form__text-contact {
+    width: auto;
   }
 
   .form__value {

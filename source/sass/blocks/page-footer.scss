@@ -69,17 +69,6 @@
 
   .page-footer__map {
     min-height: 395px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 143px;
-      left: 42.5%;
-      width: 124px;
-      height: 106px;
-      background-image: url("../img/map-pin.png");
-      z-index: 10;
-    }
   }
 
   .page-footer__bottom {
@@ -118,9 +107,10 @@
   }
 
   .page-footer__map {
-    &::before {
-      left: 69.5%;
-    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .page-footer__logo-text {
@@ -128,9 +118,10 @@
   }
 
   .page-footer__contact {
-    position: absolute;
+    margin: 0;
+    position: relative;
     top: 90px;
-    left: 109px;
+    left: 0;
 
     width: 570px;
     height: 200px;
