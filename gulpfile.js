@@ -23,10 +23,10 @@ gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss(
-      [autoprefixer()],
-      [normalize(({ /* options */ }))]
-    ))
+    .pipe(postcss([
+      autoprefixer(),
+      normalize({forceImport: true})
+    ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
