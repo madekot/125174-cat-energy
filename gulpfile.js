@@ -17,14 +17,16 @@ var build = require("run-sequence");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var normalize = require("postcss-normalize");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss(
+      [autoprefixer()],
+      [normalize(({ /* options */ }))]
+    ))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
