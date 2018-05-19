@@ -18,11 +18,11 @@
       content: "";
       position: absolute;
       width: 100%;
-      top: 30px;
+      top: 47px;
       left: 0;
       height: 3px;
-      margin-right: 40px;
-      margin-top: 9px;
+      // margin-right: 40px;
+      // margin-top: 9px;
       box-shadow:
         -500px 0 0 0 #68b738,
         500px 0 0 0 #68b738;
@@ -30,12 +30,12 @@
       background-color: $color-main;
     }
   }
-
+}
   .title__text {
     background-color: $color-white;
     box-shadow: 24px 0 0 #ffffff, -24px 0 0 #ffffff;
   }
-}
+
 
 @media (min-width: $tablet-width) {
   .title {
@@ -43,13 +43,13 @@
 
     &--theme-green {
       &::before {
-        top: 13px;
+        top: 22px;
       }
     }
   }
 
   .title__text {
     background-color: $color-white;
-    box-shadow: 43px 0 0 #ffffff, -43px 0 0 #ffffff;
+    box-shadow: 33px 0 0 #ffffff, -43px 0 0 #ffffff;
   }
 }

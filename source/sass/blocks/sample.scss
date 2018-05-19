@@ -8,7 +8,7 @@
 }
 
 .sample__column {
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .sample__illustration {
@@ -18,7 +18,7 @@
 
 
 .sample__column-mutation {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 }
 
 .sample__after {
@@ -71,7 +71,7 @@
 
   width: 85px;
   height: 12px;
-  margin-right: 20px;
+  margin-right: 13px;
   margin-left: 20px;
 
   border: 1px solid $color-grey-darken;
@@ -80,9 +80,9 @@
 }
 
 .sample__switch {
-  width: 30px;
+  width: 33px;
   height: 6px;
-  margin-left: 5px;
+  margin-left: 6px;
   padding: 4px;
 
   border: none;
@@ -97,6 +97,7 @@
 
   border: none;
   background-color: transparent;
+  font: inherit;
 }
 
 .sample__image {
@@ -154,7 +155,7 @@
     @include table-width;
     position: relative;
 
-    padding-top: 365px;
+    padding-top: 370px;
     padding-bottom: 71px;
 
     background-image: linear-gradient(to right, $color-grey 50%, $color-grey-lightest-normal 50%);
@@ -228,6 +229,7 @@
   .sample__progress-slider {
     width: 428px;
     height: 6px;
+    margin-right: 22px;
 
     border: none;
     background-color: $color-grey-lightest-dark;

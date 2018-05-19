@@ -90,7 +90,7 @@
   .preview__column-text {
     width: 425px;
     padding-left: 86px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .preview__column-image {
@@ -106,9 +106,12 @@
 
   .preview__button {
     position: absolute;
-    width: 192px;
     top: 30px;
-    left: 85px;
+    left: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -132,7 +135,7 @@
   }
 
   .preview__slogan {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .preview__image {
@@ -145,5 +148,7 @@
 
   .preview__button {
     position: static;
+    padding-left: 29px;
+    padding-right: 29px;
   }
 }

@@ -32,6 +32,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact {
+    &--color {
+      background-color: $color-grey;
+    }
+  }
+
   .contact__lead {
     font-size: 20px;
     line-height: 1.25;
@@ -60,16 +66,7 @@
     text-align: left;
   }
 
-  .contact__content {
-    @include desktop-width;
-    min-height: 395px;
-    padding-top: 90px;
-    box-sizing: border-box;
-  }
-
   .contact {
-    &--color {
-      background-color: $color-white;
-    }
+    background-color: $color-white;
   }
 }

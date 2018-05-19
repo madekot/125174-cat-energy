@@ -19,6 +19,8 @@
   min-height: 115px;
   padding-top: 30px;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-footer__logo-text {
@@ -30,9 +32,10 @@
 }
 
 .page-footer__map {
+  height: 362px;
+  z-index: 10;
   position: relative;
-
-  min-height: 360px;
+  overflow: hidden;
 }
 
 .page-footer__inner {
@@ -48,7 +51,15 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: 100%;
+    &--color {
+      background-color: $color-grey;
+    }
+  }
+
+  .page-footer__content {
+    &--color {
+      background-color: $color-grey;
+    }
   }
 
   .page-footer__inner {
@@ -68,7 +79,7 @@
   }
 
   .page-footer__map {
-    min-height: 395px;
+    min-height: 396px;
   }
 
   .page-footer__bottom {
@@ -98,6 +109,9 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     position: relative;
+      &--color {
+        background-color: $color-white;
+      }
   }
 
   .page-footer__inner {
@@ -106,12 +120,21 @@
     padding-left: 0;
   }
 
-  .page-footer__map {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+  .page-footer__content {
+    min-height: 395px;
+    box-sizing: border-box;
+
+    &--color {
+      background-color: $color-white;
+    }
   }
+
+  // .page-footer__map {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translate(-50%);
+  // }
 
   .page-footer__logo-text {
     margin-right: 369px;
@@ -119,9 +142,11 @@
 
   .page-footer__contact {
     margin: 0;
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    z-index: 15;
+    top: 92px;
+    left: 50%;
+    transform: translate(-107%);
 
     width: 570px;
     height: 200px;

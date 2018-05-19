@@ -9,13 +9,18 @@
   border: 1px solid $color-grey-lightest-light;
 }
 
+.merchandise-item__link-title {
+  text-decoration: none;
+  color: inherit;
+}
+
 .merchandise-item__content {
   position: relative;
 
   display: flex;
   flex-wrap: wrap;
 
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 
   &--last {
     padding-top: 80px;
@@ -46,7 +51,7 @@
   width: 85px;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   text-transform: uppercase;
 

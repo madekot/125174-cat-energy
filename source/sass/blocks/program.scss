@@ -113,6 +113,10 @@
     background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
+  &:hover.program__link--pro::after {
+    right: 7px;
+  }
+
   &:active,
   &:active .program__link::after {
     opacity: 0.3;
@@ -200,6 +204,10 @@
 
       background-image: url("../img/icon-right-arrow-verylong.svg");
     }
+
+    &:hover.program__link--slim::after {
+      right: -5px;
+    }
   }
 }
 
@@ -260,6 +268,16 @@
 
     span {
       display: inline;
+    }
+  }
+
+  .program__link {
+    &--pro::after {
+      right: 1px;
+    }
+
+    &:hover.program__link--pro::after {
+      right: -6px;
     }
   }
 }
