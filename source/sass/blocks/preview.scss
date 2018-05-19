@@ -15,16 +15,18 @@
   color: $color-black;
 
   background-color: $color-white;
-  background-image: url("../img/index-background-mobile@1x.jpg"),
-  linear-gradient(#65a93c 305px, $color-white 305px);
+  background-image:
+    url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#65a93c 305px, $color-white 305px);
   background-repeat: no-repeat;
   background-position: top center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg"),
-    linear-gradient(#65a93c 305px, $color-white 305px);
-    background-size: 320px auto,
-    auto;
+      linear-gradient(#65a93c 305px, $color-white 305px);
+    background-size:
+      320px auto,
+      auto;
   }
 }
 

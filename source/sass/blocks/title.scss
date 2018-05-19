@@ -25,8 +25,9 @@
       height: 3px;
 
       background-color: $color-main;
-      box-shadow: -500px 0 0 0 #68b738,
-      500px 0 0 0 #68b738;
+      box-shadow:
+        -500px 0 0 0 #68b738,
+        500px 0 0 0 #68b738;
     }
   }
 
@@ -36,6 +37,7 @@
     }
   }
 }
+
 .title__text {
   background-color: $color-white;
   box-shadow: 24px 0 0 #ffffff, -24px 0 0 #ffffff;

@@ -19,6 +19,7 @@ var uglify = require("gulp-uglify");
 var pump = require("pump");
 var normalize = require("postcss-normalize");
 var concat = require("gulp-concat");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -70,11 +71,14 @@ gulp.task("svgstore", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("posthtml", function () {
+gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
+    .pipe(gulp.dest("build"))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build"));
 });
 
@@ -111,5 +115,5 @@ gulp.task("scripts", function() {
 });
 
 gulp.task("build", function(done) {
-  build("del", "copy", "style", "scripts", "svgstore", "posthtml", "imagemin", "webp", done)
+  build("del", "copy", "style", "scripts", "svgstore", "html", "imagemin", "webp", done)
 });

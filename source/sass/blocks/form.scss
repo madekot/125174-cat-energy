@@ -14,7 +14,8 @@
 }
 
 .form__text-contact {
-  box-shadow: 16px 0 0 #ffffff, -24px 0 0 #ffffff;
+  width: 185px;
+  box-shadow: 15px 0 0 #ffffff, -40px 0 0 #ffffff;
 }
 
 .form__title {
@@ -37,11 +38,6 @@
   &--contact {
     margin-bottom: 0;
   }
-}
-
-.form__text-contact {
-  width: 185px;
-  box-shadow: 15px 0 0 #ffffff, -40px 0 0 #ffffff;
 }
 
 .form__icon {
@@ -109,7 +105,7 @@
     transition: color, box-shadow 0.3s ease;
   }
 
-  &:focus + .form__icon{
+  &:focus + .form__icon {
     fill: $color-main;
 
     transition: fill 0.3s ease;
@@ -295,7 +291,7 @@
     padding-top: 4px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 3px
+    padding-bottom: 3px;
   }
 }
 
@@ -497,13 +493,14 @@
 
   .form__value {
     &--e-mail {
-    margin-right: 21px;
+      margin-right: 21px;
     }
 
     &--phone {
       margin-right: 12px;
     }
   }
+
   .form__column {
     @include desktop-width;
 
