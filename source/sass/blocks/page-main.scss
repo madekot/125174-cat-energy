@@ -44,6 +44,7 @@
     padding-top: 20px;
     padding-bottom: 25px;
   }
+
 }
 
 .page-main__desc {
@@ -60,7 +61,7 @@
 }
 
 .page-main__form {
-  padding-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,6 +85,10 @@
     &--border {
       border: none;
     }
+
+    &--size {
+      margin-bottom: 56px;
+    }
   }
 
   .page-main__inner {
@@ -104,7 +109,7 @@
   .page-main__desc {
     @include desktop-width-form;
 
-    margin-bottom: 67px;
+    margin-bottom: 65px;
     padding: 0;
   }
 

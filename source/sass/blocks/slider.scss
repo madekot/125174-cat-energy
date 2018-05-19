@@ -38,9 +38,8 @@
     }
 
     &:active {
+      border-bottom: none;
       padding-bottom: 1px;
-
-      border: none;
 
       transition: color 0.3s ease;
       transition-duration: 0s;

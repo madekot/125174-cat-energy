@@ -13,9 +13,13 @@
   width: 100%;
 }
 
+.form__text-contact {
+  box-shadow: 16px 0 0 #ffffff, -24px 0 0 #ffffff;
+}
+
 .form__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   padding: 0;
   padding-top: 27px;
   padding-right: 0;
@@ -29,10 +33,15 @@
   &--green-them {
     display: flex;
   }
+
+  &--contact {
+    margin-bottom: 0;
+  }
 }
 
 .form__text-contact {
   width: 185px;
+  box-shadow: 15px 0 0 #ffffff, -40px 0 0 #ffffff;
 }
 
 .form__icon {
@@ -70,6 +79,14 @@
     min-height: 125px;
   }
 
+  &--email {
+    padding-right: 40px;
+  }
+
+  &--phone {
+    padding-right: 40px;
+  }
+
   &::placeholder {
     color: $color-black-lightest;
 
@@ -92,10 +109,10 @@
     transition: color, box-shadow 0.3s ease;
   }
 
-  &:focus + .form__icon path {
-    transition: fill 0.3s ease;
-
+  &:focus + .form__icon{
     fill: $color-main;
+
+    transition: fill 0.3s ease;
   }
 
   &:invalid + .form__icon path {
@@ -111,11 +128,16 @@
     appearance: textfield;
   }
 
-  &--field-error,
-  &--field-error:hover,
-  &--field-error:focus {
+  &--error,
+  &--error:hover,
+  &--error:focus {
     box-shadow: 0 0 0 2px $color-error;
   }
+}
+
+.form__field--error + .form__icon,
+.form__field--error:focus + .form__icon {
+  fill: $color-error;
 }
 
 .form__value {
@@ -262,15 +284,18 @@
   }
 
   &--contact {
+    padding-top: 35px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 5px;
   }
 
   &--checkbox {
-    margin-bottom: 35px;
-    padding-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 4px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 3px
   }
 }
 
@@ -278,10 +303,9 @@
   &--coment {
     display: flex;
     min-height: 150px;
-    padding-top: 5px;
     padding-right: 20px;
-    padding-bottom: 5px;
     padding-left: 20px;
+    padding-bottom: 2px;
   }
 }
 
@@ -308,6 +332,7 @@
 
   .form__text-contact {
     width: auto;
+    box-shadow: 40px 0 0 #ffffff, -40px 0 0 #ffffff;
   }
 
   .form__value {
@@ -349,7 +374,7 @@
     }
 
     &--contact {
-      margin-bottom: 67px;
+      margin-bottom: 63px;
       padding-right: 0;
       padding-left: 0;
     }
@@ -438,6 +463,14 @@
     &--coment {
       min-height: 150px;
     }
+
+    &--email {
+      padding-right: 40px;
+    }
+
+    &--phone {
+      padding-right: 40px;
+    }
   }
 
   .form__button {
@@ -462,6 +495,15 @@
     margin-bottom: 90px;
   }
 
+  .form__value {
+    &--e-mail {
+    margin-right: 21px;
+    }
+
+    &--phone {
+      margin-right: 12px;
+    }
+  }
   .form__column {
     @include desktop-width;
 
@@ -511,7 +553,7 @@
     padding-left: 0;
 
     &--contact {
-      margin-bottom: 77px;
+      margin-bottom: 74px;
     }
 
     &--coment {
@@ -546,6 +588,12 @@
     &--extra {
       width: 568px;
       margin-bottom: 0;
+    }
+  }
+
+  .form__icon {
+    &--phone {
+      right: 20px;
     }
   }
 

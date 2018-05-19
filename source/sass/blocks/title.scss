@@ -17,7 +17,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 47px;
+      top: 40px;
       left: 0;
       z-index: -5;
 
@@ -27,6 +27,12 @@
       background-color: $color-main;
       box-shadow: -500px 0 0 0 #68b738,
       500px 0 0 0 #68b738;
+    }
+  }
+
+  &--form-theme-green {
+    &::before {
+      top: 46px;
     }
   }
 }

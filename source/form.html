@@ -112,8 +112,8 @@
             </legend class="form__legend">
             <div class="form__wrapper form__wrapper--contact">
               <p class="form__inner form__inner--extra">
-                <label class="form__value" for="e-mail">E-mail:*</label>
-                <input class="form__field form__field--email" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
+                <label class="form__value form__value--e-mail" for="e-mail">E-mail:*</label>
+                <input class="form__field form__field--email form__field--error" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
                 required id="e-mail">
                 <svg class="form__icon form__icon--e-mail"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="17" height="13">
@@ -122,7 +122,7 @@
               </p>
 
               <p class="form__inner form__inner--extra">
-                <label class="form__value" for="phone">Телефон:*</label>
+                <label class="form__value form__value--phone" for="phone">Телефон:*</label>
                 <input class="form__field form__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
                 required id="phone">
                 <svg class="form__icon form__icon--phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
@@ -140,7 +140,7 @@
                 <span class="title__text">Комментарий</span>
               </div>
             </div>
-            <div class="form__column form__column--coment form__column-coment">
+            <div class="form__column form__column--coment">
               <textarea class="form__field form__field--coment" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -196,7 +196,7 @@
         </div>
 
         <div class="page-footer__map map">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1526632844637"></iframe>
+          <div id="map" class="map__iframe"></div>
           <div class="map__content">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -211,8 +211,6 @@
           </div>
         </div>
       </div>
-
-
 
       <div class="page-footer__wrapper">
         <div class="page-footer__bottom page-footer__inner">
@@ -257,6 +255,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/all.min.js"></script>
   </body>
 </html>
