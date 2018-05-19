@@ -1,13 +1,14 @@
 .copyright {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  color: $color-black-lightest;
-  background-color: $color-grey;
+  align-items: center;
 
-  font-family: $font-family-secondary;
   font-size: 16px;
   line-height: 1;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-grey;
 }
 
 .copyright__text {
@@ -17,8 +18,9 @@
 }
 
 .copyright__image {
-  fill: $color-black-dark;
   transition: fill 0.3s ease;
+
+  fill: $color-black-dark;
 }
 
 .copyright__link {
@@ -26,16 +28,18 @@
   padding-right: 0;
 
   &:hover .copyright__image {
-    fill: $color-main;
     transition: fill 0.3s ease;
+
+    fill: $color-main;
   }
 
   &:active .copyright__image {
     opacity: 0.3;
 
-    fill: $color-main;
     transition: fill 0.3s ease;
     transition-duration: 0s;
+
+    fill: $color-main;
   }
 }
 

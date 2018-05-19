@@ -1,18 +1,18 @@
 .after-market-item {
   padding-top: 15px;
   padding-bottom: 15px;
-  color: $color-black-lightest;
-  background-color: $color-white;
 
-  font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
 }
 
 .after-market-item__wrapper {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   margin-bottom: 13px;
 }
@@ -21,15 +21,14 @@
   margin-top: 0;
   margin-bottom: 15px;
 
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black-lighten;
   text-transform: uppercase;
 
-  color: $color-black-lighten;
   background-color: $color-white;
-
-  font-family: $font-family-main;
-  font-size: 16px;
-  font-weight: $font-weight-regular;
-  line-height: 1;
 }
 
 .after-market-item__field {
@@ -42,7 +41,6 @@
 
 .after-market-item__button {
   display: block;
-
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -55,14 +53,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    font-size: 16px;
-    line-height: 1.25;
-
     padding-top: 26px;
     padding-right: 35px;
     padding-bottom: 28px;
     padding-left: 35px;
+
+    font-size: 16px;
+    line-height: 1.25;
 
     border: 1px solid $color-grey-dark;
   }
@@ -70,13 +67,11 @@
   .after-market-item__wrapper {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 0;
   }
 
   .after-market-item__button {
     display: inline-block;
-
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 0;

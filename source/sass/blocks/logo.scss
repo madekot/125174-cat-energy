@@ -3,11 +3,13 @@
 
   &:hover .logo__img {
     opacity: 0.8;
+
     transition: opacity 0.3s ease;
   }
 
   &:active .logo__img {
     opacity: 0.6;
+
     transition: opacity 0.3s ease;
     transition-duration: 0s;
   }
@@ -16,14 +18,15 @@
 .logo__img {
   width: 191px;
   height: 38px;
+
   transition: opacity 0.3s ease;
 }
 
 @media (min-width: $tablet-width) {
   .logo {
-    padding-top: 0;
     display: flex;
     flex-grow: 1;
+    padding-top: 0;
   }
 
   .logo__img {

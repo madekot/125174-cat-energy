@@ -1,13 +1,11 @@
 .page-header {
-  text-align: center;
-  text-transform: uppercase;
-
-  color: $color-black;
-
-  font-family: $font-family-main;
-  font-size: 20px;
   font-weight: $font-weight-medium;
+  font-size: 20px;
   line-height: 1;
+  font-family: $font-family-main;
+  text-align: center;
+  color: $color-black;
+  text-transform: uppercase;
 
   &--no-js {
     .page-header__toggle {
@@ -30,26 +28,26 @@
 }
 
 .page-header__toggle {
+  position: relative;
+
   display: block;
   width: 64px;
   height: 54px;
-  position: relative;
   margin: 0;
   margin-right: -20px;
 
-  cursor: pointer;
-
-  border: none;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   &--close::before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 24px;
     height: 2px;
-
-    left: 50%;
-    top: 50%;
 
     background-color: $color-black-lighten;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -58,11 +56,11 @@
   &--close::after {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 2px;
     height: 24px;
-
-    left: 50%;
-    top: 50%;
 
     background-color: $color-black-lighten;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -71,15 +69,16 @@
   &--open::before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 24px;
     height: 2px;
+
     background-color: $color-black-lighten;
-    left: 50%;
-    top: 50%;
+    box-shadow: 0 -6px 0 0 $color-black-lighten,
+    0 6px 0 0 $color-black-lighten;
     transform: translate(-50%, -50%);
-    box-shadow:
-      0 -6px 0 0 $color-black-lighten,
-      0 6px 0 0 $color-black-lighten;
   }
 }
 
@@ -99,10 +98,11 @@
 
 .page-header__top {
   @include mobile-width;
-  padding-top: 17px;
-  padding-bottom: 5px;
+
   display: flex;
   align-items: flex-start;
+  padding-top: 17px;
+  padding-bottom: 5px;
 }
 
 .page-header__list {
@@ -111,11 +111,10 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-
-    padding-top: 24px;
-    padding-bottom: 3px;
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 3px;
   }
 
   .page-header__nav {
@@ -128,6 +127,7 @@
 
   .page-header__wrapper {
     @include table-width;
+
     flex-direction: row;
   }
 
@@ -147,22 +147,22 @@
   .page-header__list {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 12px;
     margin-right: -18px;
+    padding-right: 12px;
   }
 
   .page-header__inner {
     width: 192px;
     margin-right: auto;
+
     border: none;
   }
 
   .page-header__top {
-    padding-top: 0;
-    padding-bottom: 0;
-
     width: auto;
     margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -170,18 +170,20 @@
   .page-header {
     position: relative;
     z-index: 5;
+
     display: flex;
     padding-top: 54px;
     padding-bottom: 0;
 
     &--image::after {
       content: "";
-      z-index: -10;
       position: absolute;
-      width: 50%;
-      height: 696px;
       top: 0;
       left: 50%;
+      z-index: -10;
+
+      width: 50%;
+      height: 696px;
 
       background-color: #64a83b;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -196,8 +198,8 @@
 
     &--color {
       &::after {
-        background-image: none;
         background-color: transparent;
+        background-image: none;
       }
     }
   }
@@ -217,7 +219,6 @@
 
   .page-header__list {
     justify-content: flex-end;
-
     max-width: none;
     padding-top: 75px;
     padding-bottom: 75px;

@@ -1,14 +1,15 @@
 .program {
-  color: $color-black-lightest;
-  background-color: $color-grey;
-
-  font-family: $font-family-secondary;
-  font-size: 14px;
-  line-height: 1.285;
   padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 1.285;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-grey;
 }
 
 .program__title {
@@ -18,20 +19,17 @@
   margin-bottom: 33px;
   padding-left: 70px;
 
-  text-transform: uppercase;
-
-  color: $color-black;
-
-  font-family: $font-family-main;
-  font-size: 24px;
   font-weight: $font-weight-regular;
+  font-size: 24px;
   line-height: 1.542;
+  font-family: $font-family-main;
+  color: $color-black;
+  text-transform: uppercase;
 
   &::before,
   &::after {
-    position: absolute;
-
     content: "";
+    position: absolute;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -44,8 +42,8 @@
     width: 50px;
     height: 50px;
 
-    border-radius: 50%;
     background-color: $color-main;
+    border-radius: 50%;
   }
 
   &--slim::after {
@@ -73,31 +71,30 @@
   margin: 0;
   margin-bottom: 20px;
   padding-bottom: 22px;
+
   border-bottom: 1px solid $color-grey-dark;
 }
 
 .program__link {
   position: relative;
+
   padding-right: 50px;
 
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: $color-black;
-
-  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &::after {
+    content: "";
     position: absolute;
     right: 14px;
     bottom: 6px;
 
     width: 24px;
     height: 11px;
-
-    content: "";
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
@@ -125,12 +122,13 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    font-size: 16px;
-    line-height: 1.5;
     padding-top: 75px;
     padding-right: 55px;
     padding-bottom: 55px;
     padding-left: 52px;
+
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .program__title {
@@ -147,6 +145,7 @@
 
       width: 140px;
       height: 194px;
+
       background-image: url("../img/icon-cat-slim.svg");
     }
 
@@ -154,6 +153,7 @@
       top: 57px;
       right: -28px;
       left: auto;
+
       width: 268px;
       height: 112px;
 
@@ -171,8 +171,9 @@
   }
 
   .program__desc {
-    padding-bottom: 0;
     margin-bottom: 57px;
+    padding-bottom: 0;
+
     border: none;
 
     &--text-diet {
@@ -254,9 +255,9 @@
   }
 
   .program__desc {
+    width: auto;
     margin-bottom: 30px;
     padding-right: 50px;
-    width: auto;
 
     &--text-diet {
       padding-right: 0;

@@ -1,11 +1,11 @@
 .page-footer {
-  color: $color-black-lightest;
-  background-color: $color-white;
-
-  font-family: $font-family-secondary;
-  font-size: 14px;
   font-weight: $font-weight-regular;
+  font-size: 14px;
   line-height: 1.428;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
 }
 
 .page-footer__contact {
@@ -14,27 +14,26 @@
 
   display: flex;
   flex-wrap: wrap;
-
   box-sizing: border-box;
   min-height: 115px;
   padding-top: 30px;
+  padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 
 .page-footer__logo-text {
   display: flex;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
   height: 95px;
 }
 
 .page-footer__map {
-  height: 362px;
-  z-index: 10;
   position: relative;
+  z-index: 10;
+
+  height: 362px;
   overflow: hidden;
 }
 
@@ -69,9 +68,9 @@
 
   .page-footer__contact {
     @include table-width;
+
     display: flex;
     justify-content: space-between;
-
     padding-top: 65px;
     padding-right: 42px;
     padding-bottom: 60px;
@@ -84,9 +83,10 @@
 
   .page-footer__bottom {
     @include table-width;
+
     display: flex;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .page-footer__wrapper {
@@ -94,63 +94,59 @@
   }
 
   .page-footer__logo-text {
-    padding: 30px;
-    padding-left: 0;
     height: auto;
     margin-right: 111px;
+    padding: 30px;
+    padding-left: 0;
   }
 
   .page-footer__social {
-    border: none;
     margin-right: auto;
+
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     position: relative;
-      &--color {
-        background-color: $color-white;
-      }
+    &--color {
+      background-color: $color-white;
+    }
   }
 
   .page-footer__inner {
     @include desktop-width;
+
     padding-right: 0;
     padding-left: 0;
   }
 
   .page-footer__content {
-    min-height: 395px;
     box-sizing: border-box;
+    min-height: 395px;
 
     &--color {
       background-color: $color-white;
     }
   }
 
-  // .page-footer__map {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 50%;
-  //   transform: translate(-50%);
-  // }
-
   .page-footer__logo-text {
     margin-right: 369px;
   }
 
   .page-footer__contact {
-    margin: 0;
     position: absolute;
-    z-index: 15;
     top: 92px;
     left: 50%;
-    transform: translate(-107%);
+    z-index: 15;
 
     width: 570px;
     height: 200px;
+    margin: 0;
     padding-right: 75px;
     padding-left: 75px;
+
+    transform: translate(-107%);
   }
 }
