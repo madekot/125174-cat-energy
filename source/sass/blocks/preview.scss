@@ -3,15 +3,18 @@
 
   display: flex;
   flex-direction: column;
-
   padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 0;
   padding-left: 20px;
 
+  font-size: 14px;
+  line-height: 1.285;
+  font-family: $font-family-main;
+  text-align: center;
   color: $color-black;
-  background-color: $color-white;
 
+  background-color: $color-white;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(#65a93c 305px, $color-white 305px);
@@ -19,27 +22,21 @@
   background-position: top center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:
-      url("../img/index-background-mobile@2x.jpg"),
+    background-image: url("../img/index-background-mobile@2x.jpg"),
       linear-gradient(#65a93c 305px, $color-white 305px);
     background-size:
       320px auto,
       auto;
   }
-
-  font-family: $font-family-main;
-  font-size: 14px;
-  line-height: 1.285;
-  text-align: center;
 }
 
 .preview__slogan {
-  color: $color-white;
-
-  font-size: 14px;
   margin: 0;
   margin-bottom: 26px;
 
+  font-size: 14px;
+  line-height: 1;
+  color: $color-white;
   text-transform: uppercase;
 }
 
@@ -47,11 +44,10 @@
   margin: 0;
   margin-bottom: 25px;
 
-  color: $color-white;
-
-  font-size: 36px;
   font-weight: $font-weight-regular;
+  font-size: 36px;
   line-height: 1;
+  color: $color-white;
 }
 
 .preview__image {
@@ -65,15 +61,17 @@
 
 @media (min-width: $tablet-width) {
   .preview {
-    text-align: left;
-    align-items: flex-start;
-    background-image: none;
-    font-size: 20px;
     z-index: 5;
 
+    align-items: flex-start;
     padding-top: 55px;
     padding-right: 0;
     padding-left: 0;
+
+    font-size: 20px;
+    text-align: left;
+
+    background-image: none;
   }
 
   .preview__image {
@@ -83,14 +81,15 @@
 
   .preview__title {
     margin-bottom: 40px;
-    color: $color-black;
+
     font-size: 60px;
+    color: $color-black;
   }
 
   .preview__column-text {
     width: 425px;
+    margin-bottom: 17px;
     padding-left: 86px;
-    margin-bottom: 20px;
   }
 
   .preview__column-image {
@@ -98,33 +97,39 @@
   }
 
   .preview__slogan {
+    margin-bottom: 0;
+
     font-size: 20px;
     line-height: 1;
     color: $color-black;
-    margin-bottom: 0;
   }
 
   .preview__button {
     position: absolute;
-    width: 192px;
     top: 30px;
-    left: 85px;
+    left: 90px;
+
+    padding-top: 16px;
+    padding-right: 25px;
+    padding-bottom: 16px;
+    padding-left: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .preview {
     box-sizing: border-box;
+    min-height: 582px;
     padding-top: 107px;
     padding-left: 77px;
+
     background-color: transparent;
-    min-height: 582px;
   }
 
   .preview__column-text {
+    margin-bottom: 0;
     padding-top: 0;
     padding-left: 0;
-    margin-bottom: 0;
   }
 
   .preview__column-image {
@@ -132,18 +137,22 @@
   }
 
   .preview__slogan {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .preview__image {
     position: absolute;
     top: 27px;
     right: 222px;
+
     width: 552px;
     height: 499px;
   }
 
   .preview__button {
     position: static;
+
+    padding-right: 29px;
+    padding-left: 29px;
   }
 }

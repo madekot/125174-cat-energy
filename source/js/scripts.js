@@ -24,14 +24,3 @@ navToggle.addEventListener('click', function() {
     }
   }
 });
-
-
-// var fieldRequired = document.querySelectorAll(':required:invalid');
-// var formSubmit = document.querySelector('.form__button');
-//
-// formSubmit.addEventListener('click', function(evt) {
-//   if (fieldRequired !== null) {
-//     evt.preventDefault();
-//     console.log("Клик по кнопке отправки формы")
-//   }
-// });

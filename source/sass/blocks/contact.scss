@@ -1,12 +1,13 @@
 .contact {
   display: flex;
   justify-content: space-between;
-  color: $color-black-lightest;
-  background-color: $color-white;
 
-  font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 1.428;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
 
   &--color {
     background-color: $color-grey;
@@ -17,13 +18,11 @@
   width: 140px;
   margin: 0;
 
-  text-transform: uppercase;
-
-  color: $color-black;
-
-  font-family: $font-family-main;
   font-size: 16px;
   line-height: 1.25;
+  font-family: $font-family-main;
+  color: $color-black;
+  text-transform: uppercase;
 }
 
 .contact__text {
@@ -32,6 +31,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact {
+    &--color {
+      background-color: $color-grey;
+    }
+  }
+
   .contact__lead {
     font-size: 20px;
     line-height: 1.25;
@@ -40,10 +45,9 @@
   .contact__text {
     width: 169px;
 
-    text-align: right;
-
     font-size: 16px;
     line-height: 1.25;
+    text-align: right;
   }
 
   .contact__text-more {
@@ -60,16 +64,7 @@
     text-align: left;
   }
 
-  .contact__content {
-    @include desktop-width;
-    min-height: 395px;
-    padding-top: 90px;
-    box-sizing: border-box;
-  }
-
   .contact {
-    &--color {
-      background-color: $color-white;
-    }
+    background-color: $color-white;
   }
 }

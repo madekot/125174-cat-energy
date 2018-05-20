@@ -2,13 +2,11 @@
   display: flex;
   justify-content: space-between;
 
-  text-align: center;
-
-  color: $color-black-lightest;
-
-  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1;
+  font-family: $font-family-secondary;
+  text-align: center;
+  color: $color-black-lightest;
 }
 
 .illustration__item {
@@ -25,14 +23,13 @@
 }
 
 .illustration__value {
-  text-transform: uppercase;
+  margin: 0;
 
-  color: $color-black;
-
-  font-family: $font-family-main;
   font-size: 24px;
   line-height: 1;
-  margin: 0;
+  font-family: $font-family-main;
+  color: $color-black;
+  text-transform: uppercase;
 }
 
 .illustration__field {
@@ -45,15 +42,14 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  transform: translate(-50%);
-  text-transform: lowercase;
-
-  color: $color-black;
-  background-color: $color-grey;
-
-  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1;
+  font-family: $font-family-secondary;
+  color: $color-black;
+  text-transform: lowercase;
+
+  background-color: $color-grey;
+  transform: translate(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -81,11 +77,10 @@
     padding-right: 10px;
     padding-left: 10px;
 
+    font-size: 14px;
     white-space: nowrap;
 
     background-color: $color-white;
-
-    font-size: 14px;
   }
 }
 

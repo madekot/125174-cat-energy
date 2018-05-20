@@ -1,12 +1,20 @@
 .merchandise-item {
-  color: $color-black-lightest;
-  background-color: $color-white;
-
-  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1.333;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
 
+  background-color: $color-white;
   border: 1px solid $color-grey-lightest-light;
+}
+
+.merchandise-item__link {
+  line-height: 0;
+}
+
+.merchandise-item__link-title {
+  color: inherit;
+  text-decoration: none;
 }
 
 .merchandise-item__content {
@@ -14,14 +22,14 @@
 
   display: flex;
   flex-wrap: wrap;
-
   padding-bottom: 24px;
 
   &--last {
-    padding-top: 80px;
     flex-direction: column;
+    padding-top: 80px;
 
     &::before {
+      content: "";
       position: absolute;
       top: 25px;
       left: 50%;
@@ -29,10 +37,8 @@
       width: 30px;
       height: 30px;
 
-      content: "";
-      transform: translate(-50%);
-
       background-image: url("../img/icon-plus-mobile.svg");
+      transform: translate(-50%);
     }
   }
 }
@@ -46,17 +52,16 @@
   width: 85px;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: $font-family-main;
+  color: $color-black;
   text-transform: uppercase;
 
-  color: $color-black;
   background-color: $color-white;
-
-  font-family: $font-family-main;
-  font-size: 16px;
-  font-weight: $font-weight-regular;
-  line-height: 1.25;
 
   &--more {
     width: auto;
@@ -76,10 +81,9 @@
 }
 
 .merchandise-item__button {
+  flex-grow: 1;
   box-sizing: border-box;
   width: 100%;
-  flex-grow: 1;
-
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -89,7 +93,6 @@
 
 .merchandise-item__wrapper {
   flex-grow: 1;
-
   margin: 0;
 }
 
@@ -101,6 +104,7 @@
   .merchandise-item {
     font-size: 16px;
     line-height: 1;
+
     border: none;
 
     &--alternative {
@@ -110,7 +114,6 @@
 
   .merchandise-item__content {
     flex-direction: column;
-
     padding-top: 164px;
     padding-right: 38px;
     padding-bottom: 40px;
@@ -120,14 +123,16 @@
 
     &--last {
       width: 324px;
-      border: 1px solid $color-grey-darken;
+
       background-color: $color-white;
+      border: 1px solid $color-grey-darken;
 
       &::before {
         top: 55px;
 
         width: 60px;
         height: 60px;
+
         background-image: url("../img/icon-plus.svg");
       }
     }
@@ -141,12 +146,14 @@
 
     &--small {
       top: -46px;
+
       width: 324px;
       height: 172px;
     }
 
     &--big {
       top: -80px;
+
       width: 324px;
       height: 208px;
     }
@@ -164,17 +171,15 @@
 
   .merchandise-item__title {
     align-self: center;
-
     width: 150px;
     margin-top: 0;
     margin-bottom: 20px;
 
+    font-size: 20px;
+    line-height: 1;
     text-align: center;
 
     background-color: $color-grey;
-
-    font-size: 20px;
-    line-height: 1;
 
     &--more {
       margin-bottom: 29px;

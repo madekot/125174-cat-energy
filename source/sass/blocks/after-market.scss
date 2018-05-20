@@ -1,26 +1,26 @@
 .after-market {
-  color: $color-black-lightest;
-  background-color: $color-white;
-
-  font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 1.166px;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
 }
 
 .after-market__title {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 31px;
   padding-right: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   padding-left: 20px;
 
-  color: $color-black;
-  background-color: $color-white;
-
-  font-family: $font-family-main;
-  font-size: 24px;
   font-weight: $font-weight-regular;
+  font-size: 24px;
   line-height: 1;
+  font-family: $font-family-main;
+  color: $color-black;
+
+  background-color: $color-white;
 }
 
 .after-market__column {
@@ -39,13 +39,15 @@
 
   margin: 0;
   padding-top: 190px;
-  padding-right: 60px;
+  padding-right: 55px;
   padding-bottom: 40px;
-  padding-left: 60px;
+  padding-left: 55px;
 
+  font-size: 16px;
+  line-height: 1.25;
   text-align: center;
-
   color: $color-white;
+
   background-color: $color-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -56,10 +58,8 @@
     background-size: 280px auto;
   }
 
-  font-size: 16px;
-  line-height: 1.25;
-
   &::before {
+    content: "";
     position: absolute;
     top: 66px;
     left: 50%;
@@ -67,23 +67,26 @@
     width: 55px;
     height: 60px;
 
-    content: "";
-    transform: translate(-50%);
-
     background-image: url("../img/icon-gift.svg");
+    transform: translate(-50%);
   }
 }
 
 @media (min-width: $tablet-width) {
   .after-market__title {
     @include desktop-width-form;
-    padding: 0;
-    border-bottom: none;
     margin-bottom: 80px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 1;
+
+    border-bottom: none;
   }
 
   .after-market__column {
     @include table-width;
+
     padding-right: 0;
     padding-left: 0;
   }
@@ -92,7 +95,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     margin-bottom: 70px;
   }
 
@@ -120,11 +122,13 @@
 @media (min-width: $desktop-width) {
   .after-market__title {
     @include desktop-width;
+
     margin-bottom: 80px;
   }
 
   .after-market__column {
     @include desktop-width;
+
     display: flex;
   }
 

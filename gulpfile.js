@@ -18,6 +18,8 @@ var del = require("del");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
 var normalize = require("postcss-normalize");
+var concat = require("gulp-concat");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -44,22 +46,43 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html"), ["posthtml"];
+  gulp.watch("source/js/*.js", ["scripts"]).on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
-gulp.task("jsmin", function (cb) {
-  pump([
-        gulp.src(["build/js/*.js", "build/!js/*.min.js"]),
-        uglify(),
-        rename({suffix: ".min"}),
-        gulp.dest("build/js/")
-    ],
-    cb
-  );
+gulp.task("del", function () {
+  return del("build");
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+      "source/fonts/**/*.{woff,woff2}"
+      ], {
+        base: "source"
+      })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("svgstore", function() {
+  return gulp.src("source/img/{icon-vk-mobile,icon-insta-mobile,htmlacademy,icon-fb-mobile,icon-mail,icon-phone}.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("imagemin", function() {
-  return gulp.src("build/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
@@ -73,50 +96,23 @@ gulp.task("imagemin", function() {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("build/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("svgstore", function() {
-  return gulp.src("build/img/{icon-vk-mobile,icon-insta-mobile,htmlacademy,icon-fb-mobile}.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
-gulp.task("posthtml", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-      ]))
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task("picturefill", function() {
+gulp.task("scripts", function() {
   return gulp.src([
-      "node_modules/picturefill/dist/picturefill.js"
-    ])
+    "source/js/*.js",
+    "node_modules/picturefill/dist/picturefill.js"
+  ])
+    .pipe(concat("all.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("copy", function() {
-  return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/img/**/*.{png,jpg,svg}",
-      "source/js/**/*.js"
-      ], {
-        base: "source"
-      })
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task("del", function () {
-  return del("build");
-});
-
 gulp.task("build", function(done) {
-  build("del", "copy", "style", "picturefill", "jsmin", "svgstore", "posthtml", "imagemin", "webp",  done)
+  build("del", "copy", "style", "scripts", "svgstore", "html", "imagemin", "webp", done)
 });

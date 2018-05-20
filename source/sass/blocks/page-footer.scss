@@ -1,11 +1,11 @@
 .page-footer {
-  color: $color-black-lightest;
-  background-color: $color-white;
-
-  font-family: $font-family-secondary;
-  font-size: 14px;
   font-weight: $font-weight-regular;
+  font-size: 14px;
   line-height: 1.428;
+  font-family: $font-family-secondary;
+  color: $color-black-lightest;
+
+  background-color: $color-white;
 }
 
 .page-footer__contact {
@@ -14,25 +14,27 @@
 
   display: flex;
   flex-wrap: wrap;
-
   box-sizing: border-box;
   min-height: 115px;
   padding-top: 30px;
+  padding-right: 20px;
   padding-bottom: 25px;
+  padding-left: 20px;
 }
 
 .page-footer__logo-text {
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  height: 95px;
+  align-items: center;
+  height: 97px;
 }
 
 .page-footer__map {
   position: relative;
+  z-index: 10;
 
-  min-height: 360px;
+  height: 362px;
+  overflow: hidden;
 }
 
 .page-footer__inner {
@@ -48,7 +50,15 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: 100%;
+    &--color {
+      background-color: $color-grey;
+    }
+  }
+
+  .page-footer__content {
+    &--color {
+      background-color: $color-grey;
+    }
   }
 
   .page-footer__inner {
@@ -58,9 +68,9 @@
 
   .page-footer__contact {
     @include table-width;
+
     display: flex;
     justify-content: space-between;
-
     padding-top: 65px;
     padding-right: 42px;
     padding-bottom: 60px;
@@ -68,14 +78,15 @@
   }
 
   .page-footer__map {
-    min-height: 395px;
+    min-height: 396px;
   }
 
   .page-footer__bottom {
     @include table-width;
+
     display: flex;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .page-footer__wrapper {
@@ -83,34 +94,46 @@
   }
 
   .page-footer__logo-text {
-    padding: 30px;
-    padding-left: 0;
     height: auto;
     margin-right: 111px;
+    padding: 30px;
+    padding-left: 0;
   }
 
   .page-footer__social {
-    border: none;
     margin-right: auto;
+
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     position: relative;
+
+    &--color {
+      background-color: $color-white;
+    }
+  }
+
+  .page-footer__bottom {
+    padding-top: 3px;
   }
 
   .page-footer__inner {
     @include desktop-width;
+
     padding-right: 0;
     padding-left: 0;
   }
 
-  .page-footer__map {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+  .page-footer__content {
+    box-sizing: border-box;
+    min-height: 395px;
+
+    &--color {
+      background-color: $color-white;
+    }
   }
 
   .page-footer__logo-text {
@@ -118,14 +141,17 @@
   }
 
   .page-footer__contact {
-    margin: 0;
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    z-index: 15;
 
     width: 570px;
     height: 200px;
+    margin: 0;
     padding-right: 75px;
     padding-left: 75px;
+
+    transform: translate(-107%);
   }
 }

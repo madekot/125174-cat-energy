@@ -1,14 +1,17 @@
 .logo-text {
   background-color: $color-grey;
+
   transition: opacity 0.3s ease;
 
   &:hover .logo-text__image {
     opacity: 0.8;
+
     transition: opacity 0.3s ease;
   }
 
   &:active .logo-text__image {
     opacity: 0.6;
+
     transition: opacity 0.3s ease;
     transition-duration: 0s;
   }
