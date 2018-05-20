@@ -1,17 +1,22 @@
 ymaps.ready(function() {
+  var coordsMobile = [59.9386, 30.3231];
+  var coordsDesktop = [59.9386, 30.3195];
+
+  var coords;
+  if (window.matchMedia("(min-width: 1300px)").matches) {
+    coords = coordsDesktop;
+  } else {
+    coords = coordsMobile;
+  }
+
   var myMap = new ymaps.Map('map', {
-      center: [59.9386, 30.3231],
+      center: coords,
       zoom: 17
     }, {
       searchControlProvider: 'yandex#search'
-    }),
+    });
 
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+    var myPlacemark = new ymaps.Placemark(coordsMobile, {
       hintContent: 'Кэт энерджи',
       balloonContent: 'Магазин кормов для животных'
     }, {

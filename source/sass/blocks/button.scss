@@ -19,20 +19,16 @@
   background-color: $color-main;
   border: none;
 
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
     background-color: $color-green-down;
-
-    transition: background-color 0.3s ease;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.302);
 
     background-color: $color-green-down;
-
-    transition: background-color 0.3s ease;
     transition-duration: 0s;
   }
 

@@ -161,7 +161,7 @@
     position: relative;
 
     padding-top: 370px;
-    padding-bottom: 71px;
+    padding-bottom: 75px;
 
     background-image: linear-gradient(to right, $color-grey 50%, $color-grey-lightest-normal 50%);
   }
@@ -239,11 +239,11 @@
   }
 
   .sample__switch {
-    width: 8px;
-    height: 8px;
-    margin-left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: 49.5%;
 
-    border: 10px solid $color-white;
+    border: 12px solid $color-white;
     border-radius: 50%;
     box-shadow:
       0 2px 5px 0 rgba(0, 0, 0, 0.15),
@@ -291,7 +291,7 @@
   .sample__column-mutation {
     width: auto;
     margin: auto;
-    padding-top: 370px;
+    padding-top: 373px;
     padding-bottom: 70px;
   }
 

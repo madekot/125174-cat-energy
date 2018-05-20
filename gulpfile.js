@@ -46,6 +46,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/js/*.js", ["scripts"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
@@ -76,9 +77,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"))
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build"));
 });
 

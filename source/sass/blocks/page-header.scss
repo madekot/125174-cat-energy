@@ -90,6 +90,17 @@
 
   &--open {
     display: block;
+    animation: open 0.3s;
+
+    @keyframes open {
+      0% {
+        transform: translateX(-2000px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
   }
 }
 

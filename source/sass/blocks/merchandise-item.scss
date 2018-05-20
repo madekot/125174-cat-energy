@@ -8,6 +8,10 @@
   border: 1px solid $color-grey-lightest-light;
 }
 
+.merchandise-item__link {
+  line-height: 0;
+}
+
 .merchandise-item__link-title {
   color: inherit;
   text-decoration: none;
@@ -18,7 +22,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 
   &--last {
     flex-direction: column;
