@@ -46,7 +46,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["posthtml"]).on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("del", function () {
@@ -63,7 +63,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("svgstore", function() {
-  return gulp.src("source/img/{icon-vk-mobile,icon-insta-mobile,htmlacademy,icon-fb-mobile}.svg")
+  return gulp.src("source/img/{icon-vk-mobile,icon-insta-mobile,htmlacademy,icon-fb-mobile,icon-mail,icon-phone}.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))

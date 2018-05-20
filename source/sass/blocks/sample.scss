@@ -41,8 +41,9 @@
 
 .sample__desc {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   padding-right: 5px;
+  line-height: 1.2857;
 }
 
 .sample__subtitle {
@@ -137,11 +138,17 @@
   .sample__desc {
     margin-bottom: 52px;
     padding-right: 30px;
+    line-height: 1.5;
   }
 
   .sample__subtitle-expenses {
     display: block;
     margin-bottom: 5px;
+    line-height: 1;
+  }
+
+  .sample__subtitle-value {
+    line-height: 1;
   }
 
   .sample__wrapper {

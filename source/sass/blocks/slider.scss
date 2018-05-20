@@ -24,24 +24,32 @@
   }
 
   .slider__toggle {
+    position: relative;
     font-size: 20px;
-    line-height: 1.25;
+    line-height: 1;
 
-    border-bottom: 1px dotted $color-grey-darken-dark;
-
-    transition: color 0.3s ease;
-
-    &:hover {
-      border-bottom: 1px solid $color-black-darken;
-
-      transition: color 0.3s ease;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dotted $color-grey-darken-dark;
+      transition: border 0.3s ease;
     }
 
-    &:active {
+    &:hover::after {
+      border-bottom: 1px solid $color-black-darken;
+
+      transition: border 0.3s ease;
+    }
+
+    &:active::after {
       border-bottom: none;
       padding-bottom: 1px;
 
-      transition: color 0.3s ease;
+      transition: border 0.3s ease;
       transition-duration: 0s;
     }
   }

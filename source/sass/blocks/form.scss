@@ -43,6 +43,8 @@
 .form__icon {
   position: absolute;
   top: 50%;
+  fill: $color-black-lighten;
+  transition: fill 0.6s ease;
 
   transform: translate(0, -50%);
 
@@ -70,6 +72,7 @@
   background-color: $color-white;
   border: none;
   box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.5);
+  transition: box-shadow 0.3s ease;
 
   &--coment {
     min-height: 125px;
@@ -128,12 +131,14 @@
   &--error:hover,
   &--error:focus {
     box-shadow: 0 0 0 2px $color-error;
+    transition: box-shadow 0.3s ease;
   }
 }
 
 .form__field--error + .form__icon,
 .form__field--error:focus + .form__icon {
   fill: $color-error;
+  transition: fill 0.3s ease;
 }
 
 .form__value {
@@ -155,7 +160,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 1px $color-grey-darken;
 
-    transition: color, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
   }
 
   &--checkbox::after {
@@ -332,6 +337,8 @@
   }
 
   .form__value {
+    margin-right: 20px;
+
     &--radio::before {
       top: -8px;
       left: -58px;
