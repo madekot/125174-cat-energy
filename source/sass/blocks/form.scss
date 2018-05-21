@@ -208,7 +208,10 @@
   }
 
   &:focus + .form__value--checkbox::after {
+    /* stylelint-disable declaration-block-no-duplicate-properties*/
+    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
+    /* stylelint-enable */
   }
 
   &:active + .form__value--checkbox::after,
@@ -228,7 +231,10 @@
   }
 
   &:focus + .form__value--radio::before {
+    /* stylelint-disable declaration-block-no-duplicate-properties*/
+    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
+    /* stylelint-enable */
   }
 
   &:active + .form__value--radio::before,
